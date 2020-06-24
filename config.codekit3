@@ -19,61 +19,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/section-1/hero1.jpg": {
-		"ft": 16384,
-		"iS": 243009,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-1/hero1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-2/hero2.jpg": {
-		"ft": 16384,
-		"iS": 30596,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-2/hero2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-3/card1.jpeg": {
-		"ft": 16384,
-		"iS": 23888,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-3/card1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-3/card2.jpeg": {
-		"ft": 16384,
-		"iS": 27328,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-3/card2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/section-3/card3.jpeg": {
-		"ft": 16384,
-		"iS": 28169,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/section-3/card3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -99,6 +44,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/footer.html",
+		"oF": 0
+		},
+	"/dev/global/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/footer.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -330,7 +283,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/section-1.html",
 		"oF": 0
 		},
