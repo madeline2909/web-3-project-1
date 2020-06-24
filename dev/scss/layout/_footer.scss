@@ -2,50 +2,5 @@
     Footer
 ============= */
 footer {
-	background-color: $black;
-	color: white;
-	margin-top: 20px;
-	padding: 45px 0 50px;
-	text-align: center;
-	#footer-content {
-		@include lg {
-			display: grid;
-			grid-template-areas: "icon text";
-			grid-template-columns: 15% auto;
-			padding: 0 30px;
-		}
-		ul {
-			align-items: center;
-			display: flex;
-			justify-content: space-evenly;
-			padding: 0 70px;
-			@include md {
-				padding: 0 280px;
-			}
-			@include lg {
-				grid-area: icon;
-				justify-content: space-between;
-				padding: 0 0px;
-			}
-			li {
-				a:link,
-                a:visited {
-					color: $darkgray;
-					font-size: rem-calc(30);
-					transition: 0.25s;
-				}
-				a:hover,
-                a:active {
-					color: $white;
-				}
-			}
-		}
-		>h1 {
-			padding-top: 20px;
-			@include lg {
-				grid-area: text;
-				text-align: right;
-			}
-		}
-	}
+	
 }

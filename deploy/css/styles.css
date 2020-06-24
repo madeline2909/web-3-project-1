@@ -363,18 +363,18 @@ ul li {
   list-style: none;
 }
 
-.content-spacing {
-  padding-top: 45px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". container .";
 }
-@media (min-width: 768px) {
-  .content-spacing {
-    padding-top: 35px;
+@media (min-width: 1440px) {
+  .grid-container {
+    grid-template-columns: auto 1440px auto;
   }
 }
-@media (min-width: 992px) {
-  .content-spacing {
-    padding: 70px 0;
-  }
+.grid-container > div {
+  grid-area: container;
 }
 
 /* =============
@@ -429,59 +429,6 @@ textarea {
 /* =============
     Footer
 ============= */
-footer {
-  background-color: #000;
-  color: white;
-  margin-top: 20px;
-  padding: 45px 0 50px;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  footer #footer-content {
-    display: grid;
-    grid-template-areas: "icon text";
-    grid-template-columns: 15% auto;
-    padding: 0 30px;
-  }
-}
-footer #footer-content ul {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 70px;
-}
-@media (min-width: 768px) {
-  footer #footer-content ul {
-    padding: 0 280px;
-  }
-}
-@media (min-width: 992px) {
-  footer #footer-content ul {
-    grid-area: icon;
-    justify-content: space-between;
-    padding: 0 0px;
-  }
-}
-footer #footer-content ul li a:link,
-footer #footer-content ul li a:visited {
-  color: #6B6B6B;
-  font-size: 1.875rem;
-  transition: 0.25s;
-}
-footer #footer-content ul li a:hover,
-footer #footer-content ul li a:active {
-  color: #fff;
-}
-footer #footer-content > h1 {
-  padding-top: 20px;
-}
-@media (min-width: 992px) {
-  footer #footer-content > h1 {
-    grid-area: text;
-    text-align: right;
-  }
-}
-
 /* =============
     section-1
 ============= */
