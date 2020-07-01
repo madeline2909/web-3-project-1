@@ -19,6 +19,350 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/blog/blog-1.jpeg": {
+		"ft": 16384,
+		"iS": 94174,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/blog-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/blog-hero.jpg": {
+		"ft": 16384,
+		"iS": 187951,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/blog-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/monokubo1.jpeg": {
+		"ft": 16384,
+		"iS": 214602,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/monokubo1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/monokubo2.jpeg": {
+		"ft": 16384,
+		"iS": 171781,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/monokubo2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/monokubo3.jpeg": {
+		"ft": 16384,
+		"iS": 192762,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/monokubo3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/monokubo4.jpeg": {
+		"ft": 16384,
+		"iS": 86123,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/monokubo4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/monokubo5.jpeg": {
+		"ft": 16384,
+		"iS": 67275,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/monokubo5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/monokubo6.jpeg": {
+		"ft": 16384,
+		"iS": 86777,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/monokubo6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/blog/pusheen meal.gif": {
+		"ft": 4194304,
+		"iS": 1553122,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/pusheen meal.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/deploy/img/blog/pusheen snack.gif": {
+		"ft": 4194304,
+		"iS": 831893,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/pusheen snack.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/deploy/img/blog/thecatreturns.jpg": {
+		"ft": 16384,
+		"iS": 97341,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/blog/thecatreturns.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/celebs/celeb-hero.jpeg": {
+		"ft": 16384,
+		"iS": 102107,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/celebs/celeb-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/footer/cat-solid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/footer/cat-solid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/footer/footer.jpeg": {
+		"ft": 16384,
+		"iS": 142065,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/footer/footer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery-hero.jpeg": {
+		"ft": 16384,
+		"iS": 98905,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery1.jpeg": {
+		"ft": 16384,
+		"iS": 59325,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery2.jpeg": {
+		"ft": 16384,
+		"iS": 68044,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery3.jpeg": {
+		"ft": 16384,
+		"iS": 271656,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery4.jpeg": {
+		"ft": 16384,
+		"iS": 44223,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery5.jpeg": {
+		"ft": 16384,
+		"iS": 92256,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery6.jpeg": {
+		"ft": 16384,
+		"iS": 19098,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery7.jpeg": {
+		"ft": 16384,
+		"iS": 27375,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery8.jpeg": {
+		"ft": 16384,
+		"iS": 55343,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/gallery/gallery9.jpeg": {
+		"ft": 16384,
+		"iS": 105155,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/gallery/gallery9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/header/paw.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/deploy/img/header/paw.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/deploy/img/home/home-1.jpeg": {
+		"ft": 16384,
+		"iS": 44407,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/home-2.jpeg": {
+		"ft": 16384,
+		"iS": 33962,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/home-3.jpeg": {
+		"ft": 16384,
+		"iS": 47409,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/home-hero-2.jpeg": {
+		"ft": 16384,
+		"iS": 314964,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home-hero-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/home/home_hero.jpg": {
+		"ft": 16384,
+		"iS": 123504,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/home/home_hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/travel/contact.jpg": {
+		"ft": 16384,
+		"iS": 30597,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/travel/contact.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/travel/travel-hero.jpeg": {
+		"ft": 16384,
+		"iS": 159000,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/travel/travel-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -38,12 +382,20 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/footer.kit": {
+	"/deploy/template.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/template.html",
+		"oF": 0
+		},
+	"/dev/content/index-content.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/footer.html",
+		"oAP": "/dev/content/index-content.html",
 		"oF": 0
 		},
 	"/dev/global/footer.kit": {
@@ -227,45 +579,6 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_section-1.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-1.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/dev/scss/sections/_section-2.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-2.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/dev/scss/sections/_section-3.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-3.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -279,29 +592,13 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/section-1.kit": {
+	"/dev/template.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-1.html",
-		"oF": 0
-		},
-	"/dev/section-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-2.html",
-		"oF": 0
-		},
-	"/dev/section-3.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-3.html",
-		"oF": 0
+		"oA": 0,
+		"oAP": "/deploy/template.html",
+		"oF": 2
 		}
 	},
 "hooks": [
