@@ -1,3 +1,31 @@
 /* =============
     Header
 ============= */
+header{
+    color: $mainpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+    @include lg{
+        padding: 30px 42px;
+    }
+    @include md{
+        padding: 25px 30px;
+    }
+
+    h5{
+        font-family: 'Space Mono', monospace;
+        font-weight: 400;
+        font-size: rem-calc(18px);
+        line-height: rem-calc(18px);
+        text-align: center;
+    }
+    img{
+        height: 60px;
+    }
+    #burger-icon{
+        font-size: rem-calc(24px);
+    }
+}
