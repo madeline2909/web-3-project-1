@@ -2,5 +2,163 @@
     Footer
 ============= */
 footer {
-	
+    position: relative;
+    height: auto;
+    #footer-background{
+        width: 100%;
+        height: 343px;
+        position: absolute;
+        z-index: -2;
+        background-image: url('../img/footer/footer.jpeg');
+        background-position: center bottom;
+        background-size: cover;
+        @include md{
+            height: 360px;
+        }
+        @include lg{
+            height: 410px;
+        }
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        ul{
+            font-size: rem-calc(30);
+            width: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include lg{
+                width: 170px;
+            }
+            li{
+                a:link,
+                a:visited {
+                    color: $white;
+
+                    &:hover,
+                    &:active {
+                        color: $mainpink;
+                    }
+                }
+            }
+        }
+    }
+    
+    #footer-overlay{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba($color: $green, $alpha: 0.7);
+        width: 100%;
+        height: 343px;
+        @include md{
+            height: 360px;
+            width: 93vw;
+        }
+        @include lg{
+            height: 410px;
+        }
+        h5{
+            margin-top: 45px;
+            left: -25px;
+            border: 2px solid white;
+            color: white;
+            position: absolute;
+            display: none;
+            @include md{
+                display: block;
+            }
+        }
+    }
+
+    #email{
+        display: flex;
+        justify-content: center;
+        input{
+            border-radius: 10px 0 0 10px;
+            width: 100%;
+            height: 40px;
+            @include md{
+                width: 400px;
+                height: 50px;
+            }
+            @include lg{
+                width: 600px;
+                height: 65px;
+            }
+        }
+        
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            font-family: 'Space Mono', monospace;
+            font-size: rem-calc(16);
+            color: $mainpink;
+            opacity: 1;
+            padding-left: 8px;
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            font-family: 'Space Mono', monospace;
+            font-size: rem-calc(16);
+            color: $mainpink;
+            padding-left: 10px;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            font-family: 'Space Mono', monospace;
+            font-size: rem-calc(16);
+            color: $mainpink;
+            padding-left: 10px;
+        }
+
+        button{
+            i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                color: white;
+                text-align: center;
+                font-size: rem-calc(30);
+                padding: 0 5px;
+                @include lg{
+                    font-size: rem-calc(35);
+                    padding: 0 16px;
+                }
+            }
+            border-radius: 0 10px 10px 0;
+            background-color: $mainpink;
+            height: 100%;
+        }
+    }
+    h4{
+        text-align: center;
+        margin:0 50px 10px;
+        font-size: rem-calc(30);
+        color: white;
+        @include md{
+            margin-bottom: 15px;
+        }
+        @include lg{
+            margin-bottom: 20px;
+        }
+    }
+
+    h6{
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        @include md{
+            padding-bottom: 20px;
+        }
+        @include lg{
+            padding-bottom: 30px;
+        }
+    }
 }

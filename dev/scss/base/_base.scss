@@ -1,9 +1,6 @@
 /* =============
     Base
 ============= */
-/* =============
-    Base
-============= */
 ul{
     padding: 0;
     margin: 0;
@@ -11,7 +8,34 @@ ul{
         list-style: none;
     }
 }
+a:link, a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
+input, button{
+    border: none;
+}
 
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+.show-for-lg{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}
+
+.show-for-xl{
+    display: none;
+    @include xl{
+        display: block;
+    }
+}
 .grid-container{
     display: grid;
     grid-template-columns: 15px auto 15px;
@@ -24,6 +48,12 @@ ul{
     }
 }
 .content-spacing{
-    
+    margin: 50px 0;
+    @include md{
+        margin: 60px 0;
+    }
+    @include lg{
+        margin: 70px 0;
+    }
 }
 

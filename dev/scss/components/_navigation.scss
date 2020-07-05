@@ -1,3 +1,40 @@
 /* =============
     Navigation
 ============= */
+
+button{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: rem-calc(14);
+    line-height: rem-calc(18);
+    text-align: center;
+    padding: 5px;
+    @include md{
+        font-size: rem-calc(25);
+        line-height: rem-calc(30);
+        padding: 10px;
+    }
+    @include lg{
+        font-size: rem-calc(30);
+        line-height: rem-calc(37);
+        padding: 14px;
+    }
+
+    a:link,
+    a:visited {
+        border: none;
+        color: $white;
+        background-color: $mainpink;
+        &:hover,
+        &:active {
+            color: $mainpink;
+            background-color: white;
+            border: 2px solid $mainpink;
+        }
+    }
+}
