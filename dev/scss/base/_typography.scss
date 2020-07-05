@@ -37,7 +37,28 @@ h6{
 	border-radius: 10px;
 	padding: 12px;
 }
-
+.header{
+	padding-top: 200px;
+}
+h1{
+	padding-top: 10vh;
+	margin-left: -12px;
+	font-family: 'Space Mono', monospace;
+	line-height: rem-calc(80);
+	font-size: rem-calc(100);
+	@include md{
+		margin-left: -25px;
+		line-height: rem-calc(145);
+		font-size: rem-calc(180);
+	}
+	@include lg{
+		line-height: rem-calc(164);
+		font-size: rem-calc(200);
+	}
+}
 h4{
 	font-family: 'Covered By Your Grace', cursive;
+	font-size: rem-calc(25);
+	line-height: rem-calc(30);
 }
+

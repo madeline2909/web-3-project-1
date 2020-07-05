@@ -36,6 +36,16 @@ input, button{
         display: block;
     }
 }
+.hero-container{
+    @include xl{
+        display: grid;
+        grid-template-areas: ". hero .";
+        grid-template-columns: auto 1440px auto;
+    }
+    >div{
+        grid-area: hero;
+    }
+}
 .grid-container{
     display: grid;
     grid-template-columns: 15px auto 15px;

@@ -396,6 +396,17 @@ input, button {
   }
 }
 
+@media (min-width: 1440px) {
+  .hero-container {
+    display: grid;
+    grid-template-areas: ". hero .";
+    grid-template-columns: auto 1440px auto;
+  }
+}
+.hero-container > div {
+  grid-area: hero;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -462,8 +473,35 @@ h6 {
   padding: 12px;
 }
 
+.header {
+  padding-top: 200px;
+}
+
+h1 {
+  padding-top: 10vh;
+  margin-left: -12px;
+  font-family: "Space Mono", monospace;
+  line-height: 5rem;
+  font-size: 6.25rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    margin-left: -25px;
+    line-height: 9.0625rem;
+    font-size: 11.25rem;
+  }
+}
+@media (min-width: 1025px) {
+  h1 {
+    line-height: 10.25rem;
+    font-size: 12.5rem;
+  }
+}
+
 h4 {
   font-family: "Covered By Your Grace", cursive;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
 }
 
 /* =============
@@ -534,10 +572,15 @@ button a:visited:active {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  width: 100%;
+}
 header div {
   color: #EF87A3;
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
   padding: 15px;
 }
@@ -573,7 +616,7 @@ footer #footer-background {
   width: 100%;
   height: 343px;
   position: absolute;
-  z-index: -2;
+  z-index: -3;
   background-image: url("../img/footer/footer.jpeg");
   background-position: center bottom;
   background-size: cover;
@@ -614,7 +657,7 @@ footer section ul li a:visited:active {
   color: #EF87A3;
 }
 footer #footer-overlay {
-  z-index: -1;
+  z-index: -2;
   position: absolute;
   top: 0;
   right: 0;
@@ -714,6 +757,7 @@ footer h4 {
   text-align: center;
   margin: 0 50px 10px;
   font-size: 1.875rem;
+  line-height: 2.1875rem;
   color: white;
 }
 @media (min-width: 768px) {
@@ -726,7 +770,7 @@ footer h4 {
     margin-bottom: 20px;
   }
 }
-footer h6 {
+footer #copyright {
   margin-bottom: 0;
   padding-bottom: 15px;
   display: flex;
@@ -734,12 +778,116 @@ footer h6 {
   justify-content: center;
 }
 @media (min-width: 768px) {
-  footer h6 {
+  footer #copyright {
     padding-bottom: 20px;
   }
 }
 @media (min-width: 1025px) {
-  footer h6 {
+  footer #copyright {
     padding-bottom: 30px;
+  }
+}
+
+/* =============
+    Index Content
+============= */
+/* --------------------------
+    Index Hero
+ --------------------------*/
+#home-hero-container {
+  height: auto;
+}
+@media (min-width: 768px) {
+  #home-hero-container {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  #home-hero-container {
+    margin-right: 0;
+  }
+}
+
+#home-hero {
+  z-index: -1;
+  position: relative;
+  background-image: url("../img/home/home_hero.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  #home-hero {
+    background-position-x: 0px;
+  }
+}
+#home-hero .japn {
+  display: none;
+  position: absolute;
+  top: 250px;
+  color: #EF87A3;
+  border: 2px solid #EF87A3;
+}
+@media (min-width: 768px) {
+  #home-hero .japn {
+    display: block;
+    right: -25px;
+  }
+}
+@media (min-width: 1025px) {
+  #home-hero .japn {
+    top: 270px;
+  }
+}
+#home-hero h1 {
+  color: #59BEB0;
+  padding-top: 200px;
+  margin-bottom: -10px;
+}
+@media (min-width: 768px) {
+  #home-hero h1 {
+    margin-bottom: -20px;
+  }
+}
+@media (min-width: 1025px) {
+  #home-hero h1 {
+    margin-bottom: -25px;
+  }
+}
+
+/* --------------------------
+    Index intro
+ --------------------------*/
+#home-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 60px;
+}
+@media (min-width: 768px) {
+  #home-intro {
+    margin-right: 60px;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1440px) {
+  #home-intro {
+    margin: 0;
+  }
+}
+#home-intro p {
+  font-family: "Space Mono", monospace;
+  font-size: 1.4375rem;
+  line-height: 1.875rem;
+  color: #EF87A3;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #home-intro p {
+    text-align: right;
+    font-size: 1.5625rem;
+    line-height: 2.1875rem;
+    width: 370px;
   }
 }
