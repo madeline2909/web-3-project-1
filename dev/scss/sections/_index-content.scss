@@ -129,7 +129,7 @@
     }
 }
 #intro{
-    color: rgba($color: $sun, $alpha: 0.55);
+    color: rgba($color: $sun, $alpha: 0.75);
     margin-top: -50px;
     @include md{
         margin-top: -100px;
@@ -180,4 +180,159 @@
     }
 }
 
+/* --------------------------
+    Index culture
+ --------------------------*/
+#home-culture{
+    background-color: $blush;
+    @include md{
+        background-color: unset;
+    }
+    #home-culture-container{
+        
+        @include md{
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) ;
+            grid-template-rows: 360px 180px auto;
+            grid-template-areas: 
+            "i ."
+            "i p3"
+            ". p3";
+        }
+        @include lg{
+            
+            grid-template-columns: 130px auto 120px auto 130px;
+            
+            grid-template-areas: 
+            ". i . . ."
+            ". i . p3 ."
+            ". . . p3 .";
+        }
+    }
+    img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 72%;
+        @include md{
+            grid-area: i;
+            padding-top: 70px;
+            width: 80%;
+        }
+        @include lg{
+            width: 450px;
+        }
+    }
+    #home-culture-para{
+        grid-area: p3;
+        padding: 0 20px;
+        @include md{
+            padding: 0;
+        }
+        >div{
+            display: flex;
+            justify-content: flex-end;
+            @include md{
+                display: block;
+            }
+        }
+    }
+    p{
+        color: $darkblue;
+        text-align: right;
+        margin: 50px 0 20px;
+        @include md{
+            text-align: left;
+            margin: 60px 45px 25px 0;
+        }
+        @include lg{
+            margin: 120px 0 25px 0;
+        }
+    }
+    #culture{
+        @include md{
+            width: 100%;
+            background-color: $blush;
+            height: auto;
+            z-index: -99;
+            position: absolute;
+        }
+        h1{
+            padding-top: 50px;
+            position: absolute;
+            right: -20px;
+            text-align: right;
+            color: $verygreen;
+            @include md{
+                right: 0;
+                width: unset;
+                position: unset;
+                // margin-right: -40px;
+                margin-top: 30px;
+                margin-bottom: -12px;
+            }
+            @include lg{
+                margin-top: 40px;
+                margin-bottom: -15px;
+            }
+        }
+    }
+    
+}
+
+
+/* --------------------------
+    Index art
+ --------------------------*/
+#home-art{
+    margin-top: 0;
+    padding: 0 20px;
+    background-image: url('../img/home/home-hero-2.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    @include md{
+        margin-top: 0;
+        padding: 0;
+    }
+    h1{
+        color: rgba($color: white, $alpha: 0.3);
+        margin-top: -20px;
+        @include md{
+            margin-top: -40px;
+        }
+    }
+    p{
+        width: 380px;
+        color: white;
+        padding: 50px 0 0 0px;
+        @include md{
+            padding: 60px 0 0 80px;
+        }
+        @include lg{
+            padding: 70px 0 0 130px;
+        }
+    }
+    #art{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -30px;
+        @include md{
+            display: block;
+        }
+    }
+    .button{
+        margin-top: 80px;
+
+        @include md{
+            margin-top: 100px;
+            margin-left: 80px;
+        }
+        @include lg{
+            margin-top: 120px;
+            margin-left: 130px;
+        }
+    }
+}
 

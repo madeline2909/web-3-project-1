@@ -2,39 +2,53 @@
     Navigation
 ============= */
 
-button{
+.button{
+    background-color: $mainpink;
+    color: $white;
+
+    border: none;
     border-radius: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: rem-calc(14);
-    line-height: rem-calc(18);
+    font-size: rem-calc(20);
+    line-height: rem-calc(22);
+
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+
+    width: 100px;
     @include md{
+        width: 136px;
         font-size: rem-calc(25);
         line-height: rem-calc(30);
-        padding: 10px;
+        padding: 15px;
     }
     @include lg{
+        width: 166px;
         font-size: rem-calc(30);
         line-height: rem-calc(37);
-        padding: 14px;
+        padding: 20px;
     }
 
-    a:link,
-    a:visited {
-        border: none;
-        color: $white;
-        background-color: $mainpink;
-        &:hover,
-        &:active {
-            color: $mainpink;
-            background-color: white;
-            border: 2px solid $mainpink;
-        }
+    &:hover,
+    &:active {
+        color: $mainpink;
+        background-color: rgba($color: white, $alpha: 0.5);
+        border: 2px solid $mainpink;
+    }
+}
+.button-container{
+    padding-bottom: 50px;
+    @include md{
+        padding-bottom: 60px;
+    }
+    @include lg{
+        padding-bottom: 70px;
     }
 }

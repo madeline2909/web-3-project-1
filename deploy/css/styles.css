@@ -473,7 +473,7 @@ h6 {
   padding: 12px;
 }
 
-.header {
+.headings {
   padding-top: 200px;
 }
 
@@ -542,7 +542,10 @@ textarea {
 /* =============
     Navigation
 ============= */
-button {
+.button {
+  background-color: #EF87A3;
+  color: #fff;
+  border: none;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -550,37 +553,46 @@ button {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
+  width: 100px;
 }
 @media (min-width: 768px) {
-  button {
+  .button {
+    width: 136px;
     font-size: 1.5625rem;
     line-height: 1.875rem;
-    padding: 10px;
+    padding: 15px;
   }
 }
 @media (min-width: 1025px) {
-  button {
+  .button {
+    width: 166px;
     font-size: 1.875rem;
     line-height: 2.3125rem;
-    padding: 14px;
+    padding: 20px;
   }
 }
-button a:link,
-button a:visited {
-  border: none;
-  color: #fff;
-  background-color: #EF87A3;
-}
-button a:link:hover, button a:link:active,
-button a:visited:hover,
-button a:visited:active {
+.button:hover, .button:active {
   color: #EF87A3;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid #EF87A3;
+}
+
+.button-container {
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .button-container {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  .button-container {
+    padding-bottom: 70px;
+  }
 }
 
 /* =============
@@ -588,6 +600,7 @@ button a:visited:active {
 ============= */
 header {
   position: fixed;
+  z-index: 1;
   width: 100%;
 }
 header div {
@@ -709,7 +722,7 @@ footer #email {
 }
 footer #email input {
   border-radius: 10px 0 0 10px;
-  width: 100%;
+  width: 250px;
   height: 40px;
 }
 @media (min-width: 768px) {
@@ -947,7 +960,7 @@ footer #copyright {
 }
 
 #intro {
-  color: rgba(230, 204, 19, 0.55);
+  color: rgba(230, 204, 19, 0.75);
   margin-top: -50px;
 }
 @media (min-width: 768px) {
@@ -1009,4 +1022,181 @@ footer #copyright {
 }
 #home-intro-p :nth-child(3) {
   grid-area: p2;
+}
+
+/* --------------------------
+    Index culture
+ --------------------------*/
+#home-culture {
+  background-color: #F0DBDA;
+}
+@media (min-width: 768px) {
+  #home-culture {
+    background-color: unset;
+  }
+}
+@media (min-width: 768px) {
+  #home-culture #home-culture-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 360px 180px auto;
+    grid-template-areas: "i ." "i p3" ". p3";
+  }
+}
+@media (min-width: 1025px) {
+  #home-culture #home-culture-container {
+    grid-template-columns: 130px auto 120px auto 130px;
+    grid-template-areas: ". i . . ." ". i . p3 ." ". . . p3 .";
+  }
+}
+#home-culture img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 72%;
+}
+@media (min-width: 768px) {
+  #home-culture img {
+    grid-area: i;
+    padding-top: 70px;
+    width: 80%;
+  }
+}
+@media (min-width: 1025px) {
+  #home-culture img {
+    width: 450px;
+  }
+}
+#home-culture #home-culture-para {
+  grid-area: p3;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  #home-culture #home-culture-para {
+    padding: 0;
+  }
+}
+#home-culture #home-culture-para > div {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  #home-culture #home-culture-para > div {
+    display: block;
+  }
+}
+#home-culture p {
+  color: #027E88;
+  text-align: right;
+  margin: 50px 0 20px;
+}
+@media (min-width: 768px) {
+  #home-culture p {
+    text-align: left;
+    margin: 60px 45px 25px 0;
+  }
+}
+@media (min-width: 1025px) {
+  #home-culture p {
+    margin: 120px 0 25px 0;
+  }
+}
+@media (min-width: 768px) {
+  #home-culture #culture {
+    width: 100%;
+    background-color: #F0DBDA;
+    height: auto;
+    z-index: -99;
+    position: absolute;
+  }
+}
+#home-culture #culture h1 {
+  padding-top: 50px;
+  position: absolute;
+  right: -20px;
+  text-align: right;
+  color: #A2B334;
+}
+@media (min-width: 768px) {
+  #home-culture #culture h1 {
+    right: 0;
+    width: unset;
+    position: unset;
+    margin-top: 30px;
+    margin-bottom: -12px;
+  }
+}
+@media (min-width: 1025px) {
+  #home-culture #culture h1 {
+    margin-top: 40px;
+    margin-bottom: -15px;
+  }
+}
+
+/* --------------------------
+    Index art
+ --------------------------*/
+#home-art {
+  margin-top: 0;
+  padding: 0 20px;
+  background-image: url("../img/home/home-hero-2.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+@media (min-width: 768px) {
+  #home-art {
+    margin-top: 0;
+    padding: 0;
+  }
+}
+#home-art h1 {
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: -20px;
+}
+@media (min-width: 768px) {
+  #home-art h1 {
+    margin-top: -40px;
+  }
+}
+#home-art p {
+  width: 380px;
+  color: white;
+  padding: 50px 0 0 0px;
+}
+@media (min-width: 768px) {
+  #home-art p {
+    padding: 60px 0 0 80px;
+  }
+}
+@media (min-width: 1025px) {
+  #home-art p {
+    padding: 70px 0 0 130px;
+  }
+}
+#home-art #art {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -30px;
+}
+@media (min-width: 768px) {
+  #home-art #art {
+    display: block;
+  }
+}
+#home-art .button {
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  #home-art .button {
+    margin-top: 100px;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  #home-art .button {
+    margin-top: 120px;
+    margin-left: 130px;
+  }
 }
