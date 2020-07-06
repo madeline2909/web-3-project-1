@@ -1,0 +1,1 @@
+$('[data-fancybox="gallery"]').fancybox({}),$(document).ready((function(){console.log("change")}));
