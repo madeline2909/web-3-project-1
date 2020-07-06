@@ -1200,3 +1200,9 @@ footer #copyright {
     margin-left: 130px;
   }
 }
+
+.my-slider img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}

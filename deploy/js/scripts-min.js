@@ -1,1 +1,1 @@
-$('[data-fancybox="gallery"]').fancybox({}),console.log("tiny slider is working"),$(document).ready((function(){console.log("change")}));
+$('[data-fancybox="gallery"]').fancybox({}),tns({container:".my-slider",items:1,edgePadding:50,gutter:10,slideBy:"page",autoplay:!0}),$(document).ready((function(){console.log("change")}));

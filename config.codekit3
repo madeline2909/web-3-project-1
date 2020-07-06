@@ -646,6 +646,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/components/_fancy-box.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_fancy-box.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/components/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -668,6 +681,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/components/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/components/_tiny-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_tiny-slider.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -724,6 +750,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/dev/scss/sections/_blog-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_blog-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/dev/scss/sections/_index-content.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -757,6 +796,28 @@
 		"oA": 0,
 		"oAP": "/deploy/template.html",
 		"oF": 3
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/node_modules",
+		"oF": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		}
 	},
 "hooks": [
@@ -2269,7 +2330,7 @@
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "tns",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
