@@ -1,7 +1,55 @@
+#blog-hero-container{
+    color: $verygreen;
+    @include md{
+        margin-right: 60px;
+    }
+    @include xl{
+        margin-right: 0;
+    }
+    #blog-hero{
+        position: relative;
+        background-image: url('../img/blog/blog-hero.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 60vh;
+        @include md{
+            height: 500px;
+        }
+        @include lg{
+            height: 620px;
+            background-position-y: -150px;
+        }
+        .japn{
+            @include md{
+                top: 180px;
+                right: -25px;
+            }
+            @include lg{
+                top: 250px;
+            }
+            @include xl{
+        
+            }
+        }
+    }
+    h4{
+        @include md{
+            width: 400px;
+        }
+        @include lg{
+            width: 370px;
+        }
+        
+    }
+}
+
+
 .my-slider{
     img{
         object-fit: cover;
         object-position: center;
         width: 100%;
+        height: 600px;
     }
 }

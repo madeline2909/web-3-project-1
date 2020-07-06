@@ -17,6 +17,28 @@ p {
 	margin: 0;
 	padding: 0;
 }
+.heading{
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+h2{
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-size: rem-calc(65);
+	line-height: rem-calc(65);
+	margin-bottom: -20px;
+	@include md{
+		font-size: rem-calc(80);
+		line-height: rem-calc(80);
+		margin-bottom: -25px;
+	}
+	@include lg{
+		font-size: rem-calc(100);
+		line-height: rem-calc(100);
+		margin-bottom: -35px;
+	}
+}
 h6{
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
@@ -36,10 +58,15 @@ h6{
 	letter-spacing: 3px;
 	border-radius: 10px;
 	padding: 12px;
+	color: $mainpink;
+	border: 2px solid $mainpink;
+	display: none;
+	position: absolute;
+        @include md{
+            display: block;
+        }
 }
-.headings{
-	padding-top: 200px;
-}
+
 h1{
 	margin-left: -12px;
 	font-family: 'Space Mono', monospace;
@@ -57,9 +84,20 @@ h1{
 	}
 }
 h4{
+	padding: 52px 0;
 	font-family: 'Covered By Your Grace', cursive;
-	font-size: rem-calc(25);
-	line-height: rem-calc(30);
+	font-size: rem-calc(20);
+	line-height: rem-calc(25);
+	@include md{
+		font-size: rem-calc(24);
+		line-height: rem-calc(28);
+		padding: 62px 0;
+	}
+	@include lg{
+		font-size: rem-calc(25);
+		line-height: rem-calc(30);
+		padding: 72px 0;
+	}
 }
 p{
 	font-family: 'Space Mono', monospace;

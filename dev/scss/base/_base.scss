@@ -57,6 +57,15 @@ input, button{
         grid-area: container;
     }
 }
+.heading-spacing{
+    margin: 0 30px;
+    @include md{
+        margin: 0 120px;
+    }
+    @include lg{
+        margin: 0 202px;
+    }
+}
 .content-spacing{
     margin: 50px 0;
     @include md{

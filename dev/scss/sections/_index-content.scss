@@ -28,13 +28,8 @@
     @include lg{
     }
     .japn{
-        display: none;
-        position: absolute;
         top: 250px;
-        color: $mainpink;
-        border: 2px solid $mainpink;
         @include md{
-            display: block;
             right: -25px;
         }
         @include lg{
