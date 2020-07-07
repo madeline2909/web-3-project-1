@@ -3,8 +3,23 @@
 tns({
     container: ".my-slider",
     items: 1,
+    slideBy: "page",
+    navPosition: "bottom",
     "edgePadding": 50,
     "gutter": 20,
-    slideBy: "page",
-    autoplay: true
+    controls: true,
+    autoplay: true,
+    responsive: {
+        768: {
+          "gutter": 20,
+          items: 1
+        },
+        1025: {
+          "gutter": 30,
+          items: 2
+        },
+        1440: {
+          items: 2
+        }
+      }
 })
