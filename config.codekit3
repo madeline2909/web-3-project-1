@@ -303,28 +303,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/gallery/thumbnail/gallery3.jpeg": {
-		"ft": 16384,
-		"iS": 271656,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/thumbnail/gallery3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/gallery/thumbnail/gallery7.jpeg": {
-		"ft": 16384,
-		"iS": 49948,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/gallery/thumbnail/gallery7.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/deploy/img/header/paw.svg": {
 		"ft": 2097152,
 		"miP": 0,
