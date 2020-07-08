@@ -1147,6 +1147,8 @@ footer #copyright {
     Index culture
  --------------------------*/
 #home-culture {
+  overflow: hidden;
+  position: relative;
   background-color: #F0DBDA;
 }
 @media (min-width: 768px) {
@@ -1159,13 +1161,14 @@ footer #copyright {
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 360px 180px auto;
+    grid-template-rows: 310px 180px auto;
     grid-template-areas: "i ." "i p3" ". p3";
   }
 }
 @media (min-width: 1025px) {
   #home-culture #home-culture-container {
     grid-template-columns: 130px auto 120px auto 130px;
+    grid-template-rows: 390px 180px auto;
     grid-template-areas: ". i . . ." ". i . p3 ." ". . . p3 .";
   }
 }
@@ -1218,38 +1221,41 @@ footer #copyright {
 }
 @media (min-width: 1025px) {
   #home-culture p {
-    margin: 120px 0 25px 0;
+    margin: 70px 0 25px 0;
   }
+}
+#home-culture #culture-bg {
+  top: 0;
+  background-color: #F0DBDA;
+  position: absolute;
+  width: 100vw;
+  z-index: -99;
 }
 @media (min-width: 768px) {
-  #home-culture #culture {
-    width: 100%;
-    background-color: #F0DBDA;
-    height: auto;
-    z-index: -99;
-    position: absolute;
+  #home-culture #culture-bg {
+    height: 310px;
   }
 }
-#home-culture #culture h1 {
-  padding-top: 50px;
-  position: absolute;
+@media (min-width: 1025px) {
+  #home-culture #culture-bg {
+    height: 390px;
+  }
+}
+#home-culture h1 {
   right: -20px;
+  top: 30px;
+  position: absolute;
   text-align: right;
   color: #A2B334;
 }
 @media (min-width: 768px) {
-  #home-culture #culture h1 {
-    right: 0;
-    width: unset;
-    position: unset;
-    margin-top: 30px;
-    margin-bottom: -12px;
+  #home-culture h1 {
+    right: -40px;
   }
 }
 @media (min-width: 1025px) {
-  #home-culture #culture h1 {
-    margin-top: 40px;
-    margin-bottom: -15px;
+  #home-culture h1 {
+    top: 80px;
   }
 }
 
@@ -1258,7 +1264,6 @@ footer #copyright {
  --------------------------*/
 #home-art {
   margin-top: 0;
-  padding: 0 20px;
   background-image: url("../img/home/home-hero-2.jpeg");
   background-position: center;
   background-size: cover;
@@ -1270,22 +1275,14 @@ footer #copyright {
     padding: 0;
   }
 }
-#home-art h1 {
-  color: rgba(255, 255, 255, 0.3);
-  margin-top: -20px;
-}
-@media (min-width: 768px) {
-  #home-art h1 {
-    margin-top: -40px;
-  }
-}
 #home-art p {
-  width: 380px;
+  width: auto;
   color: white;
-  padding: 50px 0 0 0px;
+  padding: 50px 20px 0 20px;
 }
 @media (min-width: 768px) {
   #home-art p {
+    width: 380px;
     padding: 60px 0 0 80px;
   }
 }
@@ -1297,12 +1294,28 @@ footer #copyright {
 #home-art #art {
   display: flex;
   justify-content: flex-end;
-  margin-right: -30px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #home-art #art {
+    overflow: unset;
+    margin-right: 0;
     display: block;
   }
+}
+#home-art #art h1 {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: -20px;
+  margin-right: -30px;
+}
+@media (min-width: 768px) {
+  #home-art #art h1 {
+    margin-top: -40px;
+  }
+}
+#home-art .button-container {
+  padding-left: 20px;
 }
 #home-art .button {
   margin-top: 80px;
