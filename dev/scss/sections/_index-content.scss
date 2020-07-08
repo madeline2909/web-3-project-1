@@ -279,11 +279,13 @@
     Index art
  --------------------------*/
 #home-art{
+    position: relative;
     margin-top: 0;
     background-image: url('../img/home/home-hero-2.jpeg');
     background-position: center;
     background-size: cover;
     height: auto;
+    overflow: hidden;
     @include md{
         margin-top: 0;
         padding: 0;
@@ -301,36 +303,27 @@
             padding: 70px 0 0 130px;
         }
     }
-    #art{
-        display: flex;
-        justify-content: flex-end;
-        overflow: hidden;
+    h1{
+        position: absolute;
+        color: rgba($color: white, $alpha: 0.3);
+        top: 130px;
+        right: -20px;
         @include md{
-            overflow: unset;
-            margin-right: 0;
-            display: block;
-        }
-        h1{
-            width: 100%;
-            color: rgba($color: white, $alpha: 0.3);
-            margin-top: -20px;
-            margin-right: -30px;
-            @include md{
-                margin-top: -40px;
-            }
+            top: 120px;
+            left: 0;
         }
     }
     .button-container{
         padding-left: 20px;
     }
     .button{
-        margin-top: 80px;
+        margin-top: 30vh;
         @include md{
-            margin-top: 100px;
+            margin-top: 40vh;
             margin-left: 80px;
         }
         @include lg{
-            margin-top: 120px;
+            margin-top: 50vh;
             margin-left: 130px;
         }
     }
