@@ -1172,21 +1172,25 @@ footer #copyright {
     grid-template-areas: ". i . . ." ". i . p3 ." ". . . p3 .";
   }
 }
-#home-culture img {
+@media (min-width: 768px) {
+  #home-culture a {
+    grid-area: i;
+  }
+}
+#home-culture a img {
   object-fit: cover;
   object-position: center;
   height: 100%;
   width: 72%;
 }
 @media (min-width: 768px) {
-  #home-culture img {
-    grid-area: i;
+  #home-culture a img {
     padding-top: 70px;
     width: 80%;
   }
 }
 @media (min-width: 1025px) {
-  #home-culture img {
+  #home-culture a img {
     width: 450px;
   }
 }

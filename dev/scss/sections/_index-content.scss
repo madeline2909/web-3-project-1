@@ -206,18 +206,22 @@
             ". . . p3 .";
         }
     }
-    img {
-        object-fit: cover;
-        object-position: center;
-        height: 100%;
-        width: 72%;
+    a {
         @include md{
             grid-area: i;
-            padding-top: 70px;
-            width: 80%;
         }
-        @include lg{
-            width: 450px;
+        img{
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 72%;
+            @include md{
+                padding-top: 70px;
+                width: 80%;
+            }
+            @include lg{
+                width: 450px;
+            }
         }
     }
     #home-culture-para{
