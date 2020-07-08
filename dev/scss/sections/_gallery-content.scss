@@ -1,0 +1,196 @@
+#gallery-hero-container{
+    
+    #gallery-hero{
+        position: relative;
+        background-image: url('../img/gallery/gallery-hero.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 65vh;
+        @include md{
+            height: 500px;
+        }
+        @include lg{
+            height: 620px;
+        }
+        .japn{
+            @include md{
+                top: 180px;
+                left: 35px;
+            }
+            @include lg{
+                top: 250px;
+            }
+            @include xl{
+        
+            }
+        }
+    }
+    
+    h2{
+        color: $grayocean;
+        width: 512px;
+    }
+}
+.caption{
+    color: $ocean;
+    @include md{
+        width: 400px;
+    }
+    @include lg{
+        width: 370px;
+    }
+    
+}
+#gallery-content-1{
+    @include md{
+        margin: 0 15px;
+    }
+    @include lg{
+        margin: 0;
+    }
+    #gallery-1{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: 
+        ". g1 ."
+        ". g4 ."
+        "g3 g3 g3"
+        ;
+        grid-template-rows: 
+        50vh 50vh 35vh;
+        row-gap: 15px;
+        @include md{
+            grid-template-columns: 5% repeat(2,auto) 5%;
+            grid-template-areas: 
+            ". g1 g4 g4"
+            "g3 g3 g3 ."
+            ;
+            grid-template-rows: 
+            50vh 35vh;
+            grid-gap: 20px;
+        }
+        @include lg{
+            grid-template-columns: 22px 140px repeat(2,auto) 22px;
+            grid-template-rows: unset;
+            grid-template-areas: 
+            ". . g1 g2 ."
+            ". . g1 g4 g4"
+            ". g3 g3 g4 g4"
+            ;
+        }
+        @include xl{
+            grid-template-areas: 
+            ". g1 g1 g2 ."
+            ". g1 g1 g4 ."
+            ". g3 g3 g4 ."
+            ;
+            grid-template-rows: repeat(3, 350px);
+        }
+        :nth-child(1){
+            grid-area: g1;
+        }
+        :nth-child(2){
+            grid-area: g2;
+        }
+        :nth-child(3){
+            grid-area: g4;
+        }
+        :nth-child(4){
+            grid-area: g3;
+        }
+    } 
+}
+ul{
+    li{
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+#g5, #g9{
+    margin-top: 15px;
+    @include md{
+        margin-top: 20px;  
+    }
+    img{
+        object-fit: cover;
+        object-position: center bottom;
+        width: 100%;
+        height: 40vh;
+        @include md{
+            height: 50vh;
+        }
+        @include lg{
+            height: 70vh;
+        }
+    }
+}
+#g9{
+    @include lg{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+    @include xl{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#gallery-content-2{
+    #caption-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .caption{
+            text-align: center;
+            width: 90%;
+            @include md{
+                width: 45%;
+            }
+            @include lg{
+                width: 410px;
+            }
+        }
+    }
+    #gallery-2{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas: 
+        ". g6 ."
+        ;
+        @include md{
+            grid-template-columns: 5% repeat(2,auto) 5%;
+            grid-template-areas: 
+            ". g6 g7 ."
+            ;
+            grid-template-rows: 
+            50vh;
+            grid-gap: 20px;
+        }
+        @include lg{
+            grid-template-columns: auto 435px auto;
+            grid-template-areas: 
+            "g6 g7 g8"
+            ;
+            grid-template-rows: 
+            55vh;
+        }
+        @include xl{
+            grid-template-rows: 
+            70vh;
+        }
+        :nth-child(1){
+            grid-area: g6;
+        }
+        :nth-child(2){
+            grid-area: g7;
+        }
+        :nth-child(3){
+            grid-area: g8;
+        }
+    }
+    
+}

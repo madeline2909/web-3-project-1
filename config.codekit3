@@ -27,6 +27,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/gallery.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/gallery.html",
+		"oF": 0
+		},
 	"/deploy/img/blog/blog-1.jpeg": {
 		"ft": 16384,
 		"iS": 94174,
@@ -513,6 +521,14 @@
 		"oAP": "/dev/content/blog-content.html",
 		"oF": 1
 		},
+	"/dev/content/gallery-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/gallery-content.html",
+		"oF": 0
+		},
 	"/dev/content/index-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -520,6 +536,14 @@
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
 		"oF": 0
+		},
+	"/dev/gallery.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/gallery.html",
+		"oF": 2
 		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
@@ -759,6 +783,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_blog-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_gallery-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_gallery-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
