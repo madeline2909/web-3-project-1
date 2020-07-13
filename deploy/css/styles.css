@@ -725,6 +725,10 @@ textarea {
   border: 0;
 }
 
+.tns-controls [aria-controls] {
+  background: #EF87A3;
+}
+
 /* =============
     Header
 ============= */
