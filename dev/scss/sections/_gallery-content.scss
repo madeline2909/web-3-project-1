@@ -1,3 +1,9 @@
+/* =============
+    Gallery Content
+============= */
+/* --------------------------
+    Gallery Hero
+ --------------------------*/
 #gallery-hero-container{
     
     #gallery-hero{
@@ -42,6 +48,9 @@
     }
     
 }
+/* --------------------------
+    Images
+ --------------------------*/
 #gallery-content-1{
     @include md{
         margin: 0 15px;

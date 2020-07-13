@@ -398,6 +398,14 @@
 		"oAP": "/deploy/index.html",
 		"oF": 0
 		},
+	"/deploy/insta.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/insta.html",
+		"oF": 0
+		},
 	"/deploy/js/scripts-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -447,6 +455,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/content/index-content.html",
+		"oF": 0
+		},
+	"/dev/content/insta-content.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/content/insta-content.html",
 		"oF": 0
 		},
 	"/dev/gallery.kit": {
@@ -503,6 +519,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/index.html",
+		"oF": 2
+		},
+	"/dev/insta.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/insta.html",
 		"oF": 2
 		},
 	"/dev/js/fancyBox.js": {
@@ -729,6 +753,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_index-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_insta-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_insta-content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

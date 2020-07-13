@@ -1,0 +1,75 @@
+/* =============
+    Insta Content
+============= */
+/* --------------------------
+    Insta Header
+ --------------------------*/
+ #insta-hero-container{
+    position: relative;
+    color: $sun;
+    background-color: $sky;
+    @include md{
+        margin-right: 60px;
+    }
+    @include xl{
+        margin-right: 0;
+    }
+    >div{
+        margin-right: 0;
+        margin-left: 0;
+        @include md{
+            margin-right: 60px;
+            margin-left: 120px;   
+        }
+    }
+    #insta-hero{
+        background-image: url('../img/celebs/celeb-hero.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 65vh;
+        @include md{
+            
+            height: 500px;
+        }
+        @include lg{
+            height: 620px;
+        }
+        .japn{
+            @include md{
+                top: 180px;
+                right: -25px;
+            }
+            @include lg{
+                top: 250px;
+            }
+            @include xl{
+        
+            }
+        }
+        h2{
+            margin-left: 60px;
+        }
+    }
+    #insta-caption{
+        display: flex;
+        justify-content: flex-end;
+        
+        h4{
+            color: $ocean;
+            text-align: right;
+            margin: 0 15px;
+            @include md{
+                margin: 0;
+                width: 400px;
+            }
+            @include lg{
+                width: 370px;
+            }
+            
+        }
+    }
+}
+/* --------------------------
+    Insta gallery
+ --------------------------*/

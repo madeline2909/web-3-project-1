@@ -469,6 +469,10 @@ p {
   align-items: flex-end;
 }
 
+.japanese {
+  font-family: "Kosugi Maru", sans-serif;
+}
+
 h2 {
   font-family: "Space Mono", monospace;
   font-weight: 700;
@@ -1332,6 +1336,12 @@ footer #copyright {
   }
 }
 
+/* =============
+    Blog Content
+============= */
+/* --------------------------
+    Blog Hero
+ --------------------------*/
 #blog-hero-container {
   color: #A2B334;
 }
@@ -1386,6 +1396,9 @@ footer #copyright {
   }
 }
 
+/* --------------------------
+    Blog Article
+ --------------------------*/
 #blog-content-1 {
   color: #027E88;
   background-color: #E3E9E8;
@@ -1535,6 +1548,9 @@ footer #copyright {
   }
 }
 
+/* --------------------------
+    Blog Slider
+ --------------------------*/
 .my-slider img {
   object-fit: cover;
   object-position: center;
@@ -1552,6 +1568,15 @@ footer #copyright {
   }
 }
 
+/* --------------------------
+    Blog Form
+ --------------------------*/
+/* =============
+    Gallery Content
+============= */
+/* --------------------------
+    Gallery Hero
+ --------------------------*/
 #gallery-hero-container #gallery-hero {
   position: relative;
   background-image: url("../img/gallery/gallery-hero.jpeg");
@@ -1600,6 +1625,9 @@ footer #copyright {
   }
 }
 
+/* --------------------------
+    Images
+ --------------------------*/
 @media (min-width: 768px) {
   #gallery-content-1 {
     margin: 0 15px;
@@ -1749,3 +1777,90 @@ ul li img {
 #gallery-content-2 #gallery-2 :nth-child(3) {
   grid-area: g8;
 }
+
+/* =============
+    Insta Content
+============= */
+/* --------------------------
+    Insta Header
+ --------------------------*/
+#insta-hero-container {
+  position: relative;
+  color: #E6CC13;
+  background-color: #E3E9E8;
+}
+@media (min-width: 768px) {
+  #insta-hero-container {
+    margin-right: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  #insta-hero-container {
+    margin-right: 0;
+  }
+}
+#insta-hero-container > div {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  #insta-hero-container > div {
+    margin-right: 60px;
+    margin-left: 120px;
+  }
+}
+#insta-hero-container #insta-hero {
+  background-image: url("../img/celebs/celeb-hero.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 65vh;
+}
+@media (min-width: 768px) {
+  #insta-hero-container #insta-hero {
+    height: 500px;
+  }
+}
+@media (min-width: 1025px) {
+  #insta-hero-container #insta-hero {
+    height: 620px;
+  }
+}
+@media (min-width: 768px) {
+  #insta-hero-container #insta-hero .japn {
+    top: 180px;
+    right: -25px;
+  }
+}
+@media (min-width: 1025px) {
+  #insta-hero-container #insta-hero .japn {
+    top: 250px;
+  }
+}
+#insta-hero-container #insta-hero h2 {
+  margin-left: 60px;
+}
+#insta-hero-container #insta-caption {
+  display: flex;
+  justify-content: flex-end;
+}
+#insta-hero-container #insta-caption h4 {
+  color: #6AA8BA;
+  text-align: right;
+  margin: 0 15px;
+}
+@media (min-width: 768px) {
+  #insta-hero-container #insta-caption h4 {
+    margin: 0;
+    width: 400px;
+  }
+}
+@media (min-width: 1025px) {
+  #insta-hero-container #insta-caption h4 {
+    width: 370px;
+  }
+}
+
+/* --------------------------
+    Insta gallery
+ --------------------------*/
