@@ -12,14 +12,17 @@
         margin-right: 60px;
     }
     @include xl{
+        position: unset;
         margin-right: 0;
     }
     >div{
-        margin-right: 0;
-        margin-left: 0;
-        @include md{
+        @include lg{
             margin-right: 60px;
-            margin-left: 120px;   
+            margin-left: 120px;  
+        }
+        @include xl{
+            margin-right: 0px;
+            margin-left: 0px; 
         }
     }
     #insta-hero{
@@ -29,11 +32,25 @@
         width: auto;
         height: 65vh;
         @include md{
-            
             height: 500px;
         }
         @include lg{
             height: 620px;
+        }
+        @include xl{
+            position: relative;
+        }
+        >div{
+            margin: 0 15px;
+            @include md{
+                margin: 0 120px;
+            }
+            @include lg{
+                margin: 0 70px;
+            }
+            @include xl{
+                margin: 0 202px;
+            }
         }
         .japn{
             @include md{
@@ -44,11 +61,7 @@
                 top: 250px;
             }
             @include xl{
-        
             }
-        }
-        h2{
-            margin-left: 60px;
         }
     }
     #insta-caption{
@@ -59,12 +72,17 @@
             color: $ocean;
             text-align: right;
             margin: 0 15px;
+            width: 300px;
             @include md{
-                margin: 0;
+                margin: 0 60px;
                 width: 400px;
             }
             @include lg{
+                margin: 0;
                 width: 370px;
+            }
+            @include xl{
+                margin: 0 202px;
             }
             
         }
