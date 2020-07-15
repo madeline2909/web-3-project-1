@@ -19,6 +19,7 @@
 </head>
 
 <body>
+     
     <header>
         <div>
             <h5>cats<br>of<br>japan</h5>
@@ -26,30 +27,30 @@
             <img src="img/header/paw.svg" alt="paw icon">
         </div>
     </header>
-    <section id="insta-hero-container" class="hero-container">
+    <section id="contact-hero-container" class="hero-container">
             <div>
-                <div id="insta-hero">
-                    <div class="heading">
+                <div id="contact-hero">
+                    <div class="heading-spacing heading">
                         <h2>
-                            cat<br>celebs
+                            when<br>in japan
                         </h2> 
                     </div>
                     <h5 class="japn">さくらねこ</h5>
                 </div>
-                <div id="insta-caption">
-                    <h4>
-                        Every month, we choose one famous cat in Japan to adore his/her beauty, cuteness and dorkness. This month’s star is Maru (<span class="japanese">まる</span>), a male Scottish Fold. As of April 2013, videos with Maru have been viewed over 200 million times.
+                <div id="caption-container" class="heading-spacing">
+                    <h4 class="caption">
+                        Contact info avd weekly recommendations (foods, stores, cultural places) for cat lovers around the world who want to visit Japan.
                     </h4>
                 </div>
             </div>
         </section>
-        <section class="grid-container">
+        
+        <section class="hero-container" id="map-container">
             <div>
-                <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
-                <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
-                <ul class="juicer-feed" data-feed-id="fullofbuttercup"><h1 class="referral">
+                <div id="map">
+        
+                </div>
             </div>
-            
         </section>
     <footer>
                 <div id="footer-background"></div>
@@ -78,16 +79,35 @@
                     <h5 class="japn">さくらねこ</h5>
                 </div>
             </footer>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: -25.344, lng: 131.036};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaGf04AbpMhxuc1NOu9Qjcja62Ojl0Cac&callback=initMap">
+    </script>
     <!-- jQuery -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <!-- Greensock -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-                <!-- fancyBox -->
-                <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-                <!-- TinySlider -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-                
-                <script src="js/scripts-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <!-- fancyBox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- TinySlider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    
+    <script src="js/scripts-min.js"></script>
+    <!-- <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0">
+                    <button data-controls="prev" tabindex="-1" aria-controls="tns1"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                    <button data-controls="next" tabindex="-1" aria-controls="tns1"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                </div> -->
 </body>
 
 </html>

@@ -1,0 +1,70 @@
+/* =============
+    Contact content
+============= */
+/* --------------------------
+    Contact Hero
+ --------------------------*/
+#contact-hero-container{
+    color: $bluegreen;
+    background-color: $blush;
+    @include md{
+        margin-left: 60px;
+    }
+    @include xl{
+        margin-left: 0;
+    }
+    #contact-hero{
+        position: relative;
+        background-image: url('../img/travel/travel-hero.jpeg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 65vh;
+        @include md{
+            height: 500px;
+        }
+        @include lg{
+            height: 620px;
+        }
+        .japn{
+            @include md{
+                top: 180px;
+                left: -25px;
+            }
+            @include lg{
+                top: 250px;
+            }
+            @include xl{
+        
+            }
+        }
+    }
+    #caption-container{
+        display: flex;
+        justify-content: flex-end;
+        h4{
+            @include md{
+                text-align: right;
+                width: 450px;
+            }
+            @include lg{
+                width: 420px;
+            }
+        }
+    }
+    
+    h2{
+        color: $grayocean;
+        width: 512px;
+    }
+}
+/* --------------------------
+    Contact Map
+ --------------------------*/
+#map-container{
+    #map{
+        width: 100%;
+        height: 400px;
+        background-color: $blush;
+    }
+}

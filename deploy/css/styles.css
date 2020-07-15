@@ -1864,3 +1864,80 @@ ul li img {
 /* --------------------------
     Insta gallery
  --------------------------*/
+/* =============
+    Contact content
+============= */
+/* --------------------------
+    Contact Hero
+ --------------------------*/
+#contact-hero-container {
+  color: #59BEB0;
+  background-color: #F0DBDA;
+}
+@media (min-width: 768px) {
+  #contact-hero-container {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  #contact-hero-container {
+    margin-left: 0;
+  }
+}
+#contact-hero-container #contact-hero {
+  position: relative;
+  background-image: url("../img/travel/travel-hero.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 65vh;
+}
+@media (min-width: 768px) {
+  #contact-hero-container #contact-hero {
+    height: 500px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-hero-container #contact-hero {
+    height: 620px;
+  }
+}
+@media (min-width: 768px) {
+  #contact-hero-container #contact-hero .japn {
+    top: 180px;
+    left: -25px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-hero-container #contact-hero .japn {
+    top: 250px;
+  }
+}
+#contact-hero-container #caption-container {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  #contact-hero-container #caption-container h4 {
+    text-align: right;
+    width: 450px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-hero-container #caption-container h4 {
+    width: 420px;
+  }
+}
+#contact-hero-container h2 {
+  color: #A7C5D7;
+  width: 512px;
+}
+
+/* --------------------------
+    Contact Map
+ --------------------------*/
+#map-container #map {
+  width: 100%;
+  height: 400px;
+  background-color: #F0DBDA;
+}
