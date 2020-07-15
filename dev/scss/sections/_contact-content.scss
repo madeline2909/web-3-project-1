@@ -104,6 +104,14 @@
                 justify-content: center;
                 background-color: $mainpink;
             }
+            a:link, a:visited{
+                color: white;
+            }
+
+            a:hover,
+            a:active{
+                color: $blush
+            }
         }
         :nth-child(3){
             div{

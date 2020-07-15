@@ -365,7 +365,7 @@ a:link, a:visited {
   transition: 0.25s;
 }
 
-input, button {
+input, button, textarea {
   border: none;
 }
 
@@ -857,44 +857,43 @@ footer #email {
   display: flex;
   justify-content: center;
 }
-footer #email input {
+footer #email #email-input {
+  background-color: white;
   border-radius: 10px 0 0 10px;
-  width: 250px;
+  padding: 0 3%;
+}
+footer #email #email-input input {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  font-size: 1rem;
+  width: 220px;
   height: 40px;
 }
 @media (min-width: 768px) {
-  footer #email input {
+  footer #email #email-input input {
     width: 400px;
     height: 50px;
   }
 }
 @media (min-width: 1025px) {
-  footer #email input {
+  footer #email #email-input input {
     width: 600px;
     height: 65px;
   }
 }
-footer #email ::placeholder {
+footer #email #email-input ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-family: "Space Mono", monospace;
-  font-size: 1rem;
   color: #EF87A3;
   opacity: 1;
-  padding-left: 8px;
 }
-footer #email :-ms-input-placeholder {
+footer #email #email-input :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  font-family: "Space Mono", monospace;
-  font-size: 1rem;
   color: #EF87A3;
-  padding-left: 10px;
 }
-footer #email ::-ms-input-placeholder {
+footer #email #email-input ::-ms-input-placeholder {
   /* Microsoft Edge */
-  font-family: "Space Mono", monospace;
-  font-size: 1rem;
   color: #EF87A3;
-  padding-left: 10px;
 }
 footer #email button {
   border-radius: 0 10px 10px 0;
@@ -1595,6 +1594,75 @@ footer #copyright {
   padding: 0;
   color: #027E88;
 }
+#blog-form-container form {
+  display: grid;
+  gap: 20px;
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  #blog-form-container form {
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "name email" "subject subject" "cmt cmt";
+  }
+}
+#blog-form-container form section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 5%;
+}
+#blog-form-container form section input, #blog-form-container form section textarea {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  font-size: 1rem;
+  width: 100%;
+  padding: 20px 0;
+}
+#blog-form-container form section ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #EF87A3;
+  opacity: 1;
+}
+#blog-form-container form section :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #EF87A3;
+}
+#blog-form-container form section ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #EF87A3;
+}
+@media (min-width: 768px) {
+  #blog-form-container form section:nth-child(1) {
+    grid-area: name;
+  }
+}
+@media (min-width: 768px) {
+  #blog-form-container form section:nth-child(2) {
+    grid-area: email;
+  }
+}
+@media (min-width: 768px) {
+  #blog-form-container form section:nth-child(3) {
+    grid-area: subject;
+    padding: 0 2%;
+  }
+}
+@media (min-width: 1025px) {
+  #blog-form-container form section:nth-child(3) {
+    padding: 0 3%;
+  }
+}
+@media (min-width: 768px) {
+  #blog-form-container form section:nth-child(4) {
+    grid-area: cmt;
+    padding: 0 2%;
+  }
+}
+@media (min-width: 1025px) {
+  #blog-form-container form section:nth-child(4) {
+    padding: 0 3%;
+  }
+}
 
 /* =============
     Gallery Content
@@ -2039,6 +2107,13 @@ ul li img {
   align-items: center;
   justify-content: center;
   background-color: #EF87A3;
+}
+#contact-recom-1 ul :nth-child(2) a:link, #contact-recom-1 ul :nth-child(2) a:visited {
+  color: white;
+}
+#contact-recom-1 ul :nth-child(2) a:hover,
+#contact-recom-1 ul :nth-child(2) a:active {
+  color: #F0DBDA;
 }
 #contact-recom-1 ul :nth-child(3) div {
   height: 100%;

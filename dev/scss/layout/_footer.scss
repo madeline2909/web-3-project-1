@@ -71,45 +71,45 @@ footer {
     #email{
         display: flex;
         justify-content: center;
-        input{
+        #email-input{
+            background-color: white;
             border-radius: 10px 0 0 10px;
-            width: 250px;
-            height: 40px;
-            @include md{
-                width: 400px;
-                height: 50px;
+            padding: 0 3%;
+            input{
+                font-family: 'Space Mono', monospace;
+                font-weight: 400;
+                line-height: rem-calc(25);
+                font-size: rem-calc(16);
+                width: 220px;
+                height: 40px;
+                @include md{
+                    width: 400px;
+                    height: 50px;
+                }
+                @include lg{
+                    width: 600px;
+                    height: 65px;
+                }
             }
-            @include lg{
-                width: 600px;
-                height: 65px;
+            
+            ::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $mainpink;
+                opacity: 1;
             }
+    
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: $mainpink;
+            }
+    
+            ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: $mainpink;
+            }
+    
         }
         
-        ::placeholder {
-            /* Chrome, Firefox, Opera, Safari 10.1+ */
-            font-family: 'Space Mono', monospace;
-            font-size: rem-calc(16);
-            color: $mainpink;
-            opacity: 1;
-            padding-left: 8px;
-        }
-
-        :-ms-input-placeholder {
-            /* Internet Explorer 10-11 */
-            font-family: 'Space Mono', monospace;
-            font-size: rem-calc(16);
-            color: $mainpink;
-            padding-left: 10px;
-        }
-
-        ::-ms-input-placeholder {
-            /* Microsoft Edge */
-            font-family: 'Space Mono', monospace;
-            font-size: rem-calc(16);
-            color: $mainpink;
-            padding-left: 10px;
-        }
-
         button{
             i{
                 display: flex;

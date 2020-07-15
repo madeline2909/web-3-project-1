@@ -234,4 +234,72 @@
          padding: 0;
          color: $darkblue;
      }
+     form{
+        display: grid;
+        gap: 20px;
+        padding-top: 25px;
+        @include md{
+            grid-template-columns: repeat(2, auto);
+            grid-template-areas: 
+            "name email"
+            "subject subject"
+            "cmt cmt";
+        }
+        section{
+            background-color: white;
+            border-radius: 10px;
+            padding: 0 5%;
+            input, textarea{
+                font-family: 'Space Mono', monospace;
+                font-weight: 400;
+                line-height: rem-calc(25);
+                font-size: rem-calc(16);
+                width: 100%;
+                padding: 20px 0;
+            }
+            ::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $mainpink;
+                opacity: 1;
+            }
+    
+            :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: $mainpink;
+            }
+    
+            ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: $mainpink;
+            }
+        }
+        section:nth-child(1){
+            @include md{
+                grid-area: name;
+            }
+        }
+        section:nth-child(2){
+            @include md{
+                grid-area: email;
+            }
+        }
+        section:nth-child(3){
+            @include md{
+                grid-area: subject;
+                padding: 0 2%;
+            }
+            @include lg{
+                padding: 0 3%;
+            }
+        }
+        section:nth-child(4){
+            @include md{
+                grid-area: cmt;
+                padding: 0 2%;
+            }
+            @include lg{
+                padding: 0 3%;
+            }
+        }
+     }
  }
