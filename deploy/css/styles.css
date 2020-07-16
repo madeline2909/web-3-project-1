@@ -1602,7 +1602,7 @@ footer #copyright {
 @media (min-width: 768px) {
   #blog-form-container form {
     grid-template-columns: repeat(2, auto);
-    grid-template-areas: "name email" "subject subject" "cmt cmt";
+    grid-template-areas: "name email" "subject subject" "cmt cmt" "submit submit";
   }
 }
 #blog-form-container form section {
@@ -1661,6 +1661,15 @@ footer #copyright {
 @media (min-width: 1025px) {
   #blog-form-container form section:nth-child(4) {
     padding: 0 3%;
+  }
+}
+#blog-form-container form div {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #blog-form-container form div {
+    grid-area: submit;
   }
 }
 
