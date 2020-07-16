@@ -124,10 +124,17 @@ footer {
                     font-size: rem-calc(35);
                     padding: 0 16px;
                 }
+                transition: 0.25s;
+                &:hover,
+                &:active {
+                    color: $blush;
+                }
             }
             border-radius: 0 10px 10px 0;
             background-color: $mainpink;
             height: 100%;
+            
+            
         }
     }
     p{

@@ -468,7 +468,8 @@ p {
   display: flex;
   align-items: flex-end;
 }
-.heading h2 {
+
+h2 {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 4.0625rem;
@@ -476,14 +477,14 @@ p {
   margin-bottom: -20px;
 }
 @media (min-width: 768px) {
-  .heading h2 {
+  h2 {
     font-size: 5rem;
     line-height: 5rem;
     margin-bottom: -25px;
   }
 }
 @media (min-width: 1025px) {
-  .heading h2 {
+  h2 {
     font-size: 6.25rem;
     line-height: 6.25rem;
     margin-bottom: -35px;
@@ -586,8 +587,20 @@ p {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.6875rem;
-  line-height: 1.75rem;
+  font-size: 1.375rem;
+  line-height: 1.5625rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+  }
+}
+@media (min-width: 1025px) {
+  h3 {
+    font-size: 1.6875rem;
+    line-height: 1.75rem;
+  }
 }
 
 /* =============
@@ -629,6 +642,7 @@ textarea {
   line-height: 1.375rem;
   text-align: center;
   padding: 10px;
+  transition: 0.25s;
   width: 100px;
 }
 @media (min-width: 768px) {
@@ -909,12 +923,16 @@ footer #email button i {
   text-align: center;
   font-size: 1.875rem;
   padding: 0 5px;
+  transition: 0.25s;
 }
 @media (min-width: 1025px) {
   footer #email button i {
     font-size: 2.1875rem;
     padding: 0 16px;
   }
+}
+footer #email button i:hover, footer #email button i:active {
+  color: #F0DBDA;
 }
 footer p {
   font-family: "Covered By Your Grace", cursive;
@@ -2076,40 +2094,42 @@ ul li img {
 }
 
 /* --------------------------
-    Contact Recommendation 1
+    Contact Info
  --------------------------*/
-#contact-recom-1 > div {
+#contact-info > div {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
-@media (min-width: 1440px) {
-  #contact-recom-1 > div {
+@media (min-width: 768px) {
+  #contact-info > div {
     justify-content: center;
   }
 }
-#contact-recom-1 ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (min-width: 1025px) {
+  #contact-info > div {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1440px) {
+  #contact-info > div {
+    justify-content: center;
+  }
+}
+#contact-info ul {
+  margin: 0 20px;
 }
 @media (min-width: 768px) {
-  #contact-recom-1 ul {
-    flex-wrap: unset;
+  #contact-info ul {
+    display: flex;
+    justify-content: center;
   }
-}
-#contact-recom-1 ul :nth-child(1) p {
-  border: 2px solid #EF87A3;
-  color: #EF87A3;
-  padding: 20px 15px 20px 30px;
-  max-width: 360px;
 }
 @media (min-width: 1025px) {
-  #contact-recom-1 ul :nth-child(1) p {
-    border-radius: 10px 0 0 10px;
+  #contact-info ul {
+    margin: 0;
   }
 }
-#contact-recom-1 ul :nth-child(2) div {
+#contact-info ul li div {
   height: 100%;
   width: 100%;
   display: flex;
@@ -2117,38 +2137,65 @@ ul li img {
   justify-content: center;
   background-color: #EF87A3;
 }
-#contact-recom-1 ul :nth-child(2) a:link, #contact-recom-1 ul :nth-child(2) a:visited {
+#contact-info ul :nth-child(1) p {
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #EF87A3;
+  color: #EF87A3;
+  padding: 20px 15px 20px 30px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  #contact-info ul :nth-child(1) p {
+    border-radius: 10px 0 0 10px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-info ul :nth-child(1) p {
+    max-width: 360px;
+  }
+}
+#contact-info ul :nth-child(2) div {
+  background-color: #EF87A3;
+}
+#contact-info ul :nth-child(2) a:link, #contact-info ul :nth-child(2) a:visited {
   color: white;
 }
-#contact-recom-1 ul :nth-child(2) a:hover,
-#contact-recom-1 ul :nth-child(2) a:active {
+#contact-info ul :nth-child(2) a:hover,
+#contact-info ul :nth-child(2) a:active {
   color: #F0DBDA;
 }
-#contact-recom-1 ul :nth-child(3) div {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#contact-info ul :nth-child(3) div {
+  border-radius: 0 0 10px 10px;
   background-color: #A7C5D7;
 }
-@media (min-width: 1440px) {
-  #contact-recom-1 ul :nth-child(3) div {
+@media (min-width: 768px) {
+  #contact-info ul :nth-child(3) div {
     border-radius: 0px 10px 10px 0px;
   }
 }
-#contact-recom-1 ul h3 {
+@media (min-width: 1025px) {
+  #contact-info ul :nth-child(3) div {
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  #contact-info ul :nth-child(3) div h3 {
+    min-width: 130px;
+  }
+}
+#contact-info ul h3 {
   text-align: center;
   height: auto;
   color: white;
+  padding: 20px;
 }
 @media (min-width: 768px) {
-  #contact-recom-1 ul h3 {
+  #contact-info ul h3 {
     padding: 0 30px;
   }
 }
 @media (min-width: 1025px) {
-  #contact-recom-1 ul h3 {
+  #contact-info ul h3 {
     padding: 0 40px;
   }
 }
@@ -2162,4 +2209,25 @@ ul li img {
 #map-container #map {
   width: 100%;
   height: 500px;
+}
+
+/* --------------------------
+    Contact Recommendation 1
+ --------------------------*/
+#contact-recom-1 ul li #travel-card {
+  background-color: #59BEB0;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 ul li #travel-card {
+    padding: 20px 25px;
+  }
 }
