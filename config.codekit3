@@ -497,14 +497,6 @@
 		"oAP": "/deploy/gallery.html",
 		"oF": 2
 		},
-	"/dev/global/fancybox.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/global/fancybox.html",
-		"oF": 0
-		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -535,6 +527,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/global/scripts.html",
+		"oF": 0
+		},
+	"/dev/global/tinyslider.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/tinyslider.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
