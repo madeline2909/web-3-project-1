@@ -3,13 +3,12 @@
 ============= */
 header{
     position: fixed;
-    z-index: 100;
+    z-index: 200;
     width: 100%;
     div{
         color: $mainpink;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
         padding: 15px;
     
         @include lg{
@@ -24,10 +23,6 @@ header{
         a:hover, a:active{
             color: $bluegreen;
         }
-        a{
-            display: flex;
-            justify-content: ceil($number: 0);
-        }
         h5{
             font-family: 'Space Mono', monospace;
             font-weight: 400;
@@ -35,9 +30,33 @@ header{
             line-height: rem-calc(18px);
             text-align: center;
         }
-        
-        #burger-icon{
-            font-size: rem-calc(24px);
+        #logo-1-container{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        #logo-2-container{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #burger-container{
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            #burger{
+                cursor: pointer;
+                transition: 0.25s;
+                #lines{
+                    stroke: $mainpink;
+                }
+                &:hover{
+                    #lines{
+                        stroke: $bluegreen;
+                    }
+                }
+                
+            }
         }
     }
 }

@@ -21,16 +21,27 @@
 <body>
     <header>
         <div>
-            <a href="index.html"><h5>cats<br>of<br>japan</h5></a>
-            <i id=burger class="fas fa-bars"></i>
-            <a href="index.html"><img src="img/header/paw.svg" alt="paw icon"></a>
+          <section id="logo-1-container"><a href="index.html"><h5>cats<br>of<br>japan</h5></a></section>
+            
+          <section id="burger-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 26" id="burger">
+                    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g id="lines" stroke="#000" stroke-width="3">
+                        <path class="lines" id="topline" d="M4 4h24"/>
+                        <path class="lines" id="middleline" d="M4 13h24"/>
+                        <path class="lines" id="bottomline" d="M4 22h24"/>
+                      </g>
+                    </g>
+              </svg>
+            </section>
+            <section id="logo-2-container"><a href="index.html"><img src="img/header/paw.svg" alt="paw icon"></a></section>
         </div>
     </header>
 
     <nav id="main-nav">
             <ul>
-                <li  class=" hide-nav-button"><button>Culture</button></li>
-                <li class=" hide-nav-button"><button>Art</button></li>
+                <li class=" hide-nav-button"><button id="culture-btn">Culture</button></li>
+                <li class=" hide-nav-button"><button id="art-btn">Art</button></li>
                 
         
                 <li class="show-nav-button hide-nav-button">
@@ -109,8 +120,10 @@
         </footer>
     <!-- jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Greensock ScrollToPlugin -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
             <!-- Greensock -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
             <!-- fancyBox -->
             <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
             <!-- TinySlider -->

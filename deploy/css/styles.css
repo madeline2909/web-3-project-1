@@ -584,6 +584,14 @@ p {
   font-size: 1.125rem;
 }
 
+.bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -702,8 +710,6 @@ textarea {
 }
 #main-nav ul {
   display: grid;
-  margin-right: 60px;
-  margin-top: 120px;
   grid-gap: 30px;
 }
 #main-nav ul li {
@@ -842,14 +848,13 @@ textarea {
 ============= */
 header {
   position: fixed;
-  z-index: 100;
+  z-index: 200;
   width: 100%;
 }
 header div {
   color: #EF87A3;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   padding: 15px;
 }
 @media (min-width: 1025px) {
@@ -868,10 +873,6 @@ header div a:link, header div a:visited {
 header div a:hover, header div a:active {
   color: #59BEB0;
 }
-header div a {
-  display: flex;
-  justify-content: 0;
-}
 header div h5 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -879,8 +880,25 @@ header div h5 {
   line-height: 1.125rem;
   text-align: center;
 }
-header div #burger-icon {
-  font-size: 1.5rem;
+header div #logo-1-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header div #logo-2-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header div #burger-container #burger {
+  cursor: pointer;
+  transition: 0.25s;
+}
+header div #burger-container #burger #lines {
+  stroke: #EF87A3;
+}
+header div #burger-container #burger:hover #lines {
+  stroke: #59BEB0;
 }
 
 /* =============
@@ -2368,5 +2386,12 @@ ul li img {
 #contact-recom-1 ul :nth-child(3) ul li a:link:hover, #contact-recom-1 ul :nth-child(3) ul li a:link:active,
 #contact-recom-1 ul :nth-child(3) ul li a:visited:hover,
 #contact-recom-1 ul :nth-child(3) ul li a:visited:active {
+  color: #59BEB0;
+}
+
+/* --------------------------
+    Contact Recommendation 2
+ --------------------------*/
+#contact-recom-2 {
   color: #59BEB0;
 }
