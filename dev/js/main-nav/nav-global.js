@@ -11,7 +11,7 @@ mainNavTimeline.to("#main-nav",{duration:0.5,y:0})
 
 // function to handle the showing and hiding of the main-nav
 function hideShowMainNav(){
-    console.log("hide or show nav");
+    // console.log("hide or show nav");
     //toggles the css display property
     //$("#main-nav").toggle();
 

@@ -890,7 +890,13 @@ header div #logo-2-container {
   align-items: center;
   justify-content: flex-end;
 }
+header div #burger-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header div #burger-container #burger {
+  height: 30px;
   cursor: pointer;
   transition: 0.25s;
 }
