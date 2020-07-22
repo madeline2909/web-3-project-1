@@ -23,7 +23,6 @@ footer {
         display: flex;
         justify-content: center;
         ul{
-            font-size: rem-calc(30);
             width: 140px;
             display: flex;
             align-items: center;
@@ -32,6 +31,7 @@ footer {
                 width: 170px;
             }
             li{
+                font-size: rem-calc(30);
                 a:link,
                 a:visited {
                     color: $white;

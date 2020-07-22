@@ -1,54 +1,82 @@
 /* =============
     Navigation
 ============= */
-
-.button{
-    background-color: $mainpink;
-    color: $white;
-
-    border: none;
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: rem-calc(20);
-    line-height: rem-calc(22);
-
-    text-align: center;
-    padding: 10px;
-    transition: 0.25s;
-    width: 100px;
-    @include md{
-        width: 136px;
-        font-size: rem-calc(25);
-        line-height: rem-calc(30);
-        padding: 15px;
-    }
-    @include lg{
-        width: 166px;
-        font-size: rem-calc(30);
-        line-height: rem-calc(37);
-        padding: 20px;
-    }
-
-    &:hover,
-    &:active {
-        color: $mainpink;
-        background-color: rgba($color: white, $alpha: 0.5);
-        border: 2px solid $mainpink;
-    }
+.hide-nav-button{
+    display: none;
 }
-.button-container{
-    padding-bottom: 50px;
-    @include md{
-        padding-bottom: 60px;
-    }
-    @include lg{
-        padding-bottom: 70px;
+.show-nav-button{
+    display: block !important;
+}
+#main-nav{
+    background-color: $blush;
+    display: none;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 90;
+    ul{
+        display: grid;
+        margin-right: 60px;
+        margin-top: 120px;
+        grid-gap: 30px;
+        li{
+            text-align: right;
+            button{
+                color: $white;
+                background-color: transparent;
+                border: none;
+                transition: 0.25s;
+                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: rem-calc(20);
+                line-height: rem-calc(22);
+                @include md{
+                    font-size: rem-calc(25);
+                    line-height: rem-calc(30);
+                }
+                @include lg{
+                    font-size: rem-calc(30);
+                    line-height: rem-calc(37);
+                }
+            
+                &:hover,
+                &:active {
+                    color: $green;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid $green;
+                }
+
+            }
+
+            a:link, a:visited{
+                color: $white;
+                background-color: transparent;
+                border: none;
+            
+                cursor: pointer;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: rem-calc(20);
+                line-height: rem-calc(22);
+                @include md{
+                    font-size: rem-calc(25);
+                    line-height: rem-calc(30);
+                }
+                @include lg{
+                    font-size: rem-calc(30);
+                    line-height: rem-calc(37);
+                }
+                &:hover,
+                &:active {
+                    color: $green;
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid $green;
+                }
+            }
+        }
     }
 }

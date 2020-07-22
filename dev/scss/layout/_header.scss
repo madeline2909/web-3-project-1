@@ -3,13 +3,12 @@
 ============= */
 header{
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     div{
         color: $mainpink;
         display: flex;
         align-items: center;
-        justify-content: center;
         justify-content: space-between;
         padding: 15px;
     
@@ -19,7 +18,16 @@ header{
         @include md{
             padding: 25px 30px;
         }
-    
+        a:link, a:visited{
+            color: $mainpink;
+        }
+        a:hover, a:active{
+            color: $bluegreen;
+        }
+        a{
+            display: flex;
+            justify-content: ceil($number: 0);
+        }
         h5{
             font-family: 'Space Mono', monospace;
             font-weight: 400;

@@ -176,26 +176,62 @@
     Contact Recommendation 1
  --------------------------*/
  #contact-recom-1{
+
      ul{
-         li{
-            #travel-card{
-               background-color: $bluegreen;
-               border-radius: 10px;
-               color: white;
-            
-               display: flex;
-               align-items: center;
-               justify-content: center;
-            
-                transition: 0.25s;
+        @include md{
+            display: flex;
+            align-items: center;
+        }
+        #travel-card{
+            background-color: $bluegreen;
+            border-radius: 10px;
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.25s;
+            text-align: center;
+            padding: 15px 20px;
+            width: 100px;
+            @include md{
+                padding: 20px 25px;
+            }
+            @include lg{
+                margin: 0 38px;
+            }
+            P{
+                color: white;
+            }
+        }
+        :nth-child(1){
+            p{
+                color: $bluegreen;
+            }
+        }
+        :nth-child(3){
+            ul{
+                display: flex;
                 text-align: center;
-                padding: 15px 20px;
-                width: 100px;
                 @include md{
-                    padding: 20px 25px;
+                    display: grid;
+                    height: 180px;  
+                }
+                @include lg{
+                    height: 190px;  
+                }
+                li{
+                    font-size: rem-calc(30);
+                    a:link,
+                    a:visited {
+                        color: $mainpink;
+    
+                        &:hover,
+                        &:active {
+                            color: $bluegreen;
+                        }
+                    }
                 }
             }
-            
-         }
+        }
      }
  }

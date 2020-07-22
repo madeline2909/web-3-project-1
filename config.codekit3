@@ -521,20 +521,20 @@
 		"oAP": "/dev/global/header.html",
 		"oF": 0
 		},
+	"/dev/global/main-nav.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/global/main-nav.html",
+		"oF": 0
+		},
 	"/dev/global/scripts.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/global/scripts.html",
-		"oF": 0
-		},
-	"/dev/global/tinyslider.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/global/tinyslider.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
@@ -560,6 +560,39 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/fancyBox-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/main-nav/burger-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/burger-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/main-nav/main-nav-click.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/main-nav-click-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/main-nav/nav-global.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/main-nav/nav-global-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -859,8 +892,8 @@
 	"creationDate": 614697352.40987301,
 	"displayValue": "web-3-project-1",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets-unblue",
-	"iconImageWasSetByUser": 0
+	"iconImageName": "meme-grumpy",
+	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
