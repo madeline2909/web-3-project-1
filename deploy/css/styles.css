@@ -550,7 +550,7 @@ h1 {
 }
 
 h4 {
-  padding: 52px 0;
+  padding: 49px 0;
   font-family: "Covered By Your Grace", cursive;
   font-size: 1.25rem;
   line-height: 1.5625rem;
@@ -559,14 +559,14 @@ h4 {
   h4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
-    padding: 62px 0;
+    padding: 59px 0;
   }
 }
 @media (min-width: 1025px) {
   h4 {
     font-size: 1.5625rem;
     line-height: 1.875rem;
-    padding: 72px 0;
+    padding: 69px 0;
   }
 }
 
@@ -2333,66 +2333,169 @@ ul li img {
 /* --------------------------
     Contact Recommendation 1
  --------------------------*/
+#contact-recom-1 {
+  overflow: hidden;
+}
+#contact-recom-1 div > div {
+  margin-top: 0;
+  position: relative;
+  height: 72vh;
+}
 @media (min-width: 768px) {
-  #contact-recom-1 ul {
+  #contact-recom-1 div > div {
+    height: auto;
+  }
+}
+#contact-recom-1 div > div h2 {
+  z-index: 20;
+  position: absolute;
+  right: -14px;
+  bottom: -5px;
+  text-align: right;
+  color: #59BEB0;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 div > div h2 {
+    bottom: 0;
+    right: -20px;
+  }
+}
+#contact-recom-1 div > div #contact-rectangle {
+  z-index: -3;
+  position: absolute;
+  background-color: #F0DBDA;
+  width: 70vw;
+  height: 72vh;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 div > div #contact-rectangle {
+    width: 100vw;
+    height: 360px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-recom-1 div > div #contact-rectangle {
+    height: 415px;
+    width: 75vw;
+  }
+}
+#contact-recom-1 div > div img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 div > div img {
+    width: 460px;
+    margin: 0 120px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-recom-1 div > div img {
+    margin: 0 202px;
+  }
+}
+#contact-recom-1 div ul {
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-areas: "p1 p1" "card icons";
+  grid-gap: 20px;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 div ul {
+    grid-template-areas: unset;
+    grid-template-columns: unset;
     display: flex;
     align-items: center;
   }
 }
-#contact-recom-1 ul #travel-card {
+#contact-recom-1 div ul #travel-card {
+  grid-area: card;
   background-color: #59BEB0;
   border-radius: 10px;
-  margin: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: 0.25s;
   text-align: center;
   padding: 15px 20px;
   width: 100px;
 }
 @media (min-width: 768px) {
-  #contact-recom-1 ul #travel-card {
+  #contact-recom-1 div ul #travel-card {
+    margin: 0 20px;
+    display: flex;
+    grid-area: unset;
+    align-items: center;
+    justify-content: center;
     padding: 20px 25px;
   }
 }
 @media (min-width: 1025px) {
-  #contact-recom-1 ul #travel-card {
+  #contact-recom-1 div ul #travel-card {
     margin: 0 38px;
   }
 }
-#contact-recom-1 ul #travel-card P {
+#contact-recom-1 div ul #travel-card P {
   color: white;
 }
-#contact-recom-1 ul :nth-child(1) p {
-  color: #59BEB0;
-}
-#contact-recom-1 ul :nth-child(3) ul {
-  display: flex;
-  text-align: center;
+#contact-recom-1 div ul #p1 {
+  grid-area: p1;
 }
 @media (min-width: 768px) {
-  #contact-recom-1 ul :nth-child(3) ul {
-    display: grid;
+  #contact-recom-1 div ul #p1 {
+    grid-area: unset;
+  }
+}
+#contact-recom-1 div ul #p1 p {
+  color: #59BEB0;
+}
+#contact-recom-1 div ul #travel-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#contact-recom-1 div ul #icons-container {
+  grid-area: icons;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 div ul #icons-container {
+    grid-area: unset;
+  }
+}
+#contact-recom-1 div ul #icons-container ul {
+  display: grid;
+  text-align: center;
+  grid-template-areas: "insta" "trip" "youtube";
+  height: 120px;
+}
+@media (min-width: 768px) {
+  #contact-recom-1 div ul #icons-container ul {
     height: 180px;
   }
 }
 @media (min-width: 1025px) {
-  #contact-recom-1 ul :nth-child(3) ul {
+  #contact-recom-1 div ul #icons-container ul {
     height: 190px;
   }
 }
-#contact-recom-1 ul :nth-child(3) ul li {
+#contact-recom-1 div ul #icons-container ul li {
   font-size: 1.875rem;
 }
-#contact-recom-1 ul :nth-child(3) ul li a:link,
-#contact-recom-1 ul :nth-child(3) ul li a:visited {
+#contact-recom-1 div ul #icons-container ul li a:link,
+#contact-recom-1 div ul #icons-container ul li a:visited {
   color: #EF87A3;
 }
-#contact-recom-1 ul :nth-child(3) ul li a:link:hover, #contact-recom-1 ul :nth-child(3) ul li a:link:active,
-#contact-recom-1 ul :nth-child(3) ul li a:visited:hover,
-#contact-recom-1 ul :nth-child(3) ul li a:visited:active {
+#contact-recom-1 div ul #icons-container ul li a:link:hover, #contact-recom-1 div ul #icons-container ul li a:link:active,
+#contact-recom-1 div ul #icons-container ul li a:visited:hover,
+#contact-recom-1 div ul #icons-container ul li a:visited:active {
   color: #59BEB0;
+}
+#contact-recom-1 div ul #icons-container ul :nth-child(1) {
+  grid-row: insta;
+}
+#contact-recom-1 div ul #icons-container ul :nth-child(2) {
+  grid-row: trip;
+}
+#contact-recom-1 div ul #icons-container ul :nth-child(3) {
+  grid-row: youtube;
 }
 
 /* --------------------------
@@ -2400,4 +2503,31 @@ ul li img {
  --------------------------*/
 #contact-recom-2 {
   color: #59BEB0;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  #contact-recom-2 {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1025px) {
+  #contact-recom-2 {
+    margin-bottom: 70px;
+  }
+}
+#contact-recom-2 div > p {
+  margin-bottom: 20px;
+}
+#contact-recom-2 div div {
+  display: grid;
+  grid-gap: 20px;
+}
+#contact-recom-2 div div ul {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+@media (min-width: 768px) {
+  #contact-recom-2 div div ul {
+    grid-template-columns: 20% auto;
+  }
 }

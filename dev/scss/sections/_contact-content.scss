@@ -176,68 +176,181 @@
     Contact Recommendation 1
  --------------------------*/
  #contact-recom-1{
-
-     ul{
-        @include md{
-            display: flex;
-            align-items: center;
-        }
-        #travel-card{
-            background-color: $bluegreen;
-            border-radius: 10px;
-            margin: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.25s;
-            text-align: center;
-            padding: 15px 20px;
-            width: 100px;
+    overflow: hidden;
+    div{
+        >div{
+            margin-top: 0;
+            position: relative;
+            height: 72vh;
             @include md{
-                padding: 20px 25px;
+                height: auto;
             }
-            @include lg{
-                margin: 0 38px;
-            }
-            P{
-                color: white;
-            }
-        }
-        :nth-child(1){
-            p{
+            h2{
+                z-index: 20;
+                position: absolute;
+                right: -14px;
+                bottom: -5px;
+                text-align: right;
                 color: $bluegreen;
-            }
-        }
-        :nth-child(3){
-            ul{
-                display: flex;
-                text-align: center;
                 @include md{
-                    display: grid;
-                    height: 180px;  
+                    bottom: 0;
+                    right: -20px;
                 }
                 @include lg{
-                    height: 190px;  
                 }
-                li{
-                    font-size: rem-calc(30);
-                    a:link,
-                    a:visited {
-                        color: $mainpink;
-    
-                        &:hover,
-                        &:active {
-                            color: $bluegreen;
+            }
+            #contact-rectangle{
+                z-index: -3;
+                position: absolute;
+                background-color: $blush;
+                width: 70vw;
+                height: 72vh;
+                @include md{
+                    width: 100vw;
+                    height: 360px;
+                }
+                @include lg{
+                    height: 415px;
+                    width: 75vw;
+                }
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                @include md{
+                    width: 460px;
+                    margin: 0 120px;
+                }
+                @include lg{
+                    margin: 0 202px;
+                }
+            }
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+            "p1 p1"
+            "card icons";
+            grid-gap: 20px;
+            @include md{
+                grid-template-areas: unset;
+                grid-template-columns: unset;
+                display: flex;
+                align-items: center;
+            }
+            
+            #travel-card{
+                grid-area: card;
+                background-color: $bluegreen;
+                border-radius: 10px;
+                transition: 0.25s;
+                text-align: center;
+                padding: 15px 20px;
+                width: 100px;
+                @include md{
+                    margin: 0 20px;
+                    display: flex;
+                    grid-area: unset;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px 25px;
+                }
+                @include lg{
+                    margin: 0 38px;
+                }
+                P{
+                    color: white;
+                }
+            }
+            #p1{
+                grid-area: p1;
+                @include md{
+                    grid-area: unset;
+                }
+                p{
+                    color: $bluegreen;
+                }
+            }
+            #travel-card-container{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            #icons-container{
+                grid-area: icons;
+                @include md{
+                    grid-area: unset;
+                }
+                ul{
+                    display: grid;
+                    text-align: center;
+                    grid-template-areas: 
+                    "insta"
+                    "trip"
+                    "youtube";
+                    height: 120px;
+                    @include md{
+                        height: 180px; 
+                    }
+                    @include lg{
+                        height: 190px;  
+                    }
+                    li{
+                        font-size: rem-calc(30); 
+                        a:link,
+                        a:visited {
+                            color: $mainpink;
+        
+                            &:hover,
+                            &:active {
+                                color: $bluegreen;
+                            }
                         }
+                    }
+                    :nth-child(1){
+                        grid-row: insta;
+                    }
+                    :nth-child(2){
+                        grid-row: trip;
+                    }
+                    :nth-child(3){
+                        grid-row: youtube;
                     }
                 }
             }
         }
     }
+    
+    
 }
 /* --------------------------
     Contact Recommendation 2
  --------------------------*/
 #contact-recom-2{
     color: $bluegreen;
+    margin-bottom: 50px;
+    @include md{
+        margin-bottom: 60px;
+    }
+    @include lg{
+        margin-bottom: 70px;
+    }
+    div{
+        >p{
+            margin-bottom: 20px;
+        }
+        div{
+            display: grid;
+            grid-gap: 20px;
+            ul{
+                display: grid;
+                grid-template-columns: 30% auto;
+                @include md{
+                    grid-template-columns: 20% auto;
+                }
+            }
+        }
+    }
 }

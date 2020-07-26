@@ -16,6 +16,7 @@
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 
     <title>Web 3 Project1</title>
+    <meta name="format-detection" content="telephone=no" />
 </head>
 
 <body>
@@ -79,7 +80,7 @@
             </div>
             <div id="caption-container" class="heading-spacing">
                 <h4 class="caption">
-                    Contact info avd weekly recommendations (foods, stores, cultural places) for cat lovers around the world who want to visit Japan.
+                    Contact info and weekly recommendations (foods, stores, cultural places) for cat lovers around the world who want to visit Japan.
                 </h4>
             </div>
         </div>
@@ -108,24 +109,27 @@
     
     <section id="contact-recom-1">
         <div>
-            <h2>
-                this week’s<br>recom&shy;mendation
-            </h2>
-            
+            <div class="content-spacing">
+                <h2>
+                    this week’s<br>recom&shy;mendation
+                </h2>
+                <div id="contact-rectangle"></div>
+                <img src="img/travel/contact.jpg" alt="cat">
+            </div>
             <ul class="heading-spacing">
-                <li>
+                <li id="p1">
                     <p>
                         If being in a room full of cute furballs makes you happy, then a visit to one of <span class="bold-italic">Tokyo’s cat cafés</span> should be on your must-do list. Popular among locals and tourists alike, cat cafés are amusing venues to hang out with your favorite felines.
                     </p>
                 </li>
-                <li>
+                <li id="travel-card-container">
                     <div id="travel-card">
                         <p class="bold">
                             Tokyo<br>Cat Cafe MoCHA Akihabara
                         </p>
                     </div>
                 </li>
-                <li>
+                <li id="icons-container">
                     <ul>
                         <li><a href="https://www.youtube.com/channel/UC2rQRbO0xaAoYD6XGAXfN6g"><i class="fab fa-youtube"></i></a></li>
                         <li><a href="https://www.tripadvisor.com/Attraction_Review-g1066456-d10068649-Reviews-Cat_Cafe_MOCHA_Harajuku-Shibuya_Tokyo_Tokyo_Prefecture_Kanto.htmli"><i class="fab fa-tripadvisor"></i></a></li>
@@ -152,11 +156,11 @@
             <div>
                 <ul id="info-1">
                     <li class="bold-italic">Access:</li>
-                    <li><p>5 minute walk from Shibuya Station</p></li>
+                    <li><p>5 minute walk from Shibuya Station.</p></li>
                 </ul>
                 <ul id="info-2">
                     <li class="bold-italic">Address:</li>
-                    <li><p>32-12 Udagawacho Assorti Shibuya 8F<br>Shibuya 150-0042, Tokyo</p></li>
+                    <li><p>32-12 Udagawacho Assorti Shibuya 8F.<br>Shibuya 150-0042, Tokyo.</p></li>
                 </ul>
                 <ul id="info-3">
                     <li class="bold-italic">Website:</li>
@@ -192,44 +196,32 @@
                 <h5 class="japn">さくらねこ</h5>
             </div>
         </footer>
-    <!-- <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          var uluru = {lat: -25.344, lng: 131.036};
-          // The map, centered at Uluru
-          var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
-        }
-    </script> -->
+    
 
 <script>
     function initMap() {
-      // Styles a map in night mode.
+      // The location of cat cafe
+      var akihabara = {lat: 35.701332, lng: 139.771777};
+      // The marker, positioned at cat cafe
+      var marker = new google.maps.Marker({position: akihabara, map: map});
+      // Styles a map in pink mode.
       var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 35.701332, lng: 139.771777},
         zoom: 18,
-        
-        // hide:[{
-        //     featureType: poi.school,
-        //     stylers
-        // }],
 
         styles: [
-          {elementType: 'geometry', stylers: [{color: '#F0DBDA'}]},
-          {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-          {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+          {elementType: 'geometry', stylers: [{color: '#E3E9E8'}]},
+          {elementType: 'labels.text.stroke', stylers: [{color: '#E3E9E8'}]},
+          {elementType: 'labels.text.fill', stylers: [{color: '#093A3E'}]},
           {
             featureType: 'administrative.locality',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#d59563'}]
+            stylers: [{color: '#093A3E'}]
           },
           {
             featureType: 'poi',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#d59563'}]
+            stylers: [{color: '#093A3E'}]
           },
           {
             featureType: 'poi.park',
@@ -244,18 +236,18 @@
           {
             featureType: 'road',
             elementType: 'geometry',
-            stylers: [{color: '#59BEB0'}]
+            stylers: [{color: '#EF87A3'}]
           },
-        //   {
-        //     featureType: 'road',
-        //     elementType: 'geometry.stroke',
-        //     stylers: [{color: '#212a37'}]
-        //   },
+          {
+            featureType: 'road',
+            elementType: 'geometry.stroke',
+            stylers: [{color: '#A2B334'}]
+          },
           {
             featureType: 'road',
             elementType: 'labels.text.fill',
             stylers: [   
-            {color: '#093A3E'}]
+            {color: '#027E88'}]
           },
           {
             featureType: 'road.highway',
@@ -270,7 +262,7 @@
           {
             featureType: 'road.highway',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#f3d19c'}]
+            stylers: [{color: '#EF87A3'}]
           },
           {
             featureType: 'transit',
@@ -280,7 +272,7 @@
           {
             featureType: 'transit.station',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#d59563'}]
+            stylers: [{color: '#027E88'}]
           },
           {
             featureType: 'water',
@@ -290,7 +282,7 @@
           {
             featureType: 'water',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#A2B334'}]
+            stylers: [{color: '#E3E9E8'}]
           },
           {
             featureType: 'water',
@@ -300,6 +292,7 @@
         ]
       });
     }
+    
   </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaGf04AbpMhxuc1NOu9Qjcja62Ojl0Cac&callback=initMap">

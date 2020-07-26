@@ -88,19 +88,19 @@ h1{
 	}
 }
 h4{
-	padding: 52px 0;
+	padding: 49px 0;
 	font-family: 'Covered By Your Grace', cursive;
 	font-size: rem-calc(20);
 	line-height: rem-calc(25);
 	@include md{
 		font-size: rem-calc(24);
 		line-height: rem-calc(28);
-		padding: 62px 0;
+		padding: 59px 0;
 	}
 	@include lg{
 		font-size: rem-calc(25);
 		line-height: rem-calc(30);
-		padding: 72px 0;
+		padding: 69px 0;
 	}
 }
 p{
