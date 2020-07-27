@@ -23,17 +23,19 @@ header{
         a:hover, a:active{
             color: $bluegreen;
         }
-        #logo-1-container{
-            margin-top: -10px;
-        }
         h5{
             font-family: 'Space Mono', monospace;
             font-weight: 400;
-            font-size: rem-calc(18px);
-            line-height: rem-calc(18px);
+            font-size: rem-calc(17px);
+            line-height: rem-calc(17px);
             text-align: center;
+            @include lg{
+                font-size: rem-calc(15px);
+                line-height: rem-calc(15px);
+            }
         }
         #logo-1-container{
+            margin-top: -10px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -42,13 +44,19 @@ header{
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            img{
+                height: 50px;
+                @include md{
+                    height: 45px;
+                }
+            }
         }
         #burger-container{
             display: flex;
             align-items: center;
             justify-content: center;
             #burger{
-                height: 30px;
+                height: 25px;
                 cursor: pointer;
                 #lines{
                     stroke: $mainpink;

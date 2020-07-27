@@ -3,7 +3,8 @@ gsap.registerPlugin(ScrollToPlugin);
 var scrollItems = ["#home-culture","#home-art"];
 
 function scrollIndex(){
-    gsap.to(window, {duration: 1, scrollTo:{y: scrollItems[$('#main-nav li button').index(this)], offsetY:60}});
+    // gsap.to(window, {duration: 1, scrollTo:{y: scrollItems[$('#main-nav li button').index(this)], offsetY:40}});
+    gsap.to(window, {duration: 1, scrollTo:{y: scrollItems[$('#main-nav li button').index(this)]}});
 }
 
 

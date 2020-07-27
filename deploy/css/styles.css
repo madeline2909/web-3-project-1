@@ -873,17 +873,21 @@ header div a:link, header div a:visited {
 header div a:hover, header div a:active {
   color: #59BEB0;
 }
-header div #logo-1-container {
-  margin-top: -10px;
-}
 header div h5 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
+  font-size: 1.0625rem;
+  line-height: 1.0625rem;
   text-align: center;
 }
+@media (min-width: 1025px) {
+  header div h5 {
+    font-size: 0.9375rem;
+    line-height: 0.9375rem;
+  }
+}
 header div #logo-1-container {
+  margin-top: -10px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -893,13 +897,21 @@ header div #logo-2-container {
   align-items: center;
   justify-content: flex-end;
 }
+header div #logo-2-container img {
+  height: 50px;
+}
+@media (min-width: 768px) {
+  header div #logo-2-container img {
+    height: 45px;
+  }
+}
 header div #burger-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 header div #burger-container #burger {
-  height: 30px;
+  height: 25px;
   cursor: pointer;
 }
 header div #burger-container #burger #lines {
