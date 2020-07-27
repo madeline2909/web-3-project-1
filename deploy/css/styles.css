@@ -616,7 +616,7 @@ h3 {
 ============= */
 .button {
   background-color: #EF87A3;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 10px;
   display: flex;
@@ -716,7 +716,7 @@ textarea {
   text-align: right;
 }
 #main-nav ul li button {
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
   border: none;
   transition: 0.25s;
@@ -744,7 +744,7 @@ textarea {
   border-bottom: 2px solid #A2B334;
 }
 #main-nav ul li a:link, #main-nav ul li a:visited {
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -968,7 +968,7 @@ footer section ul li {
 }
 footer section ul li a:link,
 footer section ul li a:visited {
-  color: #fff;
+  color: #ffffff;
 }
 footer section ul li a:link:hover, footer section ul li a:link:active,
 footer section ul li a:visited:hover,
