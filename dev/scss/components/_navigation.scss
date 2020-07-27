@@ -9,7 +9,7 @@
 }
 #main-nav{
     background-color: $blush;
-    display: none;
+    display: grid;
     place-items: center;
     position: fixed;
     top: 0;

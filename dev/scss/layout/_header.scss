@@ -23,6 +23,9 @@ header{
         a:hover, a:active{
             color: $bluegreen;
         }
+        #logo-1-container{
+            margin-top: -10px;
+        }
         h5{
             font-family: 'Space Mono', monospace;
             font-weight: 400;
@@ -47,15 +50,17 @@ header{
             #burger{
                 height: 30px;
                 cursor: pointer;
-                transition: 0.25s;
                 #lines{
                     stroke: $mainpink;
+                    transition: 0.25s;
+                    
                 }
                 &:hover{
                     #lines{
                         stroke: $bluegreen;
                     }
                 }
+                
                 
             }
         }

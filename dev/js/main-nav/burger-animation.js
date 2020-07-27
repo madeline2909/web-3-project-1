@@ -1,4 +1,4 @@
-var burgerAnimationTimeline = gsap.timeline({pause:true});
+var burgerAnimationTimeline = gsap.timeline({paused:true});
 var burgerAnimationSpeed = 0.25;
 
 // reset transformOrigin point for each time

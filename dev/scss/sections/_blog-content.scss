@@ -133,6 +133,7 @@
     
 }
 #blog-content-2{
+    color: $darkblue;
     @include lg{
         margin-top: -50vh;
     }

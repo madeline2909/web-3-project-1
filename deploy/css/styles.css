@@ -699,7 +699,7 @@ textarea {
 
 #main-nav {
   background-color: #F0DBDA;
-  display: none;
+  display: grid;
   place-items: center;
   position: fixed;
   top: 0;
@@ -873,6 +873,9 @@ header div a:link, header div a:visited {
 header div a:hover, header div a:active {
   color: #59BEB0;
 }
+header div #logo-1-container {
+  margin-top: -10px;
+}
 header div h5 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -898,10 +901,10 @@ header div #burger-container {
 header div #burger-container #burger {
   height: 30px;
   cursor: pointer;
-  transition: 0.25s;
 }
 header div #burger-container #burger #lines {
   stroke: #EF87A3;
+  transition: 0.25s;
 }
 header div #burger-container #burger:hover #lines {
   stroke: #59BEB0;
@@ -1623,6 +1626,9 @@ footer #copyright {
   }
 }
 
+#blog-content-2 {
+  color: #027E88;
+}
 @media (min-width: 1025px) {
   #blog-content-2 {
     margin-top: -50vh;

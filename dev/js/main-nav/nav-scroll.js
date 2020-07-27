@@ -6,6 +6,8 @@ function scrollIndex(){
     gsap.to(window, {duration: 1, scrollTo:{y: scrollItems[$('#main-nav li button').index(this)], offsetY:60}});
 }
 
+
+
 // function scrollCulture(){
 //     gsap.to(window, {duration: 1, scrollTo:{y:"#home-culture", offsetY:60}});
 // }
