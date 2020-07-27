@@ -23,7 +23,7 @@ $(window).scroll(function() {
     } 
 
 });
-
+//animation of header sliding up when scrolling down-sliding dowm when scrolling up
 $(function(){
 
     var CurrentScroll = 0;
