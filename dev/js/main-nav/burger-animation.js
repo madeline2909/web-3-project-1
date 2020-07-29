@@ -1,4 +1,5 @@
 var burgerAnimationTimeline = gsap.timeline({paused:true});
+// var xAnimationTimeline = gsap.timeline({paused:true});
 var burgerAnimationSpeed = 0.25;
 
 // reset transformOrigin point for each time
@@ -15,11 +16,18 @@ burgerAnimationTimeline.to("#topline", {duration: burgerAnimationSpeed, rotation
                     .to("#arrow-right", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "burgerToX")
                     .to("#arrow-left", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "burgerToX")
 
+// xAnimationTimeline.to("#topline", {duration: burgerAnimationSpeed}, "ArrowToBurger")
+//                     .to("#bottomline", {duration: burgerAnimationSpeed}, "ArrowToBurger")
+//                     .to("#middleline", {duration: burgerAnimationSpeed, alpha:1}, "ArrowToBurger")
+//                     .to("#arrow-right", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "ArrowToBurger")
+//                     .to("#arrow-left", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "ArrowToBurger")
+
 function animateBurger(){
     if(canYouSeeTheMenu === true){
         burgerAnimationTimeline.play();
     }else{
         burgerAnimationTimeline.reverse();
+        // xAnimationTimeline.play();
     }
 }
 
