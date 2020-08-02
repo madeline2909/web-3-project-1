@@ -20,20 +20,39 @@ function hideShowMainNav(){
     //$("#main-nav").toggle();
 
     if(canYouSeeTheMenu === false){
-        console.log("show me the menu");
+        //console.log("show me the menu");
         //reset it back to true so menu will go away
         canYouSeeTheMenu = true;
-        //start the burger animation
-        animateBurger();
+
+        // console.log(burgerToArrowTimeline.progress() + "0 is the progress for the gsap timeline, anything larger than 0 means it has played");
+
+        // alert(burgerToArrowTimeline.progress() + "0 is the progress for the gsap timeline, anything larger than 0 means it has played");
+
+        if(burgerToArrowTimeline.progress() > 0){
+            //turn the burger into an X
+           // alert("dekstop animation");
+            animateBurger();
+        }else{
+            //alert("mobile animation");
+            mobileburgerAnimation();
+        }
+        
         //play the main nav animation into view; pull it down
         mainNavTimeline.play();
         $('header').css("backgroundColor","unset");
     }else{
-        console.log("hide the menu");
+        // console.log("hide the menu");
         //reset it back to false so menu will be back
         canYouSeeTheMenu = false;
-        //turn the x into burger
-        animateBurger();
+
+        if(burgerToArrowTimeline.progress()>0){
+            //start the burger animation
+            animateBurger();
+        }else{
+            // alert("mobile animation");
+            mobileburgerAnimation();    
+        }
+
         //reverse the animation of main nav out of view; push it up
         mainNavTimeline.reverse();
     }

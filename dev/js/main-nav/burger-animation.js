@@ -1,5 +1,5 @@
 var burgerAnimationTimeline = gsap.timeline({paused:true});
-// var xAnimationTimeline = gsap.timeline({paused:true});
+var upArrowToBurgerAnimationTimeline = gsap.timeline({paused:true});
 var burgerAnimationSpeed = 0.25;
 
 // reset transformOrigin point for each time
@@ -13,21 +13,24 @@ gsap.set(".lines",{transformOrigin:"center"});
 burgerAnimationTimeline.to("#topline", {duration: burgerAnimationSpeed, rotation: 45}, "burgerToX")
                     .to("#bottomline", {duration: burgerAnimationSpeed, rotation: -45}, "burgerToX")
                     .to("#middleline", {duration: burgerAnimationSpeed, alpha:0}, "burgerToX")
-                    .to("#arrow-right", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "burgerToX")
-                    .to("#arrow-left", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "burgerToX")
+                    .to("#arrow-down-right", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "burgerToX")
+                    .to("#arrow-down-left", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "burgerToX")
 
-// xAnimationTimeline.to("#topline", {duration: burgerAnimationSpeed}, "ArrowToBurger")
-//                     .to("#bottomline", {duration: burgerAnimationSpeed}, "ArrowToBurger")
-//                     .to("#middleline", {duration: burgerAnimationSpeed, alpha:1}, "ArrowToBurger")
-//                     .to("#arrow-right", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "ArrowToBurger")
-//                     .to("#arrow-left", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "ArrowToBurger")
+upArrowToBurgerAnimationTimeline.to("#topline", {duration: burgerAnimationSpeed, y:0}, "ArrowToBurger")
+                    .to("#bottomline", {duration: burgerAnimationSpeed, y:0}, "ArrowToBurger")
+                    .to("#middleline", {duration: burgerAnimationSpeed, alpha:1}, "ArrowToBurger")
+                    .to("#burger", {duration: burgerAnimationSpeed, rotation: 0}, "ArrowToBurger")
+                    .to("#arrow-up-right", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "ArrowToBurger")
+                    .to("#arrow-up-left", {duration: burgerAnimationSpeed, alpha:0, rotation: 0}, "ArrowToBurger")
+                    .to("#arrow-down-left", {duration: burgerAnimationSpeed, alpha:1}, "ArrowToBurger")
+                    .to("#arrow-down-right", {duration: burgerAnimationSpeed, alpha:1}, "ArrowToBurger")
 
 function animateBurger(){
     if(canYouSeeTheMenu === true){
         burgerAnimationTimeline.play();
     }else{
-        burgerAnimationTimeline.reverse();
-        // xAnimationTimeline.play();
+        // burgerAnimationTimeline.reverse();
+        upArrowToBurgerAnimationTimeline.play();
     }
 }
 

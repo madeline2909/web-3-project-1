@@ -5,14 +5,16 @@ var burgerArrowSpeed = 0.25;
 burgerToArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-90}, "animateBurger")
                     .to("#bottomline", {duration:burgerArrowSpeed, y:-9}, "animateBurger")
                     .to("#topline", {duration:burgerArrowSpeed, y:9}, "animateBurger")
-                    .to("#arrow-left", {duration:burgerArrowSpeed, rotation:55}, "createArrow")
-                    .to("#arrow-right", {duration:burgerArrowSpeed, rotation:-55}, "createArrow")
+                    .to("#arrow-down-left", {duration:burgerArrowSpeed, rotation:55}, "createArrow")
+                    .to("#arrow-down-right", {duration:burgerArrowSpeed, rotation:-55}, "createArrow")
 
-xtoArrowTimeline.to("#burger", {duration:burgerArrowSpeed, rotation:-270}, "animateX")
-                    .to("#bottomline", {duration:burgerArrowSpeed, rotation:180, y:-9}, "animateX")
-                    .to("#topline", {duration:burgerArrowSpeed, rotation:180, y:9}, "animateX")
-                    .to("#arrow-left", {duration:burgerArrowSpeed, rotation:55, alpha:1}, "createArrowUp")
-                    .to("#arrow-right", {duration:burgerArrowSpeed, rotation:-55, alpha:1}, "createArrowUp")
+gsap.set("#arrow-up-left",{transformOrigin:"right center", alpha:0});
+gsap.set("#arrow-up-right",{transformOrigin:"right center", alpha:0});
+
+xtoArrowTimeline.to("#bottomline", {duration:burgerArrowSpeed, rotation:0}, "animateX")
+                    .to("#topline", {duration:burgerArrowSpeed, rotation:0}, "animateX")
+                    .to("#arrow-up-left", {duration:burgerArrowSpeed, rotation:-55, alpha:1}, "createArrowUp")
+                    .to("#arrow-up-right", {duration:burgerArrowSpeed, rotation:55, alpha:1}, "createArrowUp")
 
 $("#burger").on("mouseenter", function(){
     console.log("mouse enter");
