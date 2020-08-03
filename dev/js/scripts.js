@@ -2,7 +2,6 @@
 // @codekit-prepend "tinyslider.js";
 
 // @codekit-prepend "main-nav/burger-animation.js";
-// @codekit-prepend "main-nav/mobile-burger-animation.js";
 // @codekit-prepend "main-nav/nav-global.js";
 // @codekit-prepend "main-nav/burger-mouse-event.js";
 // @codekit-prepend "main-nav/burger-click.js";
