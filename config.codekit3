@@ -376,6 +376,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/piano.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/piano.mp3",
+		"oF": 0
+		},
 	"/deploy/img/travel/contact.jpg": {
 		"ft": 16384,
 		"iS": 30597,
