@@ -20,7 +20,7 @@ gsap.from(".caption", {
 
 var introTimeline = gsap.timeline();
 introTimeline.from("#img1",{
-    yPercent: -20
+    yPercent: -10
 })
 .from("#intro",{
     yPercent: -100,
@@ -31,8 +31,8 @@ ScrollTrigger.create({
     trigger: "#home-intro-img",
     id: "intro",
     markers: true,
-    start: "-100 top",
-    end:"500 200",
+    start: "-30 top",
+    end:"200 100",
     scrub: 1,
     toggleActions: "restart reverse restart none",
     animation: introTimeline
@@ -46,8 +46,8 @@ gsap.from("#culture", {
         trigger: "#home-culture",
         id: "culture",
         // markers: true,
-        start: "top top",
-        end:"50 bottom",
+        start: "-150 top",
+        end:"150 bottom",
         scrub: 1,
         toggleActions: "restart none none none"
     }
@@ -59,7 +59,7 @@ gsap.from("#art", {
         trigger: "#home-art",
         id: "art",
         // markers: true,
-        start: "-100 top",
+        start: "-200 top",
         end:"top bottom",
         scrub: 1,
         toggleActions: "restart none none none"
