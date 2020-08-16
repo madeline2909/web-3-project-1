@@ -4,14 +4,15 @@ $(document).ready(function () {
   console.log($(".slides").hasClass("my-slider"));
   if ($(".slides").hasClass("my-slider")) {
     tns({
+        navPosition: "bottom",
         container: '.my-slider',
         items: 1,
+        mouseDrag: true,
         slideBy: "page",
-        navPosition: "bottom",
         "edgePadding": 50,
         "gutter": 20,
         controls: true,
-        autoplay: true,
+        controlsPosition:"bottom",
         responsive: {
             768: {
               "gutter": 20,
@@ -30,4 +31,5 @@ $(document).ready(function () {
     console.log("No TinySlider found!");
   }
 });
+
 

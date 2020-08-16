@@ -625,26 +625,26 @@ h3 {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.375rem;
   text-align: center;
   padding: 10px;
   transition: 0.25s;
   width: 100px;
+  border: 2px solid #EF87A3;
 }
 @media (min-width: 768px) {
   .button {
-    width: 136px;
-    font-size: 1.5625rem;
-    line-height: 1.875rem;
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
     padding: 15px;
   }
 }
 @media (min-width: 1025px) {
   .button {
-    width: 166px;
-    font-size: 1.875rem;
-    line-height: 2.3125rem;
+    width: 130px;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
     padding: 20px;
   }
 }
@@ -1726,6 +1726,49 @@ footer #copyright {
   .my-slider img {
     height: 450px;
   }
+}
+
+.tns-controls [aria-controls] {
+  background-color: #EF87A3;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  transition: 0.25s;
+  width: 70px;
+  border: 2px solid #EF87A3;
+}
+.tns-controls [aria-controls]:hover, .tns-controls [aria-controls]:active {
+  color: #EF87A3;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #EF87A3;
+}
+
+.controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  background: #333;
+  width: 100%;
+  top: 50%;
+  transform: translatey(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls:focus {
+  outline: none;
+}
+.controls li:hover {
+  cursor: pointer;
 }
 
 /* --------------------------

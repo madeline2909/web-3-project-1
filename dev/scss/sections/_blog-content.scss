@@ -205,7 +205,8 @@
 /* --------------------------
     Blog Slider
  --------------------------*/
-.my-slider{
+ 
+ .my-slider{
     img{
         object-fit: cover;
         object-position: center;
@@ -219,6 +220,85 @@
         }
     }
 }
+.tns-controls [aria-controls]{
+    background-color: $mainpink;
+    color: $white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: rem-calc(16);
+
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 0.25s;
+    width: 70px;
+    border: 2px solid $mainpink;
+    &:hover,
+    &:active {
+        color: $mainpink;
+        background-color: rgba($color: white, $alpha: 0.5);
+        border: 2px solid $mainpink;
+    }
+}
+
+
+.controls {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;    
+    background: #333;
+    width: 100%;    
+    top: 50%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    &:focus {
+        outline: none;
+    }
+
+    li:hover {
+        cursor: pointer;        
+    }
+}
+
+// .card {
+//     text-align: center;    
+//     margin: 0 auto;
+//     max-width: 200px;       
+//     color: #333;
+//     background: white;
+//     border-radius: 5px;
+//     padding-bottom: .75rem;
+//     font-family: sans-serif;
+//     overflow: hidden;
+//     box-shadow: 2px 2px rgba(black, .3);
+//     position: relative;
+//     &:before {
+//         content: '.card';
+//         position: absolute;
+//         bottom: 0;
+//         color: blue;
+//     }
+//     img {
+//         margin-bottom: .25rem;
+//     }
+    
+//     h2 {
+//         margin: 0 0 .25rem;
+//     }
+//     p {
+//         margin: 0;
+//         padding: 0 .5rem;
+//     }
+// }
 /* --------------------------
     Blog Form
  --------------------------*/

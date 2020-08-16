@@ -15,23 +15,23 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: rem-calc(20);
+    font-size: rem-calc(18);
     line-height: rem-calc(22);
 
     text-align: center;
     padding: 10px;
     transition: 0.25s;
     width: 100px;
+    border: 2px solid $mainpink;
     @include md{
-        width: 136px;
-        font-size: rem-calc(25);
-        line-height: rem-calc(30);
+        font-size: rem-calc(20);
+        line-height: rem-calc(25);
         padding: 15px;
     }
     @include lg{
-        width: 166px;
-        font-size: rem-calc(30);
-        line-height: rem-calc(37);
+        width: 130px;
+        font-size: rem-calc(25);
+        line-height: rem-calc(30);
         padding: 20px;
     }
 
