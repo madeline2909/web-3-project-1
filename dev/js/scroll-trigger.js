@@ -146,7 +146,7 @@ ScrollTrigger.create({
     animation: logoTimeline,
     toggleActions: "restart pause reverse none",
     // scrub: 1,
-    markers: true,
+    // markers: true,
     id: "logo"
     }
 );

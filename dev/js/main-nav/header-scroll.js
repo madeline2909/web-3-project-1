@@ -6,7 +6,7 @@ gsap.set("header",{y:-headerHeight})
 var headerTimeline = gsap.timeline()
 headerTimeline.to("header",{duration:0.4,y:0})
 
-//scrolling down makes to header to slide up and down
+//scrolling up top makes header bgc fade out
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -24,19 +24,19 @@ $(window).scroll(function() {
 //animation of header sliding up when scrolling down-sliding dowm when scrolling up
 $(function(){
 
-    var CurrentScroll = 0;
+    var CurrentScroll = 200;
     $(window).scroll(function(){
   
         var NextScroll = $(this).scrollTop();
-  
-        if (NextScroll > CurrentScroll){
-           //write the codes related to down-ward scrolling here
-           headerTimeline.reverse();
-        }
-        else {
-           //write the codes related to upward-scrolling here
-           headerTimeline.play();
-        }
+        var position = jQuery(window).scrollTop();
+        if (position >=250 && NextScroll >= CurrentScroll){
+            //write the codes related to down-ward scrolling here
+            headerTimeline.reverse();
+         }
+         else {
+            //write the codes related to upward-scrolling here
+            headerTimeline.play();
+         }
   
         CurrentScroll = NextScroll;  //Updates current scroll position
     });
