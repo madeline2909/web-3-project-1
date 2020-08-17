@@ -3,115 +3,166 @@
 <!-- @import "global/head.kit" -->
 
 <body>
-     
-    <!-- @import "global/header.kit" -->
 
-    <!-- $non-index-btn = show-nav-button -->
-    <!-- @import "global/main-nav.kit" -->
+  <!-- @import "global/header.kit" -->
 
-    <!-- @import "content/contact-content.kit" -->
-    <!-- @import "global/footer.kit" -->
+  <!-- $non-index-btn = show-nav-button -->
+  <!-- @import "global/main-nav.kit" -->
 
-<script>
+  <!-- @import "content/contact-content.kit" -->
+  <!-- @import "global/footer.kit" -->
+
+  <script>
     function initMap() {
       // The location of cat cafe
-      var akihabara = {lat: 35.701332, lng: 139.771777};
+      var akihabara = {
+        lat: 35.701332,
+        lng: 139.771777
+      };
       // The marker, positioned at cat cafe
-      var marker = new google.maps.Marker({position: akihabara, map: map});
+      var marker = new google.maps.Marker({
+        position: akihabara,
+        map: map
+      });
       // Styles a map in pink mode.
       var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 35.701332, lng: 139.771777},
+        center: {
+          lat: 35.701332,
+          lng: 139.771777
+        },
         zoom: 18,
 
-        styles: [
-          {elementType: 'geometry', stylers: [{color: '#E3E9E8'}]},
-          {elementType: 'labels.text.stroke', stylers: [{color: '#E3E9E8'}]},
-          {elementType: 'labels.text.fill', stylers: [{color: '#093A3E'}]},
+        styles: [{
+            elementType: 'geometry',
+            stylers: [{
+              color: '#E3E9E8'
+            }]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#E3E9E8'
+            }]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#093A3E'
+            }]
+          },
           {
             featureType: 'administrative.locality',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#093A3E'}]
+            stylers: [{
+              color: '#093A3E'
+            }]
           },
           {
             featureType: 'poi',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#093A3E'}]
+            stylers: [{
+              color: '#093A3E'
+            }]
           },
           {
             featureType: 'poi.park',
             elementType: 'geometry',
-            stylers: [{color: '#A2B334'}]
+            stylers: [{
+              color: '#A2B334'
+            }]
           },
           {
             featureType: 'poi.park',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#6b9a76'}]
+            stylers: [{
+              color: '#6b9a76'
+            }]
           },
           {
             featureType: 'road',
             elementType: 'geometry',
-            stylers: [{color: '#EF87A3'}]
+            stylers: [{
+              color: '#EF87A3'
+            }]
           },
           {
             featureType: 'road',
             elementType: 'geometry.stroke',
-            stylers: [{color: '#A2B334'}]
+            stylers: [{
+              color: '#A2B334'
+            }]
           },
           {
             featureType: 'road',
             elementType: 'labels.text.fill',
-            stylers: [   
-            {color: '#027E88'}]
+            stylers: [{
+              color: '#027E88'
+            }]
           },
           {
             featureType: 'road.highway',
             elementType: 'geometry',
-            stylers: [{color: '#59BEB0'}]
+            stylers: [{
+              color: '#59BEB0'
+            }]
           },
           {
             featureType: 'road.highway',
             elementType: 'geometry.stroke',
-            stylers: [{color: '#093A3E'}]
+            stylers: [{
+              color: '#093A3E'
+            }]
           },
           {
             featureType: 'road.highway',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#EF87A3'}]
+            stylers: [{
+              color: '#EF87A3'
+            }]
           },
           {
             featureType: 'transit',
             elementType: 'geometry',
-            stylers: [{color: '#2f3948'}]
+            stylers: [{
+              color: '#2f3948'
+            }]
           },
           {
             featureType: 'transit.station',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#027E88'}]
+            stylers: [{
+              color: '#027E88'
+            }]
           },
           {
             featureType: 'water',
             elementType: 'geometry',
-            stylers: [{color: '#027E88'}]
+            stylers: [{
+              color: '#027E88'
+            }]
           },
           {
             featureType: 'water',
             elementType: 'labels.text.fill',
-            stylers: [{color: '#E3E9E8'}]
+            stylers: [{
+              color: '#E3E9E8'
+            }]
           },
           {
             featureType: 'water',
             elementType: 'labels.text.stroke',
-            stylers: [{color: '#093A3E'}]
+            stylers: [{
+              color: '#093A3E'
+            }]
           }
         ]
       });
     }
-    
   </script>
-    <script async defer
+  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaGf04AbpMhxuc1NOu9Qjcja62Ojl0Cac&callback=initMap">
-    </script>
-    <!-- @import "global/scripts.kit" -->
+  </script>
+  <!-- @import "global/scripts.kit" -->
 </body>
 
 </html>
