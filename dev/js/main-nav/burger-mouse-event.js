@@ -9,7 +9,7 @@ $("#burger").on("mouseenter", function(){
     if(canYouSeeTheMenu === false){
         burgerAnimationTimeline.play("burgerToDownArrow");
     }else{
-        burgerAnimationTimeline.play("XtoUpArrow");
+        burgerAnimationTimeline.play("XToUpArrow");
     }
 });
 $("#burger").on("mouseleave", function(){
@@ -17,7 +17,7 @@ $("#burger").on("mouseleave", function(){
     if(canYouSeeTheMenu === false){
         burgerAnimationTimeline.reverse("burgerToDownArrowReverse");
     }else{
-        burgerAnimationTimeline.reverse("XtoUpArrowReverse");
+        burgerAnimationTimeline.reverse("XToUpArrowReverse");
     }
 }
 );
