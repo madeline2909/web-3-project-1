@@ -699,27 +699,52 @@ textarea {
 
 #main-nav {
   background-color: #F0DBDA;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
   z-index: 90;
 }
+#main-nav img {
+  object-fit: cover;
+  object-position: center;
+  height: 80%;
+  width: 20%;
+}
+@media (min-width: 768px) {
+  #main-nav img {
+    height: 100%;
+    width: 30%;
+    margin-left: 120px;
+  }
+}
+#main-nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
 #main-nav ul {
   display: grid;
+  margin-right: 60px;
   grid-gap: 30px;
+  text-align: left;
 }
 #main-nav ul li {
-  text-align: right;
+  width: 100%;
 }
 #main-nav ul li button {
-  color: #ffffff;
+  color: #EF87A3;
   background-color: transparent;
   border: none;
   transition: 0.25s;
+  padding: 0;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -740,11 +765,10 @@ textarea {
 }
 #main-nav ul li button:hover, #main-nav ul li button:active {
   color: #A2B334;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #A2B334;
+  font-style: italic;
 }
 #main-nav ul li a:link, #main-nav ul li a:visited {
-  color: #ffffff;
+  color: #EF87A3;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -767,8 +791,7 @@ textarea {
 }
 #main-nav ul li a:link:hover, #main-nav ul li a:link:active, #main-nav ul li a:visited:hover, #main-nav ul li a:visited:active {
   color: #A2B334;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #A2B334;
+  font-style: italic;
 }
 
 .controls li img {
