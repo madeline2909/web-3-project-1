@@ -4,391 +4,404 @@
 /* --------------------------
     Blog Hero
  --------------------------*/
-#blog-hero-container{
+#blog-hero-container {
     color: $verygreen;
-    @include md{
+
+    @include md {
         margin-right: 60px;
     }
-    @include xl{
+
+    @include xl {
         margin-right: 0;
     }
-    #blog-hero{
-        position: relative;
+
+    #blog-hero {
         background-image: url('../img/blog/blog-hero.jpg');
         background-position: center;
         background-size: cover;
-        width: 100%;
         height: 65vh;
-        @include md{
+        position: relative;
+        width: 100%;
+
+        @include md {
             height: 500px;
         }
-        @include lg{
-            height: 620px;
+
+        @include lg {
             background-position-y: -150px;
+            height: 620px;
         }
-        .japn{
-            @include md{
-                top: 180px;
+
+        .japn {
+            @include md {
                 right: -25px;
+                top: 180px;
             }
-            @include lg{
+
+            @include lg {
                 top: 250px;
             }
-            @include xl{
-        
-            }
+
+            @include xl {}
         }
     }
-    h4{
-        @include md{
+
+    h4 {
+        @include md {
             width: 400px;
         }
-        @include lg{
+
+        @include lg {
             width: 370px;
         }
-        
     }
 }
+
 /* --------------------------
     Blog Article
  --------------------------*/
-#blog-content-1{
-    color: $darkblue;
+#blog-content-1 {
     background-color: $sky;
-   
-    img{
+    color: $darkblue;
+
+    img {
+        height: 100%;
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 100%;
-        @include md{
+
+        @include md {
             height: unset;
         }
     }
-    >div{
-        @include md{
+
+    >div {
+        @include md {
             display: grid;
-            grid-template-columns: repeat(2, auto);
             grid-gap: 20px;
-            grid-template-areas: 
-            "i1 t1"
-            "i1 p1"
-            "i1 i2"
-            "p2 i2";
+            grid-template-areas: "i1 t1"
+                "i1 p1"
+                "i1 i2"
+                "p2 i2";
+            grid-template-columns: repeat(2, auto);
         }
-        @include lg{
-            padding: 0 122px 50vh;
+
+        @include lg {
             grid-gap: unset;
+            grid-template-areas: "i1 . t1 t1"
+                "i1 . . p1"
+                "i1 . . i2"
+                "p2 . . i2";
             grid-template-columns: auto 5% 5% auto;
-            grid-template-areas: 
-            "i1 . t1 t1"
-            "i1 . . p1"
-            "i1 . . i2"
-            "p2 . . i2";
+            padding: 0 122px 50vh;
         }
     }
-    p{
+
+    p {
         padding: 20px 0;
-        @include md{
+
+        @include md {
             padding: 30px 0;
         }
     }
-    #blog-i1{
+
+    #blog-i1 {
         grid-area: i1;
     }
-    #blog-i2{
+
+    #blog-i2 {
         grid-area: i2;
     }
-    #blog-p1{
+
+    #blog-p1 {
         grid-area: p1;
     }
-    #blog-p2{
+
+    #blog-p2 {
         grid-area: p2;
-        @include md{
-            text-align: right;
+
+        @include md {
             margin-left: 30px;
+            text-align: right;
         }
-        @include lg{
-            text-align: left;
+
+        @include lg {
             margin-left: 0;
+            text-align: left;
         }
     }
-    #blog-title{
-        grid-area: t1;
+
+    #blog-title {
         font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
         font-size: rem-calc(20);
+        font-weight: 700;
+        grid-area: t1;
         line-height: rem-calc(30);
-        text-align: center;
         padding: 0 30px 20px;
-        @include md{
-            text-align: left;
-            padding: 0;
-            width: 70%;
+        text-align: center;
+
+        @include md {
             font-size: rem-calc(25);
             line-height: rem-calc(35);
+            padding: 0;
+            text-align: left;
+            width: 70%;
         }
     }
-    
-    
 }
-#blog-content-2{
+
+#blog-content-2 {
     color: $darkblue;
-    @include lg{
+
+    @include lg {
         margin-top: -50vh;
     }
-    
-    #pusheen{
-        @include md{
-            display: flex;
+
+    #pusheen {
+        @include md {
             align-items: center;
+            display: flex;
             justify-content: space-between;
             padding: 10px;
         }
-        li{
+
+        li {
             margin: 10px;
-            img{
+
+            img {
                 object-fit: cover;
                 object-position: center;
                 width: 100%;
             }
         }
     }
-    p{
+
+    p {
         padding: 40px 0;
-        @include md{
+
+        @include md {
             padding: 50px 0;
         }
     }
-    #arts{
-        @include md{
-            display: flex;
+
+    #arts {
+        @include md {
             align-items: flex-start;
+            display: flex;
             justify-content: space-between;
         }
-        @include lg{
+
+        @include lg {
             margin-left: 202px;
         }
-        li{
-            img{
+
+        li {
+            img {
+                height: 100%;
+                margin-bottom: 10px;
                 object-fit: cover;
                 object-position: center;
                 width: 100%;
-                height: 100%;
-                margin-bottom: 10px;
             }
         }
-        :nth-child(1){
-            img{
-                @include lg{
+
+        :nth-child(1) {
+            img {
+                @include lg {
                     height: 428px;
                 }
             }
         }
-        :nth-child(2){
-            img{
-                @include md{
-                    width: 60vw;
+
+        :nth-child(2) {
+            img {
+                @include md {
                     height: 590px;
                     margin-left: 20px;
+                    width: 60vw;
                 }
-                @include lg{
-                    width: 55vw;
+
+                @include lg {
                     height: 620px;
+                    width: 55vw;
                 }
             }
-            
         }
     }
-
 }
+
 /* --------------------------
     Blog Slider
  --------------------------*/
- 
- .my-slider{
-    img{
+.my-slider {
+    img {
+        height: 350px;
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 350px;
-        @include md{
+
+        @include md {
             height: 500px;
         }
-        @include lg{
+
+        @include lg {
             height: 450px;
         }
     }
 }
-.tns-controls [aria-controls]{
+
+.tns-controls [aria-controls] {
     background-color: $mainpink;
-    color: $white;
-
-    border: none;
+    border: 2px solid $mainpink;
     border-radius: 10px;
-
+    color: $white;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     font-size: rem-calc(16);
-
-    text-align: center;
-    padding: 10px;
+    font-weight: 400;
     margin-top: 20px;
+    padding: 10px;
+    text-align: center;
     transition: 0.25s;
     width: 70px;
-    border: 2px solid $mainpink;
+
     &:hover,
     &:active {
-        color: $mainpink;
         background-color: rgba($color: white, $alpha: 0.5);
         border: 2px solid $mainpink;
+        color: $mainpink;
     }
 }
 
-
 .controls {
+    align-items: center;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
     position: absolute;
-    left: 0;    
-    background: #333;
-    width: 100%;    
     top: 50%;
     transform: translatey(-50%);
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
+    width: 100%;
+
     &:focus {
         outline: none;
     }
 
     li:hover {
-        cursor: pointer;        
+        cursor: pointer;
     }
 }
 
-// .card {
-//     text-align: center;    
-//     margin: 0 auto;
-//     max-width: 200px;       
-//     color: #333;
-//     background: white;
-//     border-radius: 5px;
-//     padding-bottom: .75rem;
-//     font-family: sans-serif;
-//     overflow: hidden;
-//     box-shadow: 2px 2px rgba(black, .3);
-//     position: relative;
-//     &:before {
-//         content: '.card';
-//         position: absolute;
-//         bottom: 0;
-//         color: blue;
-//     }
-//     img {
-//         margin-bottom: .25rem;
-//     }
-    
-//     h2 {
-//         margin: 0 0 .25rem;
-//     }
-//     p {
-//         margin: 0;
-//         padding: 0 .5rem;
-//     }
-// }
 /* --------------------------
     Blog Form
  --------------------------*/
- #blog-form-container{
-     background-color: $blush;
-     padding: 50px 0;
-     @include md{
+#blog-form-container {
+    background-color: $blush;
+    padding: 50px 0;
+
+    @include md {
         padding: 60px 0;
-     }
-     @include lg{
+    }
+
+    @include lg {
         padding: 70px 0;
-     }
-     h4{
-         padding: 0;
-         color: $darkblue;
-     }
-     form{
+    }
+
+    h4 {
+        color: $darkblue;
+        padding: 0;
+    }
+
+    form {
         display: grid;
         gap: 20px;
         padding-top: 25px;
-        @include md{
+
+        @include md {
+            grid-template-areas: "name email"
+                "subject subject"
+                "cmt cmt"
+                "submit submit";
             grid-template-columns: repeat(2, auto);
-            grid-template-areas: 
-            "name email"
-            "subject subject"
-            "cmt cmt"
-            "submit submit";
         }
-        section{
+
+        section {
             background-color: white;
             border-radius: 10px;
             padding: 0 5%;
-            input, textarea{
+
+            input,
+            textarea {
                 font-family: 'Space Mono', monospace;
+                font-size: rem-calc(16);
                 font-weight: 400;
                 line-height: rem-calc(25);
-                font-size: rem-calc(16);
-                width: 100%;
                 padding: 20px 0;
+                width: 100%;
             }
+
             ::placeholder {
                 /* Chrome, Firefox, Opera, Safari 10.1+ */
                 color: $mainpink;
                 opacity: 1;
             }
-    
+
             :-ms-input-placeholder {
                 /* Internet Explorer 10-11 */
                 color: $mainpink;
             }
-    
+
             ::-ms-input-placeholder {
                 /* Microsoft Edge */
                 color: $mainpink;
             }
         }
-        section:nth-child(1){
-            @include md{
+
+        section:nth-child(1) {
+            @include md {
                 grid-area: name;
             }
         }
-        section:nth-child(2){
-            @include md{
+
+        section:nth-child(2) {
+            @include md {
                 grid-area: email;
             }
         }
-        section:nth-child(3){
-            @include md{
+
+        section:nth-child(3) {
+            @include md {
                 grid-area: subject;
                 padding: 0 2%;
             }
-            @include lg{
+
+            @include lg {
                 padding: 0 3%;
             }
         }
-        section:nth-child(4){
-            @include md{
+
+        section:nth-child(4) {
+            @include md {
                 grid-area: cmt;
                 padding: 0 2%;
             }
-            @include lg{
+
+            @include lg {
                 padding: 0 3%;
             }
         }
-        div{
+
+        div {
             display: flex;
             justify-content: center;
-            @include md{
+
+            @include md {
                 grid-area: submit;
             }
         }
-     }
- }
+    }
+}

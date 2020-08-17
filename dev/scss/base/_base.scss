@@ -1,78 +1,97 @@
 /* =============
     Base
 ============= */
-ul{
-    padding: 0;
+ul {
     margin: 0;
-    li{
+    padding: 0;
+
+    li {
         list-style: none;
     }
 }
-a:link, a:visited{
+
+a:link,
+a:visited {
     text-decoration: none;
     transition: 0.25s;
 }
-input, button, textarea{
+
+input,
+button,
+textarea {
     border: none;
 }
 
-.show-for-md{
+.show-for-md {
     display: none;
-    @include md{
+
+    @include md {
         display: block;
     }
 }
 
-.show-for-lg{
+.show-for-lg {
     display: none;
-    @include lg{
+
+    @include lg {
         display: block;
     }
 }
 
-.show-for-xl{
+.show-for-xl {
     display: none;
-    @include xl{
+
+    @include xl {
         display: block;
     }
 }
-.hero-container{
-    @include xl{
+
+.hero-container {
+    @include xl {
         display: grid;
         grid-template-areas: ". hero .";
         grid-template-columns: auto 1440px auto;
     }
-    >div{
+
+    >div {
         grid-area: hero;
     }
 }
-.grid-container{
+
+.grid-container {
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". container .";
-    @include xl{
+    grid-template-columns: 15px auto 15px;
+
+    @include xl {
         grid-template-columns: auto 1440px auto;
     }
-    >div{
+
+    >div {
         grid-area: container;
     }
 }
-.heading-spacing{
+
+.heading-spacing {
     margin: 0 15px;
-    @include md{
+
+    @include md {
         margin: 0 120px;
     }
-    @include lg{
+
+    @include lg {
         margin: 0 202px;
     }
 }
-.content-spacing{
+
+.content-spacing {
     margin: 50px 0;
-    @include md{
+
+    @include md {
         margin: 60px 0;
     }
-    @include lg{
+
+    @include lg {
         margin: 70px 0;
     }
 }
-

@@ -3,31 +3,38 @@ var canYouSeeTheMenu = false;
 
 var navHeight = $("#main-nav").outerHeight();
 //move the nav off screen on the Y axis
-gsap.set("#main-nav",{y:-navHeight})
+gsap.set("#main-nav", {
+    y: -navHeight
+})
 
 
-var mainNavTimeline = gsap.timeline({paused:true})
-mainNavTimeline.to("#main-nav",{duration:0.5,y:0})
+var mainNavTimeline = gsap.timeline({
+    paused: true
+})
+mainNavTimeline.to("#main-nav", {
+    duration: 0.5,
+    y: 0
+})
 
-function hideShowMainNav(){
+function hideShowMainNav() {
     //console.log("hide or show nav");
     //toggles the css display property
 
-    if(canYouSeeTheMenu === false){
+    if (canYouSeeTheMenu === false) {
         //console.log("show me the menu");
         //reset it back to true so menu will go away
-        
+
         burgerAnimationTimeline.play("downArrowToX");
-        
+
         //play the main nav animation into view; pull it down
         mainNavTimeline.play();
         canYouSeeTheMenu = true;
-        $('header').css("backgroundColor","unset");
-    }else{
+        $('header').css("backgroundColor", "unset");
+    } else {
         // console.log("hide the menu");
         //reset it back to false so menu will be back
         burgerAnimationTimeline.play("upArrowToBurger");
-        
+
         //reverse the animation of main nav out of view; push it up
         mainNavTimeline.reverse();
         canYouSeeTheMenu = false;
@@ -35,8 +42,8 @@ function hideShowMainNav(){
 }
 
 var menuBackground = document.querySelector("#main-nav");
-window.onclick = function(event){
-    if(event.target == menuBackground){
+window.onclick = function (event) {
+    if (event.target == menuBackground) {
         hideShowMainNav();
     }
 }

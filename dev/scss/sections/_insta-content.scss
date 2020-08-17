@@ -4,90 +4,108 @@
 /* --------------------------
     Insta Header
  --------------------------*/
- #insta-hero-container{
-    position: relative;
-    color: $sun;
+#insta-hero-container {
     background-color: $sky;
-    @include md{
+    color: $sun;
+    position: relative;
+
+    @include md {
         margin-right: 60px;
     }
-    @include xl{
-        position: unset;
+
+    @include xl {
         margin-right: 0;
+        position: unset;
     }
-    >div{
-        @include lg{
+
+    >div {
+        @include lg {
+            margin-left: 120px;
             margin-right: 60px;
-            margin-left: 120px;  
         }
-        @include xl{
+
+        @include xl {
+            margin-left: 0px;
             margin-right: 0px;
-            margin-left: 0px; 
         }
     }
-    #insta-hero{
+
+    #insta-hero {
         background-image: url('../img/celebs/celeb-hero.jpeg');
         background-position: center;
         background-size: cover;
-        width: auto;
         height: 65vh;
-        @include md{
+        width: auto;
+
+        @include md {
             height: 500px;
         }
-        @include lg{
+
+        @include lg {
             height: 620px;
         }
-        @include xl{
+
+        @include xl {
             position: relative;
         }
-        >div{
+
+        >div {
             margin: 0 15px;
-            @include md{
+
+            @include md {
                 margin: 0 120px;
             }
-            @include lg{
+
+            @include lg {
                 margin: 0 70px;
             }
-            @include xl{
+
+            @include xl {
                 margin: 0 202px;
             }
         }
-        .japn{
-            @include md{
-                top: 180px;
+
+        .japn {
+            @include md {
                 right: -25px;
+                top: 180px;
             }
-            @include lg{
+
+            @include lg {
                 top: 250px;
             }
-            @include xl{
-            }
+
+            @include xl {}
         }
     }
-    #insta-caption{
+
+    #insta-caption {
         display: flex;
         justify-content: flex-end;
-        
-        h4{
+
+        h4 {
             color: $ocean;
-            text-align: right;
             margin: 0 15px;
+            text-align: right;
             width: 300px;
-            @include md{
+
+            @include md {
                 margin: 0 60px;
                 width: 400px;
             }
-            @include lg{
+
+            @include lg {
                 margin: 0;
                 width: 370px;
             }
-            @include xl{
+
+            @include xl {
                 margin: 0 202px;
             }
-            
         }
     }
 }
+
 /* --------------------------
     Insta gallery
  --------------------------*/

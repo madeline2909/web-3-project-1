@@ -1,53 +1,53 @@
 /* =============
     Buttons
 ============= */
-.button{
-    background-color: $mainpink;
-    color: $white;
-
-    border: none;
-    border-radius: 10px;
-
-    display: flex;
+.button {
     align-items: center;
-    justify-content: center;
-
+    background-color: $mainpink;
+    border: 2px solid $mainpink;
+    border-radius: 10px;
+    color: $white;
     cursor: pointer;
+    display: flex;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     font-size: rem-calc(18);
+    font-weight: 400;
+    justify-content: center;
     line-height: rem-calc(22);
-
-    text-align: center;
     padding: 10px;
+    text-align: center;
     transition: 0.25s;
     width: 100px;
-    border: 2px solid $mainpink;
-    @include md{
+
+    @include md {
         font-size: rem-calc(20);
         line-height: rem-calc(25);
         padding: 15px;
     }
-    @include lg{
-        width: 130px;
+
+    @include lg {
         font-size: rem-calc(25);
         line-height: rem-calc(30);
         padding: 20px;
+        width: 130px;
     }
 
     &:hover,
     &:active {
-        color: $mainpink;
         background-color: rgba($color: white, $alpha: 0.5);
         border: 2px solid $mainpink;
+        color: $mainpink;
     }
 }
-.button-container{
+
+.button-container {
     padding-bottom: 50px;
-    @include md{
+
+    @include md {
         padding-bottom: 60px;
     }
-    @include lg{
+
+    @include lg {
         padding-bottom: 70px;
     }
 }

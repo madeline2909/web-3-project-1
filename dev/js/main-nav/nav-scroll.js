@@ -1,10 +1,15 @@
 gsap.registerPlugin(ScrollToPlugin);
 
-var scrollItems = ["#home-culture","#home-art"];
+var scrollItems = ["#home-culture", "#home-art"];
 
-function scrollIndex(){
+function scrollIndex() {
     // gsap.to(window, {duration: 1, scrollTo:{y: scrollItems[$('#main-nav li button').index(this)], offsetY:40}});
-    gsap.to(window, {duration: 1, scrollTo:{y: scrollItems[$('#main-nav li button').index(this)]}});
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: scrollItems[$('#main-nav li button').index(this)]
+        }
+    });
 }
 
 

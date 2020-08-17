@@ -4,350 +4,416 @@
 /* --------------------------
     Contact Hero
  --------------------------*/
-#contact-hero-container{
-    color: $bluegreen;
+#contact-hero-container {
     background-color: $blush;
-    @include md{
+    color: $bluegreen;
+
+    @include md {
         margin-left: 60px;
     }
-    @include xl{
+
+    @include xl {
         margin-left: 0;
     }
-    #contact-hero{
-        position: relative;
+
+    #contact-hero {
         background-image: url('../img/travel/travel-hero.jpeg');
         background-position: center;
         background-size: cover;
-        width: 100%;
         height: 65vh;
-        @include md{
+        position: relative;
+        width: 100%;
+
+        @include md {
             height: 500px;
         }
-        @include lg{
+
+        @include lg {
             height: 620px;
         }
-        .japn{
-            @include md{
-                top: 180px;
+
+        .japn {
+            @include md {
                 left: -25px;
+                top: 180px;
             }
-            @include lg{
+
+            @include lg {
                 top: 250px;
             }
-            @include xl{
-        
-            }
+
+            @include xl {}
         }
-        >div{
-            @include md{
+
+        >div {
+            @include md {
                 margin: 0 60px;
             }
-            @include lg{
+
+            @include lg {
                 margin: 0 142px;
             }
-            h2{
+
+            h2 {
                 color: $grayocean;
                 width: 512px;
             }
         }
     }
-    #caption-container{
+
+    #caption-container {
         display: flex;
         justify-content: flex-end;
-        h4{
-            @include md{
+
+        h4 {
+            @include md {
                 text-align: right;
                 width: 450px;
             }
-            @include lg{
+
+            @include lg {
                 width: 420px;
             }
         }
     }
 }
+
 /* --------------------------
     Contact Info
  --------------------------*/
-#contact-info{
-    >div{
-        display: flex;
+#contact-info {
+    >div {
         align-items: center;
-        @include md{
+        display: flex;
+
+        @include md {
             justify-content: center;
         }
-        @include lg{
+
+        @include lg {
             justify-content: flex-end;
         }
-        @include xl{
+
+        @include xl {
             justify-content: center;
         }
     }
-    ul{
+
+    ul {
         margin: 0 20px;
-        @include md{
+
+        @include md {
             display: flex;
             justify-content: center;
         }
-        @include lg{
+
+        @include lg {
             margin: 0;
         }
-        li{
-            div{
-                height: 100%;
-                width: 100%;
-                display: flex;
+
+        li {
+            div {
                 align-items: center;
-                justify-content: center;
                 background-color: $mainpink;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                width: 100%;
             }
         }
-        :nth-child(1){
-            p{
-                border-radius: 10px 10px 0 0;
+
+        :nth-child(1) {
+            p {
                 border: 2px solid $mainpink;
+                border-radius: 10px 10px 0 0;
                 color: $mainpink;
                 padding: 20px 15px 20px 30px;
                 width: auto;
-                @include md{
+
+                @include md {
                     border-radius: 10px 0 0 10px;
                 }
-                @include lg{
+
+                @include lg {
                     max-width: 360px;
                 }
             }
         }
-        
-        :nth-child(2){
-            div{
+
+        :nth-child(2) {
+            div {
                 background-color: $mainpink;
             }
-            a:link, a:visited{
+
+            a:link,
+            a:visited {
                 color: white;
             }
 
             a:hover,
-            a:active{
+            a:active {
                 color: $blush;
             }
         }
-        :nth-child(3){
-            div{
-                border-radius: 0 0 10px 10px ;
+
+        :nth-child(3) {
+            div {
                 background-color: $grayocean;
-                @include md{
+                border-radius: 0 0 10px 10px;
+
+                @include md {
                     border-radius: 0px 10px 10px 0px;
                 }
-                @include lg{
+
+                @include lg {
                     border-radius: 0;
                 }
-                h3{
-                    @include md{
+
+                h3 {
+                    @include md {
                         min-width: 130px;
                     }
                 }
             }
         }
-        
-        h3{
-            text-align: center;
-            height: auto;
+
+        h3 {
             color: white;
+            height: auto;
             padding: 20px;
-            @include md{
+            text-align: center;
+
+            @include md {
                 padding: 0 30px;
             }
-            @include lg{
+
+            @include lg {
                 padding: 0 40px;
             }
         }
     }
 }
+
 /* --------------------------
     Contact Map
  --------------------------*/
-#map-container{
+#map-container {
     background-color: $blush;
-    #map{
-        width: 100%;
+
+    #map {
         height: 500px;
+        width: 100%;
     }
 }
+
 /* --------------------------
     Contact Recommendation 1
  --------------------------*/
- #contact-recom-1{
+#contact-recom-1 {
     overflow: hidden;
-    div{
-        >div{
+
+    div {
+        >div {
+            height: 72vh;
             margin-top: 0;
             position: relative;
-            height: 72vh;
-            @include md{
+
+            @include md {
                 height: auto;
             }
-            h2{
-                z-index: 20;
+
+            h2 {
+                bottom: -5px;
+                color: $bluegreen;
                 position: absolute;
                 right: -14px;
-                bottom: -5px;
                 text-align: right;
-                color: $bluegreen;
-                @include md{
+                z-index: 20;
+
+                @include md {
                     bottom: 0;
                     right: -20px;
                 }
-                @include lg{
-                }
+
+                @include lg {}
             }
-            #contact-rectangle{
-                z-index: -3;
-                position: absolute;
+
+            #contact-rectangle {
                 background-color: $blush;
-                width: 70vw;
                 height: 72vh;
-                @include md{
-                    width: 100vw;
+                position: absolute;
+                width: 70vw;
+                z-index: -3;
+
+                @include md {
                     height: 360px;
+                    width: 100vw;
                 }
-                @include lg{
+
+                @include lg {
                     height: 415px;
                     width: 75vw;
                 }
             }
-            img{
-                width: 100%;
+
+            img {
                 object-fit: cover;
                 object-position: center;
-                @include md{
-                    width: 460px;
+                width: 100%;
+
+                @include md {
                     margin: 0 120px;
+                    width: 460px;
                 }
-                @include lg{
+
+                @include lg {
                     margin: 0 202px;
                 }
             }
         }
-        ul{
+
+        ul {
             display: grid;
-            grid-template-columns: 60% auto;
-            grid-template-areas:
-            "p1 p1"
-            "card icons";
             grid-gap: 20px;
-            @include md{
+            grid-template-areas: "p1 p1"
+                "card icons";
+            grid-template-columns: 60% auto;
+
+            @include md {
+                align-items: center;
+                display: flex;
                 grid-template-areas: unset;
                 grid-template-columns: unset;
-                display: flex;
-                align-items: center;
             }
-            
-            #travel-card{
-                grid-area: card;
+
+            #travel-card {
                 background-color: $bluegreen;
                 border-radius: 10px;
-                transition: 0.25s;
-                text-align: center;
+                grid-area: card;
                 padding: 15px 20px;
+                text-align: center;
+                transition: 0.25s;
                 width: 100px;
-                @include md{
-                    margin: 0 20px;
+
+                @include md {
+                    align-items: center;
                     display: flex;
                     grid-area: unset;
-                    align-items: center;
                     justify-content: center;
+                    margin: 0 20px;
                     padding: 20px 25px;
                 }
-                @include lg{
+
+                @include lg {
                     margin: 0 38px;
                 }
-                P{
+
+                P {
                     color: white;
                 }
             }
-            #p1{
+
+            #p1 {
                 grid-area: p1;
-                @include md{
+
+                @include md {
                     grid-area: unset;
                 }
-                p{
+
+                p {
                     color: $bluegreen;
                 }
             }
-            #travel-card-container{
-                display: flex;
+
+            #travel-card-container {
                 align-items: center;
+                display: flex;
                 justify-content: flex-end;
             }
-            #icons-container{
+
+            #icons-container {
                 grid-area: icons;
-                @include md{
+
+                @include md {
                     grid-area: unset;
                 }
-                ul{
+
+                ul {
                     display: grid;
-                    text-align: center;
-                    grid-template-areas: 
-                    "insta"
-                    "trip"
-                    "youtube";
+                    grid-template-areas: "insta"
+                        "trip"
+                        "youtube";
                     height: 120px;
-                    @include md{
-                        height: 180px; 
+                    text-align: center;
+
+                    @include md {
+                        height: 180px;
                     }
-                    @include lg{
-                        height: 190px;  
+
+                    @include lg {
+                        height: 190px;
                     }
-                    li{
-                        font-size: rem-calc(30); 
+
+                    li {
+                        font-size: rem-calc(30);
+
                         a:link,
                         a:visited {
                             color: $mainpink;
-        
+
                             &:hover,
                             &:active {
                                 color: $bluegreen;
                             }
                         }
                     }
-                    :nth-child(1){
+
+                    :nth-child(1) {
                         grid-row: insta;
                     }
-                    :nth-child(2){
+
+                    :nth-child(2) {
                         grid-row: trip;
                     }
-                    :nth-child(3){
+
+                    :nth-child(3) {
                         grid-row: youtube;
                     }
                 }
             }
         }
     }
-    
-    
 }
+
 /* --------------------------
     Contact Recommendation 2
  --------------------------*/
-#contact-recom-2{
+#contact-recom-2 {
     color: $bluegreen;
     margin-bottom: 50px;
-    @include md{
+
+    @include md {
         margin-bottom: 60px;
     }
-    @include lg{
+
+    @include lg {
         margin-bottom: 70px;
     }
-    div{
-        >p{
+
+    div {
+        >p {
             margin-bottom: 20px;
         }
-        div{
+
+        div {
             display: grid;
             grid-gap: 20px;
-            ul{
+
+            ul {
                 display: grid;
                 grid-template-columns: 30% auto;
-                @include md{
+
+                @include md {
                     grid-template-columns: 20% auto;
                 }
             }

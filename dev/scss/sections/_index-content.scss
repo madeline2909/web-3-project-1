@@ -4,173 +4,202 @@
 /* --------------------------
     Index Hero
  --------------------------*/
- #home-hero-container{
+#home-hero-container {
     height: auto;
-    @include md{
+
+    @include md {
         margin-right: 60px;
     }
-    @include xl{
+
+    @include xl {
         margin-right: 0;
     }
 }
 
- #home-hero{
-    z-index: -1;
-    position: relative;
+#home-hero {
     background-image: url('../img/home/home_hero.jpg');
     background-position: center;
     background-size: cover;
-    width: 100%;
     height: 100%;
-    @include md{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+
+    @include md {
         background-position-x: 0px;
     }
-    @include lg{
-    }
-    .japn{
+
+    @include lg {}
+
+    .japn {
         top: 250px;
-        @include md{
+
+        @include md {
             right: -25px;
         }
-        @include lg{
+
+        @include lg {
             top: 270px;
         }
-        @include xl{
 
-        }
+        @include xl {}
     }
-    h1{
+
+    h1 {
         color: $bluegreen;
-        padding-top: 290px;
         margin-bottom: -10px;
-        @include md{
-            padding-top: 200px;
+        padding-top: 290px;
+
+        @include md {
             margin-bottom: -20px;
+            padding-top: 200px;
         }
-        @include lg{
+
+        @include lg {
             margin-bottom: -25px;
         }
-    }    
+    }
 }
+
 /* --------------------------
     Index intro
  --------------------------*/
-#home-intro{
+#home-intro {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0 60px;
-    @include md{
-        margin-right: 60px;
+
+    @include md {
         justify-content: flex-end;
+        margin-right: 60px;
     }
-    @include xl{
+
+    @include xl {
         margin: 0;
     }
-    p{
+
+    p {
+        color: $mainpink;
         font-family: 'Space Mono', monospace;
         font-size: rem-calc(23);
         line-height: rem-calc(30);
-        color: $mainpink;
         text-align: center;
-        @include md{
-            text-align: right;
+
+        @include md {
             font-size: rem-calc(25);
             line-height: rem-calc(35);
+            text-align: right;
             width: 370px;
         }
-        
-        
     }
 }
-#home-intro-img{
+
+#home-intro-img {
     margin-left: 30%;
-    li{
+
+    li {
         img {
+            height: 100%;
             object-fit: cover;
             object-position: center;
-            height: 100%;
             width: 100%;
         }
     }
-    @include md{
-        margin-left: 0;
+
+    @include md {
         display: grid;
         grid-gap: 15px;
+        grid-template-areas: ". . home2"
+            ". home1 home2"
+            ". home1 .";
         grid-template-columns: auto repeat(2, 40%);
         grid-template-rows: 20px 450px 20px;
-        grid-template-areas: 
-        ". . home2"
-        ". home1 home2"
-        ". home1 .";
+        margin-left: 0;
     }
-    @include lg{
+
+    @include lg {
         grid-gap: 20px;
+        grid-template-areas: ". . home2"
+            ". home1 home2"
+            ". home1 .";
         grid-template-columns: 25% 30% auto;
         grid-template-rows: 20px 550px 20px;
-        grid-template-areas: 
-        ". . home2"
-        ". home1 home2"
-        ". home1 .";
     }
-    @include xl{
+
+    @include xl {
         grid-template-columns: 20% 35% auto;
     }
-    :nth-child(1){
+
+    :nth-child(1) {
         grid-area: home1;
     }
-    :nth-child(2){
+
+    :nth-child(2) {
         grid-area: home2;
     }
 }
-#intro{
+
+#intro {
     color: rgba($color: $sun, $alpha: 0.75);
     margin-top: -50px;
-    @include md{
+
+    @include md {
         margin-top: -100px;
     }
-    @include lg{
+
+    @include lg {
         margin-top: -120px;
     }
 }
-#home-intro-p{
+
+#home-intro-p {
     margin-top: 25px;
-    @include md{
-        text-align: left;
+
+    @include md {
         display: grid;
-        grid-template-columns: 80px repeat(2, auto) 80px;
         grid-gap: 15px;
         grid-template-areas: ". p1 p2 .";
+        grid-template-columns: 80px repeat(2, auto) 80px;
+        text-align: left;
     }
-    @include lg{
+
+    @include lg {
         display: grid;
-        grid-template-columns: 20% repeat(2, auto) 5%;
         grid-gap: 20px;
         grid-template-areas: ". p1 p2 .";
+        grid-template-columns: 20% repeat(2, auto) 5%;
     }
-    p{
-        padding: 0 25px;
+
+    p {
         color: $bluegreen;
-        @include md{
+        padding: 0 25px;
+
+        @include md {
             padding: 0;
         }
     }
-    :nth-child(1){
+
+    :nth-child(1) {
         grid-area: p1;
     }
-    :nth-child(2){
+
+    :nth-child(2) {
+        margin: 50px 0 45px;
+
         img {
+            height: 50vh;
             object-fit: cover;
             object-position: center;
-            height: 50vh;
             width: 100%;
         }
-        margin: 50px 0 45px;
-       @include md{
-           display: none;
-       }
+
+        @include md {
+            display: none;
+        }
     }
-    :nth-child(3){
+
+    :nth-child(3) {
         grid-area: p2;
     }
 }
@@ -178,158 +207,182 @@
 /* --------------------------
     Index culture
  --------------------------*/
-#home-culture{
+#home-culture {
+    background-color: $blush;
     overflow: hidden;
     position: relative;
-    background-color: $blush;
-    @include md{
+
+    @include md {
         background-color: unset;
     }
-    #home-culture-container{
-        @include md{
-            height: auto;
+
+    #home-culture-container {
+        @include md {
             display: grid;
-            grid-template-columns: repeat(2, 1fr) ;
+            grid-template-areas: "i ."
+                "i p3"
+                ". p3";
+            grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 310px 180px auto;
-            grid-template-areas: 
-            "i ."
-            "i p3"
-            ". p3";
+            height: auto;
         }
-        @include lg{
-            
+
+        @include lg {
+            grid-template-areas: ". i . . ."
+                ". i . p3 ."
+                ". . . p3 .";
             grid-template-columns: 130px auto 120px auto 130px;
             grid-template-rows: 390px 180px auto;
-            grid-template-areas: 
-            ". i . . ."
-            ". i . p3 ."
-            ". . . p3 .";
         }
     }
+
     a {
-        @include md{
+        @include md {
             grid-area: i;
         }
-        img{
+
+        img {
+            height: 100%;
             object-fit: cover;
             object-position: center;
-            height: 100%;
             width: 72%;
-            @include md{
+
+            @include md {
                 padding-top: 70px;
                 width: 80%;
             }
-            @include lg{
+
+            @include lg {
                 width: 450px;
             }
         }
     }
-    #home-culture-para{
+
+    #home-culture-para {
         grid-area: p3;
         padding: 0 20px;
-        @include md{
+
+        @include md {
             padding: 0;
         }
-        >div{
+
+        >div {
             display: flex;
             justify-content: flex-end;
-            @include md{
+
+            @include md {
                 display: block;
             }
         }
     }
-    p{
+
+    p {
         color: $darkblue;
-        text-align: right;
         margin: 50px 0 20px;
-        @include md{
-            text-align: left;
+        text-align: right;
+
+        @include md {
             margin: 60px 45px 25px 0;
+            text-align: left;
         }
-        @include lg{
+
+        @include lg {
             margin: 70px 0 25px 0;
         }
     }
-    #culture-bg{
-        top: 0;
+
+    #culture-bg {
         background-color: $blush;
         position: absolute;
+        top: 0;
         width: 100vw;
         z-index: -99;
-        @include md{
+
+        @include md {
             height: 310px;
         }
-        @include lg{
+
+        @include lg {
             height: 390px;
         }
     }
-    h1{
-        right: -20px;
-        top: 30px;
-        position: absolute;
-        text-align: right;
+
+    h1 {
         color: $verygreen;
-        @include md{
+        position: absolute;
+        right: -20px;
+        text-align: right;
+        top: 30px;
+
+        @include md {
             right: -40px;
         }
-        @include lg{
+
+        @include lg {
             top: 80px;
         }
     }
 }
 
-
 /* --------------------------
     Index art
  --------------------------*/
-#home-art{
-    position: relative;
-    margin-top: 0;
+#home-art {
     background-image: url('../img/home/home-hero-2.jpeg');
     background-position: center;
     background-size: cover;
     height: auto;
+    margin-top: 0;
     overflow: hidden;
-    @include md{
+    position: relative;
+
+    @include md {
         margin-top: 0;
         padding: 0;
     }
-    
-    p{
-        width: auto;
+
+    p {
         color: white;
         padding: 50px 20px 0 20px;
-        @include md{
-            width: 380px;
+        width: auto;
+
+        @include md {
             padding: 60px 0 0 80px;
+            width: 380px;
         }
-        @include lg{
+
+        @include lg {
             padding: 70px 0 0 130px;
         }
     }
-    h1{
-        position: absolute;
+
+    h1 {
         color: rgba($color: white, $alpha: 0.3);
-        top: 130px;
+        position: absolute;
         right: -20px;
-        @include md{
-            top: 120px;
+        top: 130px;
+
+        @include md {
             left: 0;
+            top: 120px;
         }
     }
-    .button-container{
+
+    .button-container {
         padding-left: 20px;
     }
-    .button{
+
+    .button {
         margin-top: 30vh;
-        @include md{
-            margin-top: 40vh;
+
+        @include md {
             margin-left: 80px;
+            margin-top: 40vh;
         }
-        @include lg{
-            margin-top: 50vh;
+
+        @include lg {
             margin-left: 130px;
+            margin-top: 50vh;
         }
     }
 }
-

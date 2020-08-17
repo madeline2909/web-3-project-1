@@ -1,23 +1,26 @@
+gsap.set("#arrow-up-left", {
+    transformOrigin: "right center",
+    alpha: 0
+});
+gsap.set("#arrow-up-right", {
+    transformOrigin: "right center",
+    alpha: 0
+});
 
 
-gsap.set("#arrow-up-left",{transformOrigin:"right center", alpha:0});
-gsap.set("#arrow-up-right",{transformOrigin:"right center", alpha:0});
-
-
-$("#burger").on("mouseenter", function(){
+$("#burger").on("mouseenter", function () {
     // console.log("mouse enter");
-    if(canYouSeeTheMenu === false){
+    if (canYouSeeTheMenu === false) {
         burgerAnimationTimeline.play("burgerToDownArrow");
-    }else{
+    } else {
         burgerAnimationTimeline.play("XToUpArrow");
     }
 });
-$("#burger").on("mouseleave", function(){
+$("#burger").on("mouseleave", function () {
     console.log("mouse leave");
-    if(canYouSeeTheMenu === false){
+    if (canYouSeeTheMenu === false) {
         burgerAnimationTimeline.reverse("burgerToDownArrowReverse");
-    }else{
+    } else {
         burgerAnimationTimeline.reverse("XToUpArrowReverse");
     }
-}
-);
+});

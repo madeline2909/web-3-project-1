@@ -1,75 +1,88 @@
 /* =============
     Header
 ============= */
-header{
+header {
     position: fixed;
-    z-index: 200;
     width: 100%;
-    div{
+    z-index: 200;
+
+    div {
         color: $mainpink;
         display: grid;
         grid-template-columns: repeat(3, auto);
         padding: 15px;
-    
-        @include lg{
+
+        @include lg {
             padding: 30px 42px;
         }
-        @include md{
+
+        @include md {
             padding: 25px 30px;
         }
-        a:link, a:visited{
+
+        a:link,
+        a:visited {
             color: $mainpink;
         }
-        a:hover, a:active{
+
+        a:hover,
+        a:active {
             color: $bluegreen;
         }
-        h5{
+
+        h5 {
             font-family: 'Space Mono', monospace;
-            font-weight: 400;
             font-size: rem-calc(17px);
+            font-weight: 400;
             line-height: rem-calc(17px);
             text-align: center;
-            @include lg{
+
+            @include lg {
                 font-size: rem-calc(15px);
                 line-height: rem-calc(15px);
             }
         }
-        #logo-1-container{
-            margin-top: -10px;
-            display: flex;
+
+        #logo-1-container {
             align-items: center;
+            display: flex;
             justify-content: flex-start;
+            margin-top: -10px;
         }
-        #logo-2-container{
-            display: flex;
+
+        #logo-2-container {
             align-items: center;
+            display: flex;
             justify-content: flex-end;
-            img{
+
+            img {
                 height: 50px;
-                @include md{
+
+                @include md {
                     height: 45px;
                 }
             }
         }
-        #burger-container{
-            display: flex;
+
+        #burger-container {
             align-items: center;
+            display: flex;
             justify-content: center;
-            #burger{
-                height: 25px;
+
+            #burger {
                 cursor: pointer;
-                #lines{
+                height: 25px;
+
+                #lines {
                     stroke: $mainpink;
                     transition: 0.25s;
-                    
                 }
-                &:hover{
-                    #lines{
+
+                &:hover {
+                    #lines {
                         stroke: $bluegreen;
                     }
                 }
-                
-                
             }
         }
     }
