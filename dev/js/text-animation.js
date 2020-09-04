@@ -40,3 +40,18 @@ gsap.from("#home-art-anim", {
         id: "culture"
     }
 })
+
+//animating gallery caption
+gsap.from("#caption-container", {
+    duration: 0.5,
+    yPercent: 10,
+    alpha: 0,
+    scrollTrigger: {
+        //scrub:true,
+        toggleActions: "restart reverse restart reverse",
+        trigger: "#caption-container",
+        start: "top 70%",
+        //markers: true,
+        id: "gallery caption"
+    }
+})
