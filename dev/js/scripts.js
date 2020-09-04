@@ -1,6 +1,7 @@
 // @codekit-prepend "fancyBox.js";
 // @codekit-prepend "tinyslider.js";
 // @codekit-prepend "scroll-trigger.js";
+// @codekit-prepend "text-animation.js";
 // @codekit-prepend "main-nav/burger-animation.js";
 // @codekit-prepend "main-nav/nav-global.js";
 // @codekit-prepend "main-nav/burger-mouse-event.js";
