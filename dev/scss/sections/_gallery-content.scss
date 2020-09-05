@@ -163,11 +163,13 @@ ul {
 }
 
 #gallery-content-2 {
+    background-color: #fff;
+    position: relative;
     #caption-container {
         align-items: center;
         display: flex;
         justify-content: center;
-
+        
         .caption {
             text-align: center;
             width: 90%;

@@ -959,7 +959,9 @@ header div #burger-container #burger:hover #lines {
 ============= */
 footer {
   height: auto;
+  width: 100%;
   position: relative;
+  z-index: 0;
 }
 footer #footer-background {
   background-image: url("../img/footer/footer.jpeg");
@@ -2061,6 +2063,10 @@ ul li img {
   }
 }
 
+#gallery-content-2 {
+  background-color: #fff;
+  position: relative;
+}
 #gallery-content-2 #caption-container {
   align-items: center;
   display: flex;
@@ -2601,32 +2607,37 @@ ul li img {
     Contact Recommendation 2
  --------------------------*/
 #contact-recom-2 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+}
+#contact-recom-2 > div {
+  padding: 50px 0;
   color: #59BEB0;
-  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
-  #contact-recom-2 {
-    margin-bottom: 60px;
+  #contact-recom-2 > div {
+    padding: 60px 0;
   }
 }
 @media (min-width: 1025px) {
-  #contact-recom-2 {
-    margin-bottom: 70px;
+  #contact-recom-2 > div {
+    padding: 70px 0;
   }
 }
-#contact-recom-2 div > p {
+#contact-recom-2 > div > p {
   margin-bottom: 20px;
 }
-#contact-recom-2 div div {
+#contact-recom-2 > div div {
   display: grid;
   grid-gap: 20px;
 }
-#contact-recom-2 div div ul {
+#contact-recom-2 > div div ul {
   display: grid;
   grid-template-columns: 30% auto;
 }
 @media (min-width: 768px) {
-  #contact-recom-2 div div ul {
+  #contact-recom-2 > div div ul {
     grid-template-columns: 20% auto;
   }
 }

@@ -47,8 +47,7 @@ gsap.from("#caption-container", {
     yPercent: 10,
     alpha: 0,
     scrollTrigger: {
-        //scrub:true,
-        toggleActions: "restart reverse restart reverse",
+        toggleActions: "restart none none reverse",
         trigger: "#caption-container",
         start: "top 70%",
         //markers: true,
@@ -63,7 +62,7 @@ gsap.from("#recom-animation", {
     alpha: 0,
     scrollTrigger: {
         //scrub:true,
-        toggleActions: "restart reverse restart reverse",
+        toggleActions: "restart none none reverse",
         trigger: "#p1",
         start: "top 70%",
         //markers: true,
@@ -77,7 +76,7 @@ gsap.from(".recom-2-animation", {
      stagger: 0.15,
     scrollTrigger: {
         //scrub:true,
-        toggleActions: "restart reverse restart reverse",
+        toggleActions: "restart none none reverse",
         trigger: "#contact-recom-2",
         start: "top 70%",
         stagger: true,

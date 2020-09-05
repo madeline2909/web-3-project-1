@@ -3,8 +3,12 @@
 ============= */
 footer {
     height: auto;
+    width: 100%;
     position: relative;
-
+    // position: fixed;
+    // bottom: 0;
+    // z-index: -1;
+    z-index: 0;
     #footer-background {
         background-image: url('../img/footer/footer.jpeg');
         background-position: center bottom;
