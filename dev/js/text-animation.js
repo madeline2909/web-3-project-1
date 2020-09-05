@@ -55,3 +55,33 @@ gsap.from("#caption-container", {
         id: "gallery caption"
     }
 })
+
+//animating contact caption
+gsap.from("#recom-animation", {
+    duration: 0.5,
+    yPercent: 10,
+    alpha: 0,
+    scrollTrigger: {
+        //scrub:true,
+        toggleActions: "restart reverse restart reverse",
+        trigger: "#p1",
+        start: "top 70%",
+        //markers: true,
+        id: "contact caption"
+    }
+})
+gsap.from(".recom-2-animation", {
+    duration: 0.5,
+    yPercent: 10,
+    alpha: 0,
+     stagger: 0.15,
+    scrollTrigger: {
+        //scrub:true,
+        toggleActions: "restart reverse restart reverse",
+        trigger: "#contact-recom-2",
+        start: "top 70%",
+        stagger: true,
+        //markers: true,
+        id: "contact caption 2"
+    }
+})

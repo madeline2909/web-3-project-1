@@ -4,7 +4,6 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".caption", {
     xPercent: -100,
     alpha: 0,
-    // backgroundColor: "#124559",
     scrollTrigger: {
         trigger: ".caption",
         id: "description",
@@ -16,7 +15,20 @@ gsap.from(".caption", {
     }
 })
 
-//section-titles slide from top
+//page titles animation
+gsap.from(".page-title", {
+    yPercent: -100,
+    alpha: 0,
+    duration:0.5,
+    scrollTrigger: {
+        trigger: ".hero-container",
+        id: "page title",
+        //markers: true,
+        toggleActions: "play none none none"
+    }
+})
+
+//HOME section-titles slide from top
 
 ScrollTrigger.matchMedia({
 
@@ -113,6 +125,18 @@ ScrollTrigger.matchMedia({
     }
 });
 
+//CONTACT recommendation title animation
+gsap.from("#recom-title-animation", {
+    xPercent: 100,
+    alpha: 0,
+    scrollTrigger: {
+        trigger: "#contact-recom-1",
+        id: "recm title",
+        //markers: true,
+        start: "top 30%",
+        toggleActions: "restart none none reverse"
+    }
+})
 
 //footer
 gsap.set("#email", {
