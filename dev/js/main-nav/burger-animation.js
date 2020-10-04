@@ -1,4 +1,4 @@
-
+import {gsap} from "gsap";
 var burgerAnimationSpeed = 0.25;
 
 // reset transformOrigin point for each time
