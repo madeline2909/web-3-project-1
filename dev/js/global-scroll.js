@@ -19,7 +19,27 @@ export function captionAnimation(){
         toggleActions: "restart none none none",
         trigger: ".caption",
         start: "top 80%",
-        markers: true,
+        //markers: true,
         id: "caption"
+    });
+}
+
+//page titles animation
+const titleAnimTL = gsap.timeline({paused:true});
+titleAnimTL
+.from(".page-title", {
+    yPercent: -100,
+    alpha: 0,
+    duration:0.5
+})
+
+export function titleAnimation(){
+
+    ScrollTrigger.create({
+        animation:titleAnimTL,
+        trigger: ".hero-container",
+        id: "page title",
+        //markers: true,
+        toggleActions: "play none none none"
     });
 }

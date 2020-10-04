@@ -1,175 +1,184 @@
+import {gsap} from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
-//each page's captions slide from the left
-gsap.from(".caption", {
-    xPercent: -100,
-    alpha: 0,
-    scrollTrigger: {
-        trigger: ".caption",
-        id: "description",
-        // markers: true,
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: 1,
-        toggleActions: "restart reverse restart reverse"
-    }
-})
-
-//page titles animation
-gsap.from(".page-title", {
-    yPercent: -100,
-    alpha: 0,
-    duration:0.5,
-    scrollTrigger: {
-        trigger: ".hero-container",
-        id: "page title",
-        //markers: true,
-        toggleActions: "play none none none"
-    }
-})
-
 //HOME section-titles slide from top
+export function indexTitleAnimation(){
+    ScrollTrigger.matchMedia({
 
-ScrollTrigger.matchMedia({
+        // desktop
+        "(min-width: 800px)": function () {
+            var introTimeline = gsap.timeline();
+            introTimeline.from("#img1", {
+                    yPercent: -10
+                })
+                .from("#intro", {
+                    yPercent: -100,
+                    alpha: 0
+                })
 
-    // desktop
-    "(min-width: 800px)": function () {
-        var introTimeline = gsap.timeline();
-        introTimeline.from("#img1", {
-                yPercent: -10
+            ScrollTrigger.create({
+                trigger: "#home-intro-img",
+                id: "intro",
+                // markers: true,
+                start: "-30 top",
+                end: "200 100",
+                scrub: 1,
+                toggleActions: "restart reverse restart none",
+                animation: introTimeline
             })
-            .from("#intro", {
-                yPercent: -100,
+
+            var cultureTimeline = gsap.timeline();
+            cultureTimeline.from("#culture", {
+                xPercent: 100,
                 alpha: 0
             })
-
-        ScrollTrigger.create({
-            trigger: "#home-intro-img",
-            id: "intro",
-            // markers: true,
-            start: "-30 top",
-            end: "200 100",
-            scrub: 1,
-            toggleActions: "restart reverse restart none",
-            animation: introTimeline
-        })
-        gsap.from("#culture", {
-            xPercent: 100,
-            alpha: 0,
-            scrollTrigger: {
+            ScrollTrigger.create({
                 trigger: "#home-culture",
                 id: "culture",
                 // markers: true,
                 start: "-150 top",
                 end: "150 bottom",
                 scrub: 1,
-                toggleActions: "restart none none none"
-            }
-        })
-        gsap.from("#art", {
-            xPercent: -100,
-            alpha: 0,
-            scrollTrigger: {
+                toggleActions: "restart none none none",
+                animation: cultureTimeline
+            })
+
+            var artTimeline = gsap.timeline();
+            artTimeline.from("#art", {
+                xPercent: -100,
+                alpha: 0
+            })
+            ScrollTrigger.create({
                 trigger: "#home-art",
                 id: "art",
                 // markers: true,
                 start: "-200 top",
                 end: "top bottom",
                 scrub: 1,
-                toggleActions: "restart none none none"
-            }
-        })
-    },
+                toggleActions: "restart none none none",
+                animation: artTimeline
+            })
+        },
 
 
 
-    // mobile
-    "(max-width: 799px)": function () {
-        gsap.from("#intro", {
-            yPercent: -100,
-            alpha: 0,
-            scrollTrigger: {
+        // mobile
+        "(max-width: 799px)": function () {
+            var introTimeline = gsap.timeline();
+            introTimeline
+                .from("#intro", {
+                    yPercent: -100,
+                    alpha: 0
+                })
+
+            ScrollTrigger.create({
                 trigger: "#home-intro-img",
                 start: "-30 top",
                 end: "200 100",
                 scrub: 1,
-                toggleActions: "restart reverse restart none"
-            }
-        })
-        gsap.from("#culture", {
-            xPercent: 100,
-            alpha: 0,
-            scrollTrigger: {
+                toggleActions: "restart reverse restart none",
+                animation: introTimeline
+            })
+            
+            var cultureTimeline = gsap.timeline();
+            cultureTimeline.from("#culture", {
+                xPercent: 100,
+                alpha: 0
+            })
+            ScrollTrigger.create({
                 trigger: "#home-culture",
                 id: "culture",
                 // markers: true,
                 start: "-200 top",
                 end: "-200 bottom",
                 scrub: 1,
-                toggleActions: "restart none none none"
-            }
-        })
-        gsap.from("#art", {
-            xPercent: -100,
-            alpha: 0,
-            scrollTrigger: {
+                toggleActions: "restart none none none",
+                animation: cultureTimeline
+            })
+
+            var artTimeline = gsap.timeline();
+            artTimeline.from("#art", {
+                xPercent: -100,
+                alpha: 0
+            })
+            ScrollTrigger.create({
                 trigger: "#home-art",
                 id: "art",
                 // markers: true,
                 start: "-200 top",
                 end: "top bottom",
                 scrub: 1,
-                toggleActions: "restart none none none"
-            }
-        })
-    }
-});
+                toggleActions: "restart none none none",
+                animation: artTimeline
+            })
+        }
+    });
+}
 
-//CONTACT recommendation title animation
-gsap.from("#recom-title-animation", {
-    xPercent: 100,
-    alpha: 0,
-    scrollTrigger: {
-        trigger: "#contact-recom-1",
-        id: "recm title",
-        //markers: true,
-        start: "top 30%",
-        toggleActions: "restart none none reverse"
-    }
-})
+//paragraphs animation HOME
+// export function indexTextAnimation(){
+//     gsap.from(".index-caption", {
+//         duration: 0.5,
+//         yPercent: 10,
+//         alpha: 0,
+//         scrollTrigger: {
+//             //scrub:true,
+//             toggleActions: "restart reverse restart reverse",
+//             trigger: "#home-intro-p",
+//             start: "top 70%",
+//             //markers: true,
+//             id: "index caption"
+//         }
+//     })
 
-//footer
-gsap.set("#email", {
-    transformOrigin: "right center"
-})
-gsap.set("#email-btn", {
-    transformOrigin: "left center"
-});
+//     gsap.from("#home-culture-anim", {
+//         duration: 0.5,
+//         yPercent: 10,
+//         alpha: 0,
+//         scrollTrigger: {
+//             //scrub:true,
+//             toggleActions: "restart reverse restart reverse",
+//             trigger: "#home-culture-para",
+//             start: "top 70%",
+//             //markers: true,
+//             id: "culture"
+//         }
+//     })
 
-const logoTimeline = gsap.timeline();
-logoTimeline.from(".footer-logo", {
-        alpha: 0,
-        yPercent: 100,
-        rotation: 180,
-        stagger: 0.25
-    })
-    .from("#email-input", {
-        duration: 0.25,
-        alpha: 0,
-        width: 0
-    }, "email-animation")
-    .from("#email-btn", {
-        duration: 0.25,
-        alpha: 0,
-        width: 0
-    }, "email-animation");
-ScrollTrigger.create({
-    trigger: "footer",
-    start: "-30% bottom",
-    animation: logoTimeline,
-    toggleActions: "restart pause reverse none",
-    // scrub: 1,
-    // markers: true,
-    id: "logo"
-});
+//     gsap.from("#home-art-anim", {
+//         duration: 0.5,
+//         yPercent: 10,
+//         alpha: 0,
+//         scrollTrigger: {
+//             //scrub:true,
+//             toggleActions: "restart reverse restart reverse",
+//             trigger: "#home-art",
+//             start: "top 70%",
+//             //markers: true,
+//             id: "culture"
+//         }
+//     })
+// }
 
+// const indexTextAnimTL = gsap.timeline();
+// indexTextAnimTL
+// .from(".index-caption", {
+//     duration: 0.5,
+//     yPercent: 10,
+//     alpha: 0
+// });
+
+// export function indexTextAnimation(){
+
+//     ScrollTrigger.create({
+//         //markers: true,
+//         animation: indexTextAnimTL,
+//         toggleActions: "restart reverse restart reverse",
+//         trigger: ".scroll-animation",
+//         start: "top 70%",
+//         scrub:1,
+//         id: "index caption"
+//     });
+// }
