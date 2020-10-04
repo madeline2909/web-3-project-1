@@ -35,19 +35,13 @@ export function contactAnimation(){
 }
 
 //map pinning
-const contactPinTL = gsap.timeline();
-contactPinTL
-.to("#map-container", {
-    ease: "none"
-})
-
 export function contactPinning(){
     ScrollTrigger.create({
         trigger: "#map-container",
         id: "map pinning",
         pin: true,
         pinSpacing: false,
-        markers: true,
+        //markers: true,
         start: "top 0",
         toggleActions: "restart none none none"
     });

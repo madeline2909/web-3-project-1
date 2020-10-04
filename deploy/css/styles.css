@@ -2067,22 +2067,22 @@ ul li img {
   background-color: #fff;
   position: relative;
 }
-#gallery-content-2 #caption-container {
+#gallery-content-2 #gallery-caption-container {
   align-items: center;
   display: flex;
   justify-content: center;
 }
-#gallery-content-2 #caption-container .caption {
+#gallery-content-2 #gallery-caption-container .caption {
   text-align: center;
   width: 90%;
 }
 @media (min-width: 768px) {
-  #gallery-content-2 #caption-container .caption {
+  #gallery-content-2 #gallery-caption-container .caption {
     width: 45%;
   }
 }
 @media (min-width: 1025px) {
-  #gallery-content-2 #caption-container .caption {
+  #gallery-content-2 #gallery-caption-container .caption {
     width: 410px;
   }
 }

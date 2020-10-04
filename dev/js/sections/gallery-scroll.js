@@ -4,9 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 //gallery pinning
-gsap.to("#g5", {
-    ease: "none",
-    scrollTrigger: {
+export function galleryPinning(){
+
+    ScrollTrigger.create({
         trigger: "#g5",
         id: "gallery pinning",
         pin: true,
@@ -14,19 +14,26 @@ gsap.to("#g5", {
         //markers: true,
         start: "top 0",
         toggleActions: "restart none none reverse"
-    }
-})
+    });
+}
 
 //animating gallery caption
-gsap.from("#caption-container", {
+const galleryAnimTL = gsap.timeline();
+galleryAnimTL
+.from("#gallery-caption-container", {
     duration: 0.5,
     yPercent: 10,
-    alpha: 0,
-    scrollTrigger: {
-        toggleActions: "restart none none reverse",
-        trigger: "#caption-container",
+    alpha: 0
+})
+
+export function galleryAnimation(){
+
+    ScrollTrigger.create({
+        animation:galleryAnimTL,
+        toggleActions: "restart none none none",
+        trigger: "#gallery-caption-container",
         start: "top 70%",
         //markers: true,
         id: "gallery caption"
-    }
-})
+    });
+}
