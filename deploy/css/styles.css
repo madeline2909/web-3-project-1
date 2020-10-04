@@ -700,9 +700,9 @@ textarea {
 }
 
 #main-nav {
+  display: none;
   align-items: center;
   background-color: #F0DBDA;
-  display: flex;
   height: 100vh;
   justify-content: space-between;
   position: fixed;
