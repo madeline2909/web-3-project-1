@@ -1,4 +1,4 @@
-
+import $ from "jquery";
 
 import {titleAnimation} from "./global-scroll.js";
 import {captionAnimation} from "./global-scroll.js";
@@ -10,6 +10,8 @@ import {galleryPinning} from "./sections/gallery-scroll.js";
 import {contactAnimation} from "./sections/contact-scroll.js";
 import {contactPinning} from "./sections/contact-scroll.js";
 
+import {hideShowMainNav} from "./main-nav/nav-global.js";
+
 
 titleAnimation();
 captionAnimation();
@@ -20,5 +22,9 @@ contactAnimation();
 contactPinning();
 galleryAnimation();
 galleryPinning();
+
+console.log($);
+
+//$("#burger").on("click", hideShowMainNav);
 
  

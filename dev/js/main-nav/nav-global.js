@@ -1,3 +1,6 @@
+
+import {burgerAnimationTimeline} from "./burger-animation.js";
+
 //can you see the menu?
 export var canYouSeeTheMenu = false;
 
@@ -16,8 +19,8 @@ mainNavTimeline.to("#main-nav", {
     y: 0
 })
 
-function hideShowMainNav() {
-    //console.log("hide or show nav");
+export function hideShowMainNav() {
+    console.log("hide or show nav");
     //toggles the css display property
 
     if (canYouSeeTheMenu === false) {

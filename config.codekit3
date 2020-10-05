@@ -587,7 +587,7 @@
 		"tS": 0
 		},
 	"/dev/js/main-nav/burger-animation.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -631,18 +631,18 @@
 		"tS": 0
 		},
 	"/dev/js/main-nav/main-nav-click.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/main-nav/main-nav-click-min.js",
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},
 	"/dev/js/main-nav/nav-global.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
@@ -1006,6 +1006,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/gsap/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/jquery/dist/jquery-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
