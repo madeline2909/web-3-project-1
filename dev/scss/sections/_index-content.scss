@@ -81,13 +81,13 @@
 
     p {
         color: $mainpink;
-        font-family: 'Space Mono', monospace;
-        font-size: rem-calc(23);
+        font-family: 'Gaegu', cursive;
+        font-size: rem-calc(28);
         line-height: rem-calc(30);
         text-align: center;
 
         @include md {
-            font-size: rem-calc(25);
+            font-size: rem-calc(32);
             line-height: rem-calc(35);
             text-align: right;
             width: 370px;

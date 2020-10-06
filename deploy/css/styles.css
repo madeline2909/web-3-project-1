@@ -554,7 +554,7 @@ h1 {
 
 h4 {
   padding: 49px 0;
-  font-family: "Covered By Your Grace", cursive;
+  font-family: "Gaegu", cursive;
   font-size: 1.25rem;
   line-height: 1.5625rem;
 }
@@ -1104,7 +1104,8 @@ footer #email button i:hover, footer #email button i:active {
 }
 footer p {
   color: white;
-  font-family: "Covered By Your Grace", cursive;
+  font-family: "Gaegu", cursive;
+  font-weight: 700;
   font-size: 1.875rem;
   line-height: 2.1875rem;
   margin: 0 50px 10px;
@@ -1224,14 +1225,14 @@ footer #copyright {
 }
 #home-intro p {
   color: #EF87A3;
-  font-family: "Space Mono", monospace;
-  font-size: 1.4375rem;
+  font-family: "Gaegu", cursive;
+  font-size: 1.75rem;
   line-height: 1.875rem;
   text-align: center;
 }
 @media (min-width: 768px) {
   #home-intro p {
-    font-size: 1.5625rem;
+    font-size: 2rem;
     line-height: 2.1875rem;
     text-align: right;
     width: 370px;
@@ -1822,6 +1823,7 @@ footer #copyright {
   }
 }
 #blog-form-container h4 {
+  font-family: "Gaegu", cursive;
   color: #027E88;
   padding: 0;
 }

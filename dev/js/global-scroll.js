@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 //animating global caption
-const captionAnimTL = gsap.timeline();
+const captionAnimTL = gsap.timeline({paused:true});
 captionAnimTL
 .from(".caption", {
     duration: 0.5,
@@ -15,8 +15,8 @@ captionAnimTL
 export function captionAnimation(){
 
     ScrollTrigger.create({
-        animation:captionAnimTL,
-        toggleActions: "restart none none none",
+        animation: captionAnimTL,
+        toggleActions: "play none none none",
         trigger: ".caption",
         start: "top 80%",
         //markers: true,

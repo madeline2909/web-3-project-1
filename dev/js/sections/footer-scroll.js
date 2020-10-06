@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 //footer
-gsap.set("#email", {
+gsap.set("#email-input", {
     transformOrigin: "right center"
 })
 gsap.set("#email-btn", {
@@ -21,21 +21,19 @@ logoTimeline.from(".footer-logo", {
     .from("#email-input", {
         duration: 0.25,
         alpha: 0,
-        width: 0
+        scaleX: 0
     }, "email-animation")
     .from("#email-btn", {
         duration: 0.25,
-        alpha: 0,
-        width: 0
+        alpha: 0
     }, "email-animation");
 export function footerAnimation(){
     ScrollTrigger.create({
         trigger: "footer",
-        start: "-30% bottom",
         animation: logoTimeline,
         toggleActions: "restart pause reverse none",
         // scrub: 1,
-        // markers: true,
+        //markers: true,
         id: "logo"
     });
 }
