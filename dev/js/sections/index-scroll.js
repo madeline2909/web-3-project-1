@@ -17,7 +17,11 @@ export function indexTitleAnimation(){
                     yPercent: -100,
                     alpha: 0
                 })
-
+                .from(".home-intro-anim", {
+                    duration: 0.5,
+                    yPercent: 10,
+                    alpha: 0
+                })
             ScrollTrigger.create({
                 trigger: "#home-intro-img",
                 id: "intro",
@@ -34,12 +38,17 @@ export function indexTitleAnimation(){
                 xPercent: 100,
                 alpha: 0
             })
+            .from("#home-culture-anim", {
+                duration: 0.5,
+                yPercent: 10,
+                alpha: 0
+            })
             ScrollTrigger.create({
                 trigger: "#home-culture",
                 id: "culture",
-                // markers: true,
-                start: "-150 top",
-                end: "150 bottom",
+                //markers: true,
+                start: "top 70%",
+                end: "85% bottom",
                 scrub: 1,
                 toggleActions: "restart none none none",
                 animation: cultureTimeline
@@ -50,12 +59,17 @@ export function indexTitleAnimation(){
                 xPercent: -100,
                 alpha: 0
             })
+            .from("#home-art-anim", {
+                duration: 0.5,
+                yPercent: 10,
+                alpha: 0
+            })
             ScrollTrigger.create({
                 trigger: "#home-art",
                 id: "art",
                 // markers: true,
-                start: "-200 top",
-                end: "top bottom",
+                start: "top 70%",
+                end: "85% bottom",
                 scrub: 1,
                 toggleActions: "restart none none none",
                 animation: artTimeline
@@ -70,6 +84,11 @@ export function indexTitleAnimation(){
             introTimeline
                 .from("#intro", {
                     yPercent: -100,
+                    alpha: 0
+                })
+                .from(".home-intro-anim", {
+                    duration: 0.5,
+                    yPercent: 10,
                     alpha: 0
                 })
 
@@ -87,6 +106,11 @@ export function indexTitleAnimation(){
                 xPercent: 100,
                 alpha: 0
             })
+            .from("#home-culture-anim", {
+                duration: 0.5,
+                yPercent: 10,
+                alpha: 0
+            })
             ScrollTrigger.create({
                 trigger: "#home-culture",
                 id: "culture",
@@ -99,10 +123,16 @@ export function indexTitleAnimation(){
             })
 
             var artTimeline = gsap.timeline();
-            artTimeline.from("#art", {
+            artTimeline.from("#home-art-anim", {
+                duration: 0.5,
+                yPercent: 10,
+                alpha: 0
+            })
+            .from("#art", {
                 xPercent: -100,
                 alpha: 0
             })
+            
             ScrollTrigger.create({
                 trigger: "#home-art",
                 id: "art",
