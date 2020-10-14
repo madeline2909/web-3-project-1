@@ -1,6 +1,6 @@
 import $ from "jquery";
-import {scrollIndex} from "./main-nav/nav-scroll.js";
-import {hideShowMainNav} from "./main-nav/nav-global.js";
+import {scrollIndex} from "./nav-scroll.js";
+import {hideShowMainNav} from "./nav-global.js";
 
 //adding a listener the two buttons that will call a function that is defined in the nav-global js file
 $("#main-nav li button").on("click", hideShowMainNav);

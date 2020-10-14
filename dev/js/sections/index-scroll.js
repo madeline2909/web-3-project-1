@@ -11,8 +11,12 @@ export function indexTitleAnimation(){
         "(min-width: 800px)": function () {
             var introTimeline = gsap.timeline();
             introTimeline.from("#img1", {
-                    yPercent: -10
-                })
+                    yPercent: -10,
+                    alpha: 0
+                }, "img anim")
+                .from("#img2", {
+                    alpha: 0
+                }, "img anim")
                 .from("#intro", {
                     yPercent: -100,
                     alpha: 0
@@ -25,19 +29,21 @@ export function indexTitleAnimation(){
             ScrollTrigger.create({
                 trigger: "#home-intro-img",
                 id: "intro",
-                // markers: true,
-                start: "-30 top",
-                end: "200 100",
+                //markers: true,
                 scrub: 1,
-                toggleActions: "restart reverse restart none",
+                toggleActions: "restart none none none",
                 animation: introTimeline
             })
 
             var cultureTimeline = gsap.timeline();
-            cultureTimeline.from("#culture", {
+            cultureTimeline
+            .from("#img4", {
+                alpha: 0
+            }, "culture anim 1")
+            .from("#culture", {
                 xPercent: 100,
                 alpha: 0
-            })
+            }, "culture anim 1")
             .from("#home-culture-anim", {
                 duration: 0.5,
                 yPercent: 10,
@@ -82,6 +88,9 @@ export function indexTitleAnimation(){
         "(max-width: 799px)": function () {
             var introTimeline = gsap.timeline();
             introTimeline
+                .from("#img1", {
+                    alpha: 0
+                })
                 .from("#intro", {
                     yPercent: -100,
                     alpha: 0
@@ -91,21 +100,26 @@ export function indexTitleAnimation(){
                     yPercent: 10,
                     alpha: 0
                 })
+                .from("#img3", {
+                    alpha: 0
+                })
 
             ScrollTrigger.create({
                 trigger: "#home-intro-img",
-                start: "-30 top",
-                end: "200 100",
                 scrub: 1,
-                toggleActions: "restart reverse restart none",
+                toggleActions: "restart none none none",
                 animation: introTimeline
             })
             
             var cultureTimeline = gsap.timeline();
-            cultureTimeline.from("#culture", {
-                xPercent: 100,
+            cultureTimeline
+            .from("#img4", {
                 alpha: 0
             })
+            .from("#culture", {
+                xPercent: 100,
+                alpha: 0
+            }, "-=.5")
             .from("#home-culture-anim", {
                 duration: 0.5,
                 yPercent: 10,
@@ -115,8 +129,8 @@ export function indexTitleAnimation(){
                 trigger: "#home-culture",
                 id: "culture",
                 // markers: true,
-                start: "-200 top",
-                end: "-200 bottom",
+                // start: "-200 top",
+                end: "bottom 80%",
                 scrub: 1,
                 toggleActions: "restart none none none",
                 animation: cultureTimeline

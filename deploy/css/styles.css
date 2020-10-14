@@ -1448,6 +1448,7 @@ footer #copyright {
 #home-culture h1 {
   color: #A2B334;
   position: absolute;
+  z-index: 2;
   right: -20px;
   text-align: right;
   top: 30px;
