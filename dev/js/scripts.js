@@ -17,9 +17,10 @@ import {contactPinning} from "./sections/contact-scroll.js";
 import {mouseEvent} from "./main-nav/burger-mouse.js";
 import {burgerClick} from "./main-nav/burger-mouse.js";
 import {navClick} from "./main-nav/main-nav-click.js";
-import {headerScroll} from "./main-nav/header-scroll.js";
 import {reportWindowSize} from "./main-nav/nav-global.js";
 import {menuBgSelect} from "./main-nav/nav-global.js";
+import {headerScroll} from "./main-nav/header-scroll.js";
+
 
 //calling the scrolltrigger functions
 titleAnimation();
@@ -32,9 +33,9 @@ galleryAnimation();
 galleryPinning();
 
 // console.log($);
-headerScroll(); 
 mouseEvent();
 burgerClick();
 navClick();
 reportWindowSize();
 menuBgSelect();
+headerScroll(); 
