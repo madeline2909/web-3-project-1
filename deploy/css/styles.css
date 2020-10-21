@@ -2644,3 +2644,17 @@ ul li img {
     grid-template-columns: 20% auto;
   }
 }
+
+/* =============
+   Cat Demo
+============= */
+#btn-cat {
+  background-color: #F0DBDA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn-cat svg {
+  height: 100vh;
+  width: 50vw;
+}

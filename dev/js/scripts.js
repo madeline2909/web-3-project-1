@@ -43,3 +43,6 @@ reportWindowSize();
 menuBgSelect();
 headerScroll(); 
 
+//cat button
+import {btnMouseEvent} from "./btn-cat/btn-mouse-event.js"
+btnMouseEvent();

@@ -1,0 +1,13 @@
+/* =============
+   Cat Demo
+============= */
+#btn-cat{
+    background-color: #F0DBDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        height: 100vh;
+        width: 50vw;
+    }
+}

@@ -17,6 +17,14 @@
 		"oAP": "/deploy/blog.html",
 		"oF": 0
 		},
+	"/deploy/btn-cat.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/btn-cat.html",
+		"oF": 0
+		},
 	"/deploy/contact.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -468,6 +476,14 @@
 		"oAP": "/dev/content/blog-content.html",
 		"oF": 1
 		},
+	"/dev/content/btn-cat.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/btn-cat.html",
+		"oF": 3
+		},
 	"/dev/content/contact-content.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -563,6 +579,28 @@
 		"oA": 0,
 		"oAP": "/deploy/insta.html",
 		"oF": 2
+		},
+	"/dev/js/btn-cat/btn-animation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/btn-cat/btn-animation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dev/js/btn-cat/btn-mouse-event.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/btn-cat/btn-mouse-event-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/dev/js/fancyBox.js": {
 		"bF": 4,
@@ -883,6 +921,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/sections/_blog-content.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/_btn-cat.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_btn-cat.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
