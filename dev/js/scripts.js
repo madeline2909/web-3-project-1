@@ -23,7 +23,8 @@ import {headerScroll} from "./main-nav/header-scroll.js";
 //fancybox and tinyslider
 import {tinySlider} from "./tinyslider.js";
 import {fancyBox} from "./fancyBox.js";
-
+tinySlider();
+fancyBox();
 
 //calling the scrolltrigger functions
 titleAnimation();
@@ -42,5 +43,3 @@ reportWindowSize();
 menuBgSelect();
 headerScroll(); 
 
-tinySlider();
-fancyBox();
