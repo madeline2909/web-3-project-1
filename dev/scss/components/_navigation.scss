@@ -11,10 +11,10 @@
 }
 
 #main-nav {
-    display: none;
+    //display: none;
     align-items: center;
     background-color: $blush;
-    //display: flex;
+    display: flex;
     height: 100vh;
     justify-content: space-between;
     position: fixed;

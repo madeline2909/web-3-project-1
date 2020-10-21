@@ -9,6 +9,6 @@
   "dependencies": {
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
-    "tiny-slider": "^2.9.2"
+    "tiny-slider": "^2.9.3"
   }
 }

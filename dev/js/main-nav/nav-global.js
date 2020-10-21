@@ -1,4 +1,5 @@
-
+import {gsap} from "gsap";
+import $ from "jquery";
 import {burgerAnimationTimeline} from "./burger-animation.js";
 
 //can you see the menu?
@@ -11,7 +12,7 @@ gsap.set("#main-nav", {
 })
 
 
-var mainNavTimeline = gsap.timeline({
+export const mainNavTimeline = gsap.timeline({
     paused: true
 })
 mainNavTimeline.to("#main-nav", {

@@ -1,4 +1,5 @@
 import {gsap} from "gsap";
+import $ from "jquery";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
