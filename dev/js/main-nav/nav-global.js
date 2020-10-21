@@ -55,9 +55,9 @@ export function menuBgSelect() {
 }
 
 export function reportWindowSize() {
-    console.log("test");
+    //console.log("test");
     if (canYouSeeTheMenu === false) {
-        console.log("can't see the main nav");
+        //console.log("can't see the main nav");
         console.log($("#main-nav").outerHeight());
         navHeight = $("#main-nav").outerHeight();
         gsap.set("#main-nav", {
