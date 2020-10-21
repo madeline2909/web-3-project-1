@@ -21,10 +21,10 @@ import {menuBgSelect} from "./main-nav/nav-global.js";
 import {headerScroll} from "./main-nav/header-scroll.js";
 
 //fancybox and tinyslider
-import {tinySlider} from "./tinyslider.js";
-import {fancyBox} from "./fancyBox.js";
-tinySlider();
-fancyBox();
+// import {tinySlider} from "./tinyslider.js";
+// import {fancyBox} from "./fancyBox.js";
+// tinySlider();
+// fancyBox();
 
 //calling the scrolltrigger functions
 titleAnimation();

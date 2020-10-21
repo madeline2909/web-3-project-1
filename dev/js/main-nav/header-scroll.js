@@ -1,8 +1,8 @@
 import $ from "jquery";
 import {gsap} from "gsap";
+import jQuery from "jquery";
 
 import {canYouSeeTheMenu} from "./nav-global.js";
-import jQuery from "jquery";
 
 var headerHeight = $("header").outerHeight();
 //move the header off screen on the Y axis
