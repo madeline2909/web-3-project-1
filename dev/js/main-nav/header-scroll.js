@@ -2,7 +2,7 @@ import $ from "jquery";
 import {gsap} from "gsap";
 
 import {canYouSeeTheMenu} from "./nav-global.js";
-import jquery from "jquery";
+import jQuery from "jquery";
 
 var headerHeight = $("header").outerHeight();
 //move the header off screen on the Y axis
@@ -21,10 +21,7 @@ export function headerScroll() {
     //scrolling up top makes header bgc fade out
     $(window).scroll(function () {
         if (canYouSeeTheMenu === false) {
-            var CurrentScroll = 200;
-            var NextScroll = $(this).scrollTop();
             var scroll = $(window).scrollTop();
-            var position = jquery(window).scrollTop();
 
             if (scroll > 0) {
                 $('header').fadeIn('slow').css("backgroundColor", "rgba(255, 255, 255, 0.7)");
@@ -36,17 +33,28 @@ export function headerScroll() {
                 $('header').fadeIn('slow').css("backgroundColor", "unset");
             }
 
-            if (position >= 250 && NextScroll >= CurrentScroll) {
-                //write the codes related to down-ward scrolling here
-                headerTimeline.reverse();
-            } else {
-                //write the codes related to upward-scrolling here
-                //console.log("scrolling up");
-                headerTimeline.play();
-            }
-
-            CurrentScroll = NextScroll; //Updates current scroll position
         }
 
+    });
+
+    $(function () {
+
+        var CurrentScroll = 200;
+        $(window).scroll(function () {
+            if (canYouSeeTheMenu === false) {
+                var NextScroll = $(this).scrollTop();
+                var position = jQuery(window).scrollTop();
+                if (position >= 250 && NextScroll >= CurrentScroll) {
+                    //write the codes related to down-ward scrolling here
+                    headerTimeline.reverse();
+                } else {
+                    //write the codes related to upward-scrolling here
+                    headerTimeline.play();
+                }
+    
+                CurrentScroll = NextScroll; //Updates current scroll position
+            }
+    
+        });
     });
 }
