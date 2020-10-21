@@ -1,7 +1,6 @@
 // import * as fancybox from './fancyBox.js';
 // import * as tinyslider from './tinyslider.js';
-// import {gsap} from "gsap";
-// import $ from "jquery";
+
 
 //Scroll Trigger stuffs
 import {titleAnimation} from "./global-scroll.js";
@@ -21,6 +20,10 @@ import {reportWindowSize} from "./main-nav/nav-global.js";
 import {menuBgSelect} from "./main-nav/nav-global.js";
 import {headerScroll} from "./main-nav/header-scroll.js";
 
+//fancybox and tinyslider
+import {tinySlider} from "./tinyslider.js";
+import {fancyBox} from "./fancyBox.js";
+
 
 //calling the scrolltrigger functions
 titleAnimation();
@@ -32,10 +35,12 @@ contactPinning();
 galleryAnimation();
 galleryPinning();
 
-// console.log($);
 mouseEvent();
 burgerClick();
 navClick();
 reportWindowSize();
 menuBgSelect();
 headerScroll(); 
+
+tinySlider();
+fancyBox();

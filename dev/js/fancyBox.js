@@ -1,18 +1,20 @@
-//console.log("Hello from FancyBox file");
+import $ from "jquery";
 
-$('[data-fancybox="gallery"]').fancybox({
-    touch : {
-        vertical : true
-    },
-    buttons : [
-        // "zoom",
-        // "share",
-        // "slideShow",
-        // "fullScreen",
-        // "download",
-        // "thumbs",
-        // "close"
-    ]
-    
-});
+export function fancyBox() {
 
+    $('[data-fancybox="gallery"]').fancybox({
+        touch : {
+            vertical : true
+        },
+        buttons : [
+            // "zoom",
+            // "share",
+            // "slideShow",
+            // "fullScreen",
+            // "download",
+            // "thumbs",
+            // "close"
+        ]
+        
+    });
+}
