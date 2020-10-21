@@ -635,7 +635,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/main-nav/nav-global-min.js",
 		"oF": 1,
 		"sC": 3,

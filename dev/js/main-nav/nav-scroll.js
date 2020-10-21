@@ -14,12 +14,3 @@ export function scrollIndex() {
         }
     });
 }
-
-
-
-// function scrollCulture(){
-//     gsap.to(window, {duration: 1, scrollTo:{y:"#home-culture", offsetY:60}});
-// }
-// function scrollArt(){
-//     gsap.to(window, {duration: 1, scrollTo:{y:"#home-art", offsetY:60}});
-// }

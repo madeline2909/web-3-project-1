@@ -46,13 +46,15 @@ export function hideShowMainNav() {
 }
 
 var menuBackground = document.querySelector("#main-nav");
-window.onclick = function (event) {
+export function menuBgSelect() {
+    window.onclick = function (event) {
     if (event.target == menuBackground) {
         hideShowMainNav();
     }
+    }
 }
 
-function reportWindowSize() {
+export function reportWindowSize() {
     console.log("test");
     if (canYouSeeTheMenu === false) {
         console.log("can't see the main nav");
@@ -62,7 +64,7 @@ function reportWindowSize() {
             y: -navHeight
         });
     }
+    // add a listener to the window for everytime it's resized
+    window.addEventListener('resize', reportWindowSize);
 }
 
-// add a listener to the window for everytime it's resized
-window.addEventListener('resize', reportWindowSize);

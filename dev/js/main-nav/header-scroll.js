@@ -16,31 +16,14 @@ headerTimeline.to("header", {
     y: 0
 })
 
-//scrolling up top makes header bgc fade out
-$(window).scroll(function () {
-    if (canYouSeeTheMenu === false) {
-        var scroll = $(window).scrollTop();
-
-        if (scroll > 0) {
-            $('header').fadeIn('slow').css("backgroundColor", "rgba(255, 255, 255, 0.7)");
-            //   gsap.to("header",{duration:0.25,backgroundColor: "255, 255, 255, 0.7"});
-        }
-
-        if (scroll <= 0) {
-            // gsap.to("header",{duration:0.25,backgroundColor: "255, 255, 255, 0"});
-            $('header').fadeIn('slow').css("backgroundColor", "unset");
-        }
-    }
-
-});
-//animation of header sliding up when scrolling down-sliding dowm when scrolling up
-$(function () {
-
-    var CurrentScroll = 200;
+export function headerScroll() {
+    //scrolling up top makes header bgc fade out
     $(window).scroll(function () {
         if (canYouSeeTheMenu === false) {
+            var CurrentScroll = 200;
             var NextScroll = $(this).scrollTop();
-            var position = jQuery(window).scrollTop();
+            var position = $(window).scrollTop();
+
             if (position >= 250 && NextScroll >= CurrentScroll) {
                 //write the codes related to down-ward scrolling here
                 headerTimeline.reverse();
@@ -50,7 +33,16 @@ $(function () {
             }
 
             CurrentScroll = NextScroll; //Updates current scroll position
+            if (position > 0) {
+                $('header').fadeIn('slow').css("backgroundColor", "rgba(255, 255, 255, 0.7)");
+                //   gsap.to("header",{duration:0.25,backgroundColor: "255, 255, 255, 0.7"});
+            }
+
+            if (position <= 0) {
+                // gsap.to("header",{duration:0.25,backgroundColor: "255, 255, 255, 0"});
+                $('header').fadeIn('slow').css("backgroundColor", "unset");
+            }
         }
 
     });
-});
+}
