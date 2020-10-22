@@ -17,12 +17,12 @@
 		"oAP": "/deploy/blog.html",
 		"oF": 0
 		},
-	"/deploy/btn-cat.html": {
+	"/deploy/btn.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/deploy/btn-cat.html",
+		"oAP": "/deploy/btn.html",
 		"oF": 0
 		},
 	"/deploy/contact.html": {
@@ -444,14 +444,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/deploy/template.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/template.html",
-		"oF": 0
-		},
 	"/dev/blog.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -459,6 +451,14 @@
 		"oA": 0,
 		"oAP": "/deploy/blog.html",
 		"oF": 2
+		},
+	"/dev/btn.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/btn.html",
+		"oF": 3
 		},
 	"/dev/contact.kit": {
 		"cB": 0,
@@ -480,7 +480,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/btn-cat.html",
 		"oF": 3
 		},
@@ -1002,14 +1002,6 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 0
-		},
-	"/dev/template.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/template.html",
-		"oF": 3
 		},
 	"/node_modules": {
 		"ft": 65536,
