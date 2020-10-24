@@ -1,7 +1,8 @@
 import $ from "jquery";
+//import {tns} from 'tiny-slider';
 
-export function tinySlider() {
-  $(document).ready(function () {
+export function tinySliderFunc() {
+  // $(document).ready(function () {
 
     console.log($(".slides").hasClass("my-slider"));
     if ($(".slides").hasClass("my-slider")) {
@@ -32,6 +33,6 @@ export function tinySlider() {
     }else {
       console.log("No TinySlider found!");
     }
-  });
+  // });
 }
 

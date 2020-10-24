@@ -38,6 +38,7 @@ catBtnTL.from("#shade", {
 }, "btn animation")
 .to(".btn-text", {
     y:-8,
+    yoyo: true,
     fill: "#EF87A3",
     stagger: .03
 }, "btn animation")

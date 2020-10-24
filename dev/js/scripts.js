@@ -1,5 +1,5 @@
 // import * as fancybox from './fancyBox.js';
-// import * as tinyslider from './tinyslider.js';
+//import {tns} from 'tiny-slider.js';
 
 
 //Scroll Trigger stuffs
@@ -21,7 +21,8 @@ import {menuBgSelect} from "./main-nav/nav-global.js";
 import {headerScroll} from "./main-nav/header-scroll.js";
 
 //fancybox and tinyslider
-// import {tinySlider} from "./tinyslider.js";
+// import {tinySliderFunc} from "./tinyslider.js";
+// tinySliderFunc();
 // import {fancyBox} from "./fancyBox.js";
 // tinySlider();
 // fancyBox();
